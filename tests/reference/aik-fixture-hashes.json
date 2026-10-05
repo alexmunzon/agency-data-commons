@@ -1,0 +1,52 @@
+{
+  "fixtures": {
+    "agency-a": {
+      "canonical-defected/agents.csv": "157189f3c6e16f5f99bd68943f40c7b09731fda6b002c8ac3fb21ccfc217b619",
+      "canonical-defected/clients.csv": "196e8617dcc37dea794e4f6e6067aeafd53fccc1263ca209465a88f742d32453",
+      "canonical-defected/commission_lines.csv": "9d587202ae370e7db814454308d48e9d96fdc134b145704f5e422ed06ecad925",
+      "canonical-defected/households.csv": "351b530adc7b9718224e17db24c7d7b2bb52c702671d9c991120058925927c61",
+      "canonical-defected/policies.csv": "017e616ccd8cb9c68361a7b0e686fc05d9f62e577e9bcc49408594bb57e8b892",
+      "canonical-defected/rts.csv": "cb860376f67977c447f76f34b77811027e4fe9e2e19024407d04ed8bd1fb6f71",
+      "drop/agent_roster.xlsx": "0cc95e9c0f1723857e97b9a5f2e9ef4560728775e925f8191414b43bef87dc5c",
+      "drop/commissions_bluepeak.xlsx": "966918f4067320ec11266995220ab738a36fa75d5adb97983bdf389ab9583598",
+      "drop/commissions_cardinal_mutual.xlsx": "ab421bdd88a24545684cfba0e975578dd3c849dc390d854aeb438fd786ff9192",
+      "drop/commissions_harborline.xlsx": "85c4f20353e7c899079b791239d34e4975404db321230077ed57f5f679cf7ed6",
+      "drop/commissions_meridian_care.xlsx": "996cc777124aa30bb68e397571dc165b279781bdbba530cad32fecedf9c0c885",
+      "drop/commissions_northwind_health.xlsx": "3e7aaaa7412beade57ea11bb7bf0a6324c8de91a2db62a65bde5ec8a7a6e772b",
+      "drop/commissions_summit_health_plans.xlsx": "3d187ca7227e65f0c3eea95abb8e2616d3d91b1b2e40c891b2f4881a0272339a",
+      "drop/crm_export.csv": "8d37a575f3a007dd788bcbd9e43c02dd1931079759e4472e26a5721e6fc33a6f",
+      "drop/enrollment_export.csv": "de4ae408410b4acbcb5ce32fe399ca4543cff9e00ab75b30c0ac322b4d88c2f7",
+      "drop/manifest.json": "226b3bea7dec7fc0f16e0261d7473c9ee63097a7b53e3c680c8f1e0032881e48",
+      "ground_truth.json": "16c6dcdc7d74afbe230d6e9778eda4436399b445d235dd08d06ea7aa5ae16534"
+    },
+    "agency-a-ssn": {
+      "drop/agent_roster.xlsx": "7caa536284a40f2082862c57f82849b8784cfe3da46c0b1c8e86b46de9b1815d",
+      "drop/commissions_bluepeak.xlsx": "966918f4067320ec11266995220ab738a36fa75d5adb97983bdf389ab9583598",
+      "drop/commissions_cardinal_mutual.xlsx": "ab421bdd88a24545684cfba0e975578dd3c849dc390d854aeb438fd786ff9192",
+      "drop/commissions_harborline.xlsx": "85c4f20353e7c899079b791239d34e4975404db321230077ed57f5f679cf7ed6",
+      "drop/commissions_meridian_care.xlsx": "996cc777124aa30bb68e397571dc165b279781bdbba530cad32fecedf9c0c885",
+      "drop/commissions_northwind_health.xlsx": "3e7aaaa7412beade57ea11bb7bf0a6324c8de91a2db62a65bde5ec8a7a6e772b",
+      "drop/commissions_summit_health_plans.xlsx": "3d187ca7227e65f0c3eea95abb8e2616d3d91b1b2e40c891b2f4881a0272339a",
+      "drop/crm_export.csv": "8d37a575f3a007dd788bcbd9e43c02dd1931079759e4472e26a5721e6fc33a6f",
+      "drop/enrollment_export.csv": "de4ae408410b4acbcb5ce32fe399ca4543cff9e00ab75b30c0ac322b4d88c2f7",
+      "drop/manifest.json": "226b3bea7dec7fc0f16e0261d7473c9ee63097a7b53e3c680c8f1e0032881e48",
+      "ground_truth.json": "53ccf110d817270f5c2ef5df36c23534ee95755d958c18d821dd0211b4d104df"
+    },
+    "agency-a-truncated": {
+      "drop/agent_roster.xlsx": "0cc95e9c0f1723857e97b9a5f2e9ef4560728775e925f8191414b43bef87dc5c",
+      "drop/commissions_bluepeak.xlsx": "966918f4067320ec11266995220ab738a36fa75d5adb97983bdf389ab9583598",
+      "drop/commissions_cardinal_mutual.xlsx": "ab421bdd88a24545684cfba0e975578dd3c849dc390d854aeb438fd786ff9192",
+      "drop/commissions_harborline.xlsx": "85c4f20353e7c899079b791239d34e4975404db321230077ed57f5f679cf7ed6",
+      "drop/commissions_meridian_care.xlsx": "996cc777124aa30bb68e397571dc165b279781bdbba530cad32fecedf9c0c885",
+      "drop/commissions_northwind_health.xlsx": "3e7aaaa7412beade57ea11bb7bf0a6324c8de91a2db62a65bde5ec8a7a6e772b",
+      "drop/commissions_summit_health_plans.xlsx": "3d187ca7227e65f0c3eea95abb8e2616d3d91b1b2e40c891b2f4881a0272339a",
+      "drop/crm_export.csv": "928d8d6435ddf3b7a90deac8f9ed6dd9fe820784651d4edae24d252bfa7673fe",
+      "drop/enrollment_export.csv": "de4ae408410b4acbcb5ce32fe399ca4543cff9e00ab75b30c0ac322b4d88c2f7",
+      "drop/manifest.json": "226b3bea7dec7fc0f16e0261d7473c9ee63097a7b53e3c680c8f1e0032881e48",
+      "ground_truth.json": "1d376dba438bf5d792e773263100203d242b9198b76cc9ee81fca1c794aa14a1"
+    }
+  },
+  "note": "SHA-256 of every file in fixtures/<name>/ at source_commit, read with git show. Regenerate only by copying from agency-intake-kit, never from this repo's generator.",
+  "source_commit": "e9a759399fed447fd0bd3c659055f0b04faa89c9",
+  "source_repo": "agency-intake-kit"
+}
