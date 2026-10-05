@@ -314,7 +314,9 @@ def same_policy_two_member_ids(book: _Book, n: int, a_policies: dict[str, list[R
             )
 
 
-def _relative(book: _Book, kind: str, c: Row, row: Row, policies: list[Row], **change: Any) -> str:
+def _relative(
+    book: _Book, kind: str, pid: str, c: Row, row: Row, policies: list[Row], **change: Any
+) -> str:
     """A look-alike B client in c's household with copies of `policies`, labeled must-not-merge."""
     new = book.add(row)
     added = book.copy_policies(policies, new, **change)
@@ -322,7 +324,7 @@ def _relative(book: _Book, kind: str, c: Row, row: Row, policies: list[Row], **c
         kind,
         {"client_id": new},
         c["client_id"],
-        [],
+        _a_key(book, pid),
         [{"client_id": new}, {"client_id": c["client_id"]}],
         [],
         first_name=row["first_name"],
@@ -351,13 +353,13 @@ def child_on_parent_policy(book: _Book, n: int) -> None:
             if p["line_of_business"] == Lob.ACA and p["status"] != PolicyStatus.TERMINATED
         ]
 
-    for _, c in book.anchors(n, lambda c: bool(aca(c))):
+    for pid, c in book.anchors(n, lambda c: bool(aca(c))):
         parent = aca(c)[-1]
         first = book.fake.first_name()
         base = {**c, "first_name": first, "mbi": None, "email": None}
         row = {**base, "dob": _free_dob(book, base, (3, 25))}
         before = book.next_policy
-        _relative(book, "child_on_parent_policy", c, row, [parent], monthly_premium=None)
+        _relative(book, "child_on_parent_policy", pid, c, row, [parent], monthly_premium=None)
         dep = book.policies[-1]
         book.policies[-1] = {**dep, "carrier_member_id": parent["carrier_member_id"] + "-01"}
         book.member_ids.discard(dep["carrier_member_id"])
@@ -366,13 +368,13 @@ def child_on_parent_policy(book: _Book, n: int) -> None:
 
 
 def twin_lookalike(book: _Book, n: int) -> None:
-    for _, c in book.anchors(n, lambda c: c["first_name"] in TWINS):
+    for pid, c in book.anchors(n, lambda c: c["first_name"] in TWINS):
         row = {**c, "first_name": TWINS[c["first_name"]], "mbi": None}
         if c["mbi"]:
             row["mbi"] = _mbi(book.rng)
         row["email"] = _email(c, row["first_name"], c["last_name"])
         if _key(row) not in book.keys:
-            _relative(book, "twin_lookalike", c, row, book.held(c["client_id"]))
+            _relative(book, "twin_lookalike", pid, c, row, book.held(c["client_id"]))
 
 
 def father_son_same_name(book: _Book, n: int) -> None:
@@ -390,12 +392,12 @@ def father_son_same_name(book: _Book, n: int) -> None:
         age = AS_OF.year - c["dob"].year
         return c["first_name"] in male and c["mbi"] is not None and age >= 66 and c["state"] in aca
 
-    for _, c in book.anchors(n, ok):
+    for pid, c in book.anchors(n, ok):
         age = AS_OF.year - c["dob"].year
         base = {**c, "mbi": None, "email": None}
         row = {**base, "dob": _free_dob(book, base, (max(26, age - 40), min(63, age - 22)))}
         template = book.held(book.rng.choice(aca[c["state"]]))
-        _relative(book, "father_son_same_name", c, row, template)
+        _relative(book, "father_son_same_name", pid, c, row, template)
 
 
 def name_dob_lookalike(
