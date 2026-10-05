@@ -1,4 +1,7191 @@
 {
   "seed": 43,
-  "defects": []
+  "defects": [
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01089"
+      },
+      "row_ref": 1090,
+      "defect_type": "maiden_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Wolfe",
+        "b_last_name": "Finley"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01089",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00069"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01089"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1386
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00555"
+      },
+      "row_ref": 556,
+      "defect_type": "maiden_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Moore",
+        "b_last_name": "Walker"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00555",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00080"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00555"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 705
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00328"
+      },
+      "row_ref": 329,
+      "defect_type": "maiden_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Guerra",
+        "b_last_name": "Colon"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00328",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00128"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00328"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 409
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00880"
+      },
+      "row_ref": 881,
+      "defect_type": "maiden_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "King",
+        "b_last_name": "Mckay"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00880",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00136"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00880"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1122
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00064"
+      },
+      "row_ref": 65,
+      "defect_type": "maiden_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Young",
+        "b_last_name": "Andrews"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00064",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00421"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00064"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 81
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01298"
+      },
+      "row_ref": 1299,
+      "defect_type": "maiden_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Marks",
+        "b_last_name": "Jones"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01298",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00803"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01298"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1661
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00050"
+      },
+      "row_ref": 51,
+      "defect_type": "maiden_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Smith",
+        "b_last_name": "Cook"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00050",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00805"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00050"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 63
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01461"
+      },
+      "row_ref": 1462,
+      "defect_type": "maiden_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Klein",
+        "b_last_name": "Evans"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01461",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00839"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01461"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1868
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00327"
+      },
+      "row_ref": 328,
+      "defect_type": "maiden_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Keller",
+        "b_last_name": "Smith"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00327",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00996"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00327"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 408
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00053"
+      },
+      "row_ref": 54,
+      "defect_type": "maiden_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Smith",
+        "b_last_name": "Leonard"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00053",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01036"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00053"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 67
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00512"
+      },
+      "row_ref": 513,
+      "defect_type": "maiden_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Ruiz",
+        "b_last_name": "Rogers"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00512",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01133"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00512"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 645
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01109"
+      },
+      "row_ref": 1110,
+      "defect_type": "maiden_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Simmons",
+        "b_last_name": "Johnson"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01109",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01173"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01109"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1414
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00619"
+      },
+      "row_ref": 620,
+      "defect_type": "maiden_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Duke",
+        "b_last_name": "Bell"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00619",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01200"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00619"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 784
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00593"
+      },
+      "row_ref": 594,
+      "defect_type": "maiden_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Stuart",
+        "b_last_name": "Hoffman"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00593",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01202"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00593"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 754
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00025"
+      },
+      "row_ref": 26,
+      "defect_type": "maiden_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Morgan",
+        "b_last_name": "Graves"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00025",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01236"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00025"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 26
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00217"
+      },
+      "row_ref": 218,
+      "defect_type": "maiden_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Ross",
+        "b_last_name": "Clark"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00217",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01263"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00217"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 274
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00431"
+      },
+      "row_ref": 432,
+      "defect_type": "maiden_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Santos",
+        "b_last_name": "Ramirez"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00431",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01569"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00431"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 545
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00755"
+      },
+      "row_ref": 756,
+      "defect_type": "maiden_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Wiley",
+        "b_last_name": "Bautista"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00755",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01664"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00755"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 961
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01196"
+      },
+      "row_ref": 1197,
+      "defect_type": "maiden_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Smith",
+        "b_last_name": "Santiago"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01196",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01849"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01196"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1527
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00128"
+      },
+      "row_ref": 129,
+      "defect_type": "maiden_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Walters",
+        "b_last_name": "Carter"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00128",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01870"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00128"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 162
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00098"
+      },
+      "row_ref": 99,
+      "defect_type": "maiden_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Green",
+        "b_last_name": "Moore"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00098",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01940"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00098"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 120
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00701"
+      },
+      "row_ref": 702,
+      "defect_type": "hyphenated_surname",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Moore",
+        "b_last_name": "Moore-Gonzalez"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00701",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00059"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00701"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 891
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01230"
+      },
+      "row_ref": 1231,
+      "defect_type": "hyphenated_surname",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Smith",
+        "b_last_name": "Gomez-Smith"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01230",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00295"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01230"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1573
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00056"
+      },
+      "row_ref": 57,
+      "defect_type": "hyphenated_surname",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Rowland",
+        "b_last_name": "Vega-Rowland"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00056",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00305"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00056"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 71
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00875"
+      },
+      "row_ref": 876,
+      "defect_type": "hyphenated_surname",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Cross",
+        "b_last_name": "Cross-Perkins"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00875",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00462"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00875"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1116
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00077"
+      },
+      "row_ref": 78,
+      "defect_type": "hyphenated_surname",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Ford",
+        "b_last_name": "Smith-Ford"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00077",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00486"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00077"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 96
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01351"
+      },
+      "row_ref": 1352,
+      "defect_type": "hyphenated_surname",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Grant",
+        "b_last_name": "Grant-Taylor"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01351",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00559"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01351"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1731
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00567"
+      },
+      "row_ref": 568,
+      "defect_type": "hyphenated_surname",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Adams",
+        "b_last_name": "Hood-Adams"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00567",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00632"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00567"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 719
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00796"
+      },
+      "row_ref": 797,
+      "defect_type": "hyphenated_surname",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "West",
+        "b_last_name": "West-Mays"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00796",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00680"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00796"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1015
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00522"
+      },
+      "row_ref": 523,
+      "defect_type": "hyphenated_surname",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Kidd",
+        "b_last_name": "Kidd-Munoz"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00522",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00718"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00522"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 661
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00278"
+      },
+      "row_ref": 279,
+      "defect_type": "hyphenated_surname",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Robinson",
+        "b_last_name": "Robinson-Terrell"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00278",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00919"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00278"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 350
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00505"
+      },
+      "row_ref": 506,
+      "defect_type": "hyphenated_surname",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Gray",
+        "b_last_name": "Miller-Gray"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00505",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01020"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00505"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 638
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00184"
+      },
+      "row_ref": 185,
+      "defect_type": "hyphenated_surname",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Anderson",
+        "b_last_name": "Green-Anderson"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00184",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01157"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00184"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 230
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00393"
+      },
+      "row_ref": 394,
+      "defect_type": "hyphenated_surname",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Thomas",
+        "b_last_name": "Thomas-Dougherty"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00393",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01268"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00393"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 493
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00034"
+      },
+      "row_ref": 35,
+      "defect_type": "hyphenated_surname",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Griffin",
+        "b_last_name": "Griffin-Steele"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00034",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01344"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00034"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 39
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00095"
+      },
+      "row_ref": 96,
+      "defect_type": "hyphenated_surname",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Gonzalez",
+        "b_last_name": "Ortiz-Gonzalez"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00095",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01406"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00095"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 117
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00048"
+      },
+      "row_ref": 49,
+      "defect_type": "hyphenated_surname",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Willis",
+        "b_last_name": "Morgan-Willis"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00048",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01474"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00048"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 59
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00233"
+      },
+      "row_ref": 234,
+      "defect_type": "hyphenated_surname",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Deleon",
+        "b_last_name": "Deleon-Hodge"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00233",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01477"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00233"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 294
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00550"
+      },
+      "row_ref": 551,
+      "defect_type": "hyphenated_surname",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_last_name": "Orozco",
+        "b_last_name": "Buchanan-Orozco"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00550",
+      "fields": [
+        "last_name"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01674"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00550"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 699
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00154"
+      },
+      "row_ref": 155,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "72368 Ortiz Overpass Suite 772",
+        "from_city": "New Anthonybury",
+        "from_zip": "97426",
+        "to_address_line1": "16845 Jesse Burg Apt. 567",
+        "to_city": "South Jennifer",
+        "to_zip": "97198"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00154",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00240"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00154"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 195
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00251"
+      },
+      "row_ref": 252,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "516 Tim Forks",
+        "from_city": "Davisville",
+        "from_zip": "40831",
+        "to_address_line1": "6711 Mckay Route",
+        "to_city": "Port David",
+        "to_zip": "40804"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00251",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00255"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00251"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 316
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01501"
+      },
+      "row_ref": 1502,
+      "defect_type": "moved_household_stale_copy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "copy_of": "B-C-00251"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00251",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00255"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01501"
+          },
+          {
+            "client_id": "B-C-00251"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 2014
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00622"
+      },
+      "row_ref": 623,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "56481 Joseph Ports",
+        "from_city": "South Spencerstad",
+        "from_zip": "90841",
+        "to_address_line1": "51462 Jenkins Extension",
+        "to_city": "Rodriguezside",
+        "to_zip": "90809"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00622",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00265"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00622"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 789
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00205"
+      },
+      "row_ref": 206,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "520 Bright Green Suite 660",
+        "from_city": "West Jessica",
+        "from_zip": "06728",
+        "to_address_line1": "16016 Diana Coves",
+        "to_city": "South Chris",
+        "to_zip": "06155"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00205",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00325"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00205"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 258
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01502"
+      },
+      "row_ref": 1503,
+      "defect_type": "moved_household_stale_copy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "copy_of": "B-C-00205"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00205",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00325"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01502"
+          },
+          {
+            "client_id": "B-C-00205"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 2015
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00405"
+      },
+      "row_ref": 406,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "141 Jessica Oval Suite 523",
+        "from_city": "West Christineborough",
+        "from_zip": "84460",
+        "to_address_line1": "739 Hall Locks Suite 740",
+        "to_city": "New Andrewborough",
+        "to_zip": "84162"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00405",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00381"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00405"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 511
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01503"
+      },
+      "row_ref": 1504,
+      "defect_type": "moved_household_stale_copy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "copy_of": "B-C-00405"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00405",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00381"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01503"
+          },
+          {
+            "client_id": "B-C-00405"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 2016
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00207"
+      },
+      "row_ref": 208,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "07356 Floyd Parks",
+        "from_city": "Steventon",
+        "from_zip": "40296",
+        "to_address_line1": "93865 Vincent Walk",
+        "to_city": "East Kevinborough",
+        "to_zip": "40275"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00207",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00438"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00207"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 260
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00018"
+      },
+      "row_ref": 19,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "12797 Delacruz Gateway",
+        "from_city": "Sullivanton",
+        "from_zip": "55167",
+        "to_address_line1": "01337 Rogers Gateway Apt. 844",
+        "to_city": "Thomasfort",
+        "to_zip": "55129"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00018",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00483"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00018"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 20
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00012"
+      },
+      "row_ref": 13,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "84094 Manuel Fields",
+        "from_city": "Joshuamouth",
+        "from_zip": "97756",
+        "to_address_line1": "18304 Travis Mission Apt. 285",
+        "to_city": "Hernandezland",
+        "to_zip": "97729"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00012",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00512"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00012"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 14
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01504"
+      },
+      "row_ref": 1505,
+      "defect_type": "moved_household_stale_copy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "copy_of": "B-C-00012"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00012",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00512"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01504"
+          },
+          {
+            "client_id": "B-C-00012"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 2017
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00231"
+      },
+      "row_ref": 232,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "0027 Aaron Flats Suite 591",
+        "from_city": "East Johnberg",
+        "from_zip": "97088",
+        "to_address_line1": "971 Best Union",
+        "to_city": "Kaylaview",
+        "to_zip": "97506"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00231",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00645"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00231"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 292
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00868"
+      },
+      "row_ref": 869,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "1536 Clark Mission Apt. 529",
+        "from_city": "West Sherry",
+        "from_zip": "30547",
+        "to_address_line1": "330 Cory Mission",
+        "to_city": "New Charles",
+        "to_zip": "30052"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00868",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00762"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00868"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1107
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00150"
+      },
+      "row_ref": 151,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "206 Lisa Islands",
+        "from_city": "New Jamie",
+        "from_zip": "27483",
+        "to_address_line1": "3984 Rodriguez Street",
+        "to_city": "Mcneilbury",
+        "to_zip": "27310"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00150",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00776"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00150"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 190
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00109"
+      },
+      "row_ref": 110,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "27011 Warren Shoal Suite 622",
+        "from_city": "Jacobberg",
+        "from_zip": "26606",
+        "to_address_line1": "4929 Orr Lodge",
+        "to_city": "Port Jayton",
+        "to_zip": "26047"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00109",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00798"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00109"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 133
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00239"
+      },
+      "row_ref": 240,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "9856 Danny Valleys Suite 625",
+        "from_city": "North Jason",
+        "from_zip": "71649",
+        "to_address_line1": "0831 Heather Causeway",
+        "to_city": "Scottview",
+        "to_zip": "71694"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00239",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00923"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00239"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 300
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00156"
+      },
+      "row_ref": 157,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "6144 Thompson Mews Suite 923",
+        "from_city": "Derekside",
+        "from_zip": "97602",
+        "to_address_line1": "17997 Kim Mountains",
+        "to_city": "East Deanna",
+        "to_zip": "97338"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00156",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00956"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00156"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 197
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00832"
+      },
+      "row_ref": 833,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "06021 Zachary Pines",
+        "from_city": "Strongstad",
+        "from_zip": "41259",
+        "to_address_line1": "894 Joseph Unions Suite 051",
+        "to_city": "Port Mariahstad",
+        "to_zip": "41291"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00832",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01018"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00832"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1062
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01265"
+      },
+      "row_ref": 1266,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "6024 Mary Meadows Apt. 394",
+        "from_city": "Christinaside",
+        "from_zip": "79708",
+        "to_address_line1": "122 Rose Curve",
+        "to_city": "Lake Davidborough",
+        "to_zip": "75524"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01265",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01092"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01265"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1621
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01505"
+      },
+      "row_ref": 1506,
+      "defect_type": "moved_household_stale_copy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "copy_of": "B-C-01265"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01265",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01092"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01505"
+          },
+          {
+            "client_id": "B-C-01265"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 2018
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01484"
+      },
+      "row_ref": 1485,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "6437 Greene Road Suite 072",
+        "from_city": "North Dana",
+        "from_zip": "63177",
+        "to_address_line1": "51280 Guzman Extensions",
+        "to_city": "South Raymond",
+        "to_zip": "63142"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01484",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01219"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01484"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1900
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01506"
+      },
+      "row_ref": 1507,
+      "defect_type": "moved_household_stale_copy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "copy_of": "B-C-01484"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01484",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01219"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01506"
+          },
+          {
+            "client_id": "B-C-01484"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 2019
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00264"
+      },
+      "row_ref": 265,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "687 Jennifer Summit",
+        "from_city": "West Michaelstad",
+        "from_zip": "80480",
+        "to_address_line1": "078 Snyder Walks",
+        "to_city": "North Anthonyhaven",
+        "to_zip": "80470"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00264",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01301"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00264"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 333
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01507"
+      },
+      "row_ref": 1508,
+      "defect_type": "moved_household_stale_copy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "copy_of": "B-C-00264"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00264",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01301"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01507"
+          },
+          {
+            "client_id": "B-C-00264"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 2020
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00174"
+      },
+      "row_ref": 175,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "00915 Rodriguez Crossroad",
+        "from_city": "East Haleymouth",
+        "from_zip": "70737",
+        "to_address_line1": "814 Ramirez Tunnel Suite 172",
+        "to_city": "Andersonchester",
+        "to_zip": "71085"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00174",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01472"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00174"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 217
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00032"
+      },
+      "row_ref": 33,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "82856 Matthew Ports",
+        "from_city": "Moyertown",
+        "from_zip": "68038",
+        "to_address_line1": "2451 Williams Shore Suite 145",
+        "to_city": "Richardstown",
+        "to_zip": "68411"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00032",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01508"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00032"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 36
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00836"
+      },
+      "row_ref": 837,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "5025 Christensen Park",
+        "from_city": "West David",
+        "from_zip": "19880",
+        "to_address_line1": "4134 Andersen Lock",
+        "to_city": "South Anneshire",
+        "to_zip": "19897"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00836",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01602"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00836"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1068
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01034"
+      },
+      "row_ref": 1035,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "4547 Singh Ways Apt. 112",
+        "from_city": "East Sarah",
+        "from_zip": "92471",
+        "to_address_line1": "72340 Brianna Shores",
+        "to_city": "Hernandezhaven",
+        "to_zip": "92488"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01034",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01630"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01034"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1321
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01508"
+      },
+      "row_ref": 1509,
+      "defect_type": "moved_household_stale_copy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "copy_of": "B-C-01034"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01034",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01630"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01508"
+          },
+          {
+            "client_id": "B-C-01034"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 2021
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00120"
+      },
+      "row_ref": 121,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "0317 Parker Forks",
+        "from_city": "Port Jacobmouth",
+        "from_zip": "57206",
+        "to_address_line1": "1698 Kelley Parkways",
+        "to_city": "Meltonmouth",
+        "to_zip": "57257"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00120",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01955"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00120"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 149
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00441"
+      },
+      "row_ref": 442,
+      "defect_type": "moved_household",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "from_address_line1": "1432 Bonnie Cove",
+        "from_city": "Johnton",
+        "from_zip": "19019",
+        "to_address_line1": "498 Andre Shore Apt. 051",
+        "to_city": "Port Kathryn",
+        "to_zip": "19020"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00441",
+      "fields": [
+        "address_line1",
+        "city",
+        "zip"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01990"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00441"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 558
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00203"
+      },
+      "row_ref": 204,
+      "defect_type": "shared_household_contact",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "spouse_client_id": "B-C-00202",
+        "phone": "(930) 555-0148",
+        "email": "robert.reed202@example.com",
+        "from_phone": "(793) 555-0147",
+        "from_email": "ross.reed203@example.com"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00203",
+      "fields": [
+        "phone",
+        "email"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00044"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00203"
+          },
+          {
+            "client_id": "B-C-00202"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 256
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00500"
+      },
+      "row_ref": 501,
+      "defect_type": "shared_household_contact",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "spouse_client_id": "B-C-00501",
+        "phone": "(715) 555-0178",
+        "email": "shane.moody501@example.com",
+        "from_phone": "(715) 555-0178",
+        "from_email": "justin.moody500@example.com"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00500",
+      "fields": [
+        "phone",
+        "email"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00130"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00500"
+          },
+          {
+            "client_id": "B-C-00501"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 632
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00387"
+      },
+      "row_ref": 388,
+      "defect_type": "shared_household_contact",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "spouse_client_id": "B-C-00388",
+        "phone": "(330) 555-0121",
+        "email": "stephen.bryant388@example.com",
+        "from_phone": "(661) 555-0109",
+        "from_email": "miguel.bryant387@example.com"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00387",
+      "fields": [
+        "phone",
+        "email"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00269"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00387"
+          },
+          {
+            "client_id": "B-C-00388"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 485
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00998"
+      },
+      "row_ref": 999,
+      "defect_type": "shared_household_contact",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "spouse_client_id": "B-C-00999",
+        "phone": "(568) 555-0150",
+        "email": "jeremy.kaufman999@example.com",
+        "from_phone": "(948) 555-0193",
+        "from_email": "bradley.kaufman998@example.com"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00998",
+      "fields": [
+        "phone",
+        "email"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00274"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00998"
+          },
+          {
+            "client_id": "B-C-00999"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1270
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00334"
+      },
+      "row_ref": 335,
+      "defect_type": "shared_household_contact",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "spouse_client_id": "B-C-00335",
+        "phone": "(562) 555-0136",
+        "email": "chase.wise335@example.com",
+        "from_phone": "(562) 555-0136",
+        "from_email": "cindy.wise334@example.com"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00334",
+      "fields": [
+        "phone",
+        "email"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00333"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00334"
+          },
+          {
+            "client_id": "B-C-00335"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 416
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01492"
+      },
+      "row_ref": 1493,
+      "defect_type": "shared_household_contact",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "spouse_client_id": "B-C-01493",
+        "phone": "(641) 555-0106",
+        "email": "kenneth.lane1493@example.com",
+        "from_phone": "(366) 555-0182",
+        "from_email": "kim.lane1492@example.com"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01492",
+      "fields": [
+        "phone",
+        "email"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00404"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01492"
+          },
+          {
+            "client_id": "B-C-01493"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1910
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01073"
+      },
+      "row_ref": 1074,
+      "defect_type": "shared_household_contact",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "spouse_client_id": "B-C-01072",
+        "phone": "(416) 555-0195",
+        "email": "justin.williams1072@example.com",
+        "from_phone": "(416) 555-0195",
+        "from_email": "veronica.williams1073@example.com"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01073",
+      "fields": [
+        "phone",
+        "email"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00531"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01073"
+          },
+          {
+            "client_id": "B-C-01072"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1368
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01477"
+      },
+      "row_ref": 1478,
+      "defect_type": "shared_household_contact",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "spouse_client_id": "B-C-01476",
+        "phone": "(702) 555-0150",
+        "email": "ryan.family1476@example.com",
+        "from_phone": "(987) 555-0135",
+        "from_email": "sean.ryan1477@example.com"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01477",
+      "fields": [
+        "phone",
+        "email"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00587"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01477"
+          },
+          {
+            "client_id": "B-C-01476"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1890
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00225"
+      },
+      "row_ref": 226,
+      "defect_type": "shared_household_contact",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "spouse_client_id": "B-C-00226",
+        "phone": "(930) 555-0106",
+        "email": "ronald.howard226@example.com",
+        "from_phone": "(615) 555-0178",
+        "from_email": "michael.howard225@example.com"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00225",
+      "fields": [
+        "phone",
+        "email"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00600"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00225"
+          },
+          {
+            "client_id": "B-C-00226"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 285
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00067"
+      },
+      "row_ref": 68,
+      "defect_type": "shared_household_contact",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "spouse_client_id": "B-C-00066",
+        "phone": "(526) 555-0168",
+        "email": "benjamin.garcia66@example.com",
+        "from_phone": "(368) 555-0190",
+        "from_email": "belinda.garcia67@example.com"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00067",
+      "fields": [
+        "phone",
+        "email"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00609"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00067"
+          },
+          {
+            "client_id": "B-C-00066"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 84
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00413"
+      },
+      "row_ref": 414,
+      "defect_type": "shared_household_contact",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "spouse_client_id": "B-C-00412",
+        "phone": "(235) 555-0145",
+        "email": "richard.davis412@example.com",
+        "from_phone": "(847) 555-0119",
+        "from_email": "william.davis413@example.com"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00413",
+      "fields": [
+        "phone",
+        "email"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00665"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00413"
+          },
+          {
+            "client_id": "B-C-00412"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 523
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01020"
+      },
+      "row_ref": 1021,
+      "defect_type": "shared_household_contact",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "spouse_client_id": "B-C-01021",
+        "phone": "(652) 555-0103",
+        "email": "melissa.simmons1021@example.com",
+        "from_phone": "(938) 555-0165",
+        "from_email": null
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01020",
+      "fields": [
+        "phone",
+        "email"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00818"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01020"
+          },
+          {
+            "client_id": "B-C-01021"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1301
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00315"
+      },
+      "row_ref": 316,
+      "defect_type": "shared_household_contact",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "spouse_client_id": "B-C-00314",
+        "phone": "(575) 555-0196",
+        "email": "karen.nguyen314@example.com",
+        "from_phone": "(575) 555-0196",
+        "from_email": "james.nguyen315@example.com"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00315",
+      "fields": [
+        "phone",
+        "email"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00865"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00315"
+          },
+          {
+            "client_id": "B-C-00314"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 396
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01382"
+      },
+      "row_ref": 1383,
+      "defect_type": "shared_household_contact",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "spouse_client_id": "B-C-01383",
+        "phone": "(335) 555-0117",
+        "email": "horton.family1383@example.com",
+        "from_phone": "(927) 555-0122",
+        "from_email": null
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01382",
+      "fields": [
+        "phone",
+        "email"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01198"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01382"
+          },
+          {
+            "client_id": "B-C-01383"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1771
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00423"
+      },
+      "row_ref": 424,
+      "defect_type": "shared_household_contact",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "spouse_client_id": "B-C-00424",
+        "phone": "(569) 555-0157",
+        "email": "nicholas.moreno424@example.com",
+        "from_phone": "(569) 555-0157",
+        "from_email": "matthew.moreno423@example.com"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00423",
+      "fields": [
+        "phone",
+        "email"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01269"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00423"
+          },
+          {
+            "client_id": "B-C-00424"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 535
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01057"
+      },
+      "row_ref": 1058,
+      "defect_type": "shared_household_contact",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "spouse_client_id": "B-C-01058",
+        "phone": "(749) 555-0188",
+        "email": "ford.family1058@example.com",
+        "from_phone": "(749) 555-0188",
+        "from_email": "tammy.ford1057@example.com"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01057",
+      "fields": [
+        "phone",
+        "email"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01386"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01057"
+          },
+          {
+            "client_id": "B-C-01058"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1347
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00385"
+      },
+      "row_ref": 386,
+      "defect_type": "shared_household_contact",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "spouse_client_id": "B-C-00386",
+        "phone": "(891) 555-0197",
+        "email": "marvin.beard386@example.com",
+        "from_phone": "(507) 555-0103",
+        "from_email": "kevin.beard385@example.com"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00385",
+      "fields": [
+        "phone",
+        "email"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01436"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00385"
+          },
+          {
+            "client_id": "B-C-00386"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 483
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00458"
+      },
+      "row_ref": 459,
+      "defect_type": "shared_household_contact",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "spouse_client_id": "B-C-00459",
+        "phone": "(802) 555-0134",
+        "email": "brandon.hartman459@example.com",
+        "from_phone": "(802) 555-0134",
+        "from_email": "joshua.hartman458@example.com"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00458",
+      "fields": [
+        "phone",
+        "email"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01645"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00458"
+          },
+          {
+            "client_id": "B-C-00459"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 578
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00399"
+      },
+      "row_ref": 400,
+      "defect_type": "shared_household_contact",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "spouse_client_id": "B-C-00400",
+        "phone": "(619) 555-0170",
+        "email": "laura.mccullough400@example.com",
+        "from_phone": "(304) 555-0185",
+        "from_email": null
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00399",
+      "fields": [
+        "phone",
+        "email"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01737"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00399"
+          },
+          {
+            "client_id": "B-C-00400"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 501
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00211"
+      },
+      "row_ref": 212,
+      "defect_type": "shared_household_contact",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "spouse_client_id": "B-C-00210",
+        "phone": "(719) 555-0171",
+        "email": "garrett.jones210@example.com",
+        "from_phone": "(609) 555-0194",
+        "from_email": "grant.jones211@example.com"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00211",
+      "fields": [
+        "phone",
+        "email"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01741"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00211"
+          },
+          {
+            "client_id": "B-C-00210"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 265
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00037"
+      },
+      "row_ref": 38,
+      "defect_type": "shared_household_contact",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "spouse_client_id": "B-C-00038",
+        "phone": "(522) 555-0160",
+        "email": "williams.family38@example.com",
+        "from_phone": "(522) 555-0160",
+        "from_email": "richard.williams37@example.com"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00037",
+      "fields": [
+        "phone",
+        "email"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01898"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00037"
+          },
+          {
+            "client_id": "B-C-00038"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 44
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01951"
+      },
+      "row_ref": 1923,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "HL-367747",
+        "b_member_id": "HL-795004"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01084",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00134",
+            "policy_id": "P-00179",
+            "carrier_member_id": "HL-367747"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01084",
+            "policy_id": "B-P-01951",
+            "carrier_member_id": "HL-795004"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1923
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01952"
+      },
+      "row_ref": 1924,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "HL-869983",
+        "b_member_id": "HL-867355"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01084",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00134",
+            "policy_id": "P-00180",
+            "carrier_member_id": "HL-869983"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01084",
+            "policy_id": "B-P-01952",
+            "carrier_member_id": "HL-867355"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1924
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01953"
+      },
+      "row_ref": 1925,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "MC-704422",
+        "b_member_id": "MC-938318"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00062",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00250",
+            "policy_id": "P-00322",
+            "carrier_member_id": "MC-704422"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00062",
+            "policy_id": "B-P-01953",
+            "carrier_member_id": "MC-938318"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1925
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01954"
+      },
+      "row_ref": 1926,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "CM-496065",
+        "b_member_id": "CM-946993"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00062",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00250",
+            "policy_id": "P-00323",
+            "carrier_member_id": "CM-496065"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00062",
+            "policy_id": "B-P-01954",
+            "carrier_member_id": "CM-946993"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1926
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01955"
+      },
+      "row_ref": 1927,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "SH-648706",
+        "b_member_id": "SH-942427"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00446",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00300",
+            "policy_id": "P-00386",
+            "carrier_member_id": "SH-648706"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00446",
+            "policy_id": "B-P-01955",
+            "carrier_member_id": "SH-942427"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1927
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01956"
+      },
+      "row_ref": 1928,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "SH-455488",
+        "b_member_id": "SH-603814"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00446",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00300",
+            "policy_id": "P-00387",
+            "carrier_member_id": "SH-455488"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00446",
+            "policy_id": "B-P-01956",
+            "carrier_member_id": "SH-603814"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1928
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01957"
+      },
+      "row_ref": 1929,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "SH-194825",
+        "b_member_id": "SH-677919"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01363",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00441",
+            "policy_id": "P-00569",
+            "carrier_member_id": "SH-194825"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01363",
+            "policy_id": "B-P-01957",
+            "carrier_member_id": "SH-677919"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1929
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01958"
+      },
+      "row_ref": 1930,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "CM-468191",
+        "b_member_id": "CM-965576"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00157",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00492",
+            "policy_id": "P-00633",
+            "carrier_member_id": "CM-468191"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00157",
+            "policy_id": "B-P-01958",
+            "carrier_member_id": "CM-965576"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1930
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01959"
+      },
+      "row_ref": 1931,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "CM-263264",
+        "b_member_id": "CM-345063"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00157",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00492",
+            "policy_id": "P-00634",
+            "carrier_member_id": "CM-263264"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00157",
+            "policy_id": "B-P-01959",
+            "carrier_member_id": "CM-345063"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1931
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01960"
+      },
+      "row_ref": 1932,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "MC-909919",
+        "b_member_id": "MC-948618"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00320",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00626",
+            "policy_id": "P-00805",
+            "carrier_member_id": "MC-909919"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00320",
+            "policy_id": "B-P-01960",
+            "carrier_member_id": "MC-948618"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1932
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01961"
+      },
+      "row_ref": 1933,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "SH-723427",
+        "b_member_id": "SH-997454"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00320",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00626",
+            "policy_id": "P-00806",
+            "carrier_member_id": "SH-723427"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00320",
+            "policy_id": "B-P-01961",
+            "carrier_member_id": "SH-997454"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1933
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01962"
+      },
+      "row_ref": 1934,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "HL-327216",
+        "b_member_id": "HL-165366"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00316",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00690",
+            "policy_id": "P-00890",
+            "carrier_member_id": "HL-327216"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00316",
+            "policy_id": "B-P-01962",
+            "carrier_member_id": "HL-165366"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1934
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01963"
+      },
+      "row_ref": 1935,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "BP-891026",
+        "b_member_id": "BP-393152"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00316",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00690",
+            "policy_id": "P-00891",
+            "carrier_member_id": "BP-891026"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00316",
+            "policy_id": "B-P-01963",
+            "carrier_member_id": "BP-393152"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1935
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01964"
+      },
+      "row_ref": 1936,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "MC-144085",
+        "b_member_id": "MC-370026"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00127",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01074",
+            "policy_id": "P-01397",
+            "carrier_member_id": "MC-144085"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00127",
+            "policy_id": "B-P-01964",
+            "carrier_member_id": "MC-370026"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1936
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01965"
+      },
+      "row_ref": 1937,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "SH-835663",
+        "b_member_id": "SH-715049"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00426",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01076",
+            "policy_id": "P-01399",
+            "carrier_member_id": "SH-835663"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00426",
+            "policy_id": "B-P-01965",
+            "carrier_member_id": "SH-715049"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1937
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01966"
+      },
+      "row_ref": 1938,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "SH-791258",
+        "b_member_id": "SH-833842"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00949",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01176",
+            "policy_id": "P-01529",
+            "carrier_member_id": "SH-791258"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00949",
+            "policy_id": "B-P-01966",
+            "carrier_member_id": "SH-833842"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1938
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01967"
+      },
+      "row_ref": 1939,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "NW-169350",
+        "b_member_id": "NW-947331"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01148",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01266",
+            "policy_id": "P-01642",
+            "carrier_member_id": "NW-169350"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01148",
+            "policy_id": "B-P-01967",
+            "carrier_member_id": "NW-947331"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1939
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01968"
+      },
+      "row_ref": 1940,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "BP-958437",
+        "b_member_id": "BP-831861"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-01148",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01266",
+            "policy_id": "P-01643",
+            "carrier_member_id": "BP-958437"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01148",
+            "policy_id": "B-P-01968",
+            "carrier_member_id": "BP-831861"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1940
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01969"
+      },
+      "row_ref": 1941,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "MC-237863",
+        "b_member_id": "MC-254224"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00287",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01381",
+            "policy_id": "P-01795",
+            "carrier_member_id": "MC-237863"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00287",
+            "policy_id": "B-P-01969",
+            "carrier_member_id": "MC-254224"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1941
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01970"
+      },
+      "row_ref": 1942,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "NW-209862",
+        "b_member_id": "NW-897350"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00282",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01480",
+            "policy_id": "P-01916",
+            "carrier_member_id": "NW-209862"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00282",
+            "policy_id": "B-P-01970",
+            "carrier_member_id": "NW-897350"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1942
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01971"
+      },
+      "row_ref": 1943,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "SH-702893",
+        "b_member_id": "SH-696146"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00080",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01485",
+            "policy_id": "P-01923",
+            "carrier_member_id": "SH-702893"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00080",
+            "policy_id": "B-P-01971",
+            "carrier_member_id": "SH-696146"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1943
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01972"
+      },
+      "row_ref": 1944,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "BP-557008",
+        "b_member_id": "BP-587575"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00104",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01496",
+            "policy_id": "P-01937",
+            "carrier_member_id": "BP-557008"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00104",
+            "policy_id": "B-P-01972",
+            "carrier_member_id": "BP-587575"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1944
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01973"
+      },
+      "row_ref": 1945,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "NW-568621",
+        "b_member_id": "NW-534376"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00416",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01584",
+            "policy_id": "P-02058",
+            "carrier_member_id": "NW-568621"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00416",
+            "policy_id": "B-P-01973",
+            "carrier_member_id": "NW-534376"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1945
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01974"
+      },
+      "row_ref": 1946,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "NW-152037",
+        "b_member_id": "NW-528643"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00416",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01584",
+            "policy_id": "P-02059",
+            "carrier_member_id": "NW-152037"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00416",
+            "policy_id": "B-P-01974",
+            "carrier_member_id": "NW-528643"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1946
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01975"
+      },
+      "row_ref": 1947,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "MC-147146",
+        "b_member_id": "MC-188578"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00599",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01795",
+            "policy_id": "P-02327",
+            "carrier_member_id": "MC-147146"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00599",
+            "policy_id": "B-P-01975",
+            "carrier_member_id": "MC-188578"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1947
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01976"
+      },
+      "row_ref": 1948,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "NW-377892",
+        "b_member_id": "NW-927739"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00599",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01795",
+            "policy_id": "P-02328",
+            "carrier_member_id": "NW-377892"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00599",
+            "policy_id": "B-P-01976",
+            "carrier_member_id": "NW-927739"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1948
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01977"
+      },
+      "row_ref": 1949,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "SH-480425",
+        "b_member_id": "SH-327502"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00022",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01982",
+            "policy_id": "P-02573",
+            "carrier_member_id": "SH-480425"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00022",
+            "policy_id": "B-P-01977",
+            "carrier_member_id": "SH-327502"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1949
+    },
+    {
+      "source": "policies",
+      "record_key": {
+        "policy_id": "B-P-01978"
+      },
+      "row_ref": 1950,
+      "defect_type": "same_policy_two_member_ids",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_member_id": "NW-369789",
+        "b_member_id": "NW-100537"
+      },
+      "same_person": true,
+      "anchor_client_id": "B-C-00022",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01982",
+            "policy_id": "P-02574",
+            "carrier_member_id": "NW-369789"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00022",
+            "policy_id": "B-P-01978",
+            "carrier_member_id": "NW-100537"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1950
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01509"
+      },
+      "row_ref": 1510,
+      "defect_type": "child_on_parent_policy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Chloe",
+        "last_name": "Wright",
+        "dob": "2007-11-17",
+        "policy_ids": [
+          "B-P-01979"
+        ],
+        "parent_policy_id": "B-P-00368"
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00284",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00013"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01509"
+          },
+          {
+            "client_id": "B-C-00284"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1951
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01510"
+      },
+      "row_ref": 1511,
+      "defect_type": "child_on_parent_policy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Leroy",
+        "last_name": "Phillips",
+        "dob": "2004-01-22",
+        "policy_ids": [
+          "B-P-01980"
+        ],
+        "parent_policy_id": "B-P-00858"
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00660",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00098"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01510"
+          },
+          {
+            "client_id": "B-C-00660"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1952
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01511"
+      },
+      "row_ref": 1512,
+      "defect_type": "child_on_parent_policy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Jessica",
+        "last_name": "King",
+        "dob": "2009-05-26",
+        "policy_ids": [
+          "B-P-01981"
+        ],
+        "parent_policy_id": "B-P-00642"
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00491",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00135"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01511"
+          },
+          {
+            "client_id": "B-C-00491"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1953
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01512"
+      },
+      "row_ref": 1513,
+      "defect_type": "child_on_parent_policy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Ashley",
+        "last_name": "Winters",
+        "dob": "2016-06-30",
+        "policy_ids": [
+          "B-P-01982"
+        ],
+        "parent_policy_id": "B-P-01351"
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-01039",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00153"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01512"
+          },
+          {
+            "client_id": "B-C-01039"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1954
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01513"
+      },
+      "row_ref": 1514,
+      "defect_type": "child_on_parent_policy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "James",
+        "last_name": "Rivera",
+        "dob": "2010-10-22",
+        "policy_ids": [
+          "B-P-01983"
+        ],
+        "parent_policy_id": "B-P-00799"
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00612",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00181"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01513"
+          },
+          {
+            "client_id": "B-C-00612"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1955
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01514"
+      },
+      "row_ref": 1515,
+      "defect_type": "child_on_parent_policy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Andrew",
+        "last_name": "Kaufman",
+        "dob": "2004-05-22",
+        "policy_ids": [
+          "B-P-01984"
+        ],
+        "parent_policy_id": "B-P-01507"
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-01160",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00272"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01514"
+          },
+          {
+            "client_id": "B-C-01160"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1956
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01515"
+      },
+      "row_ref": 1516,
+      "defect_type": "child_on_parent_policy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Ronald",
+        "last_name": "Cruz",
+        "dob": "2015-04-03",
+        "policy_ids": [
+          "B-P-01985"
+        ],
+        "parent_policy_id": "B-P-00336"
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00260",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00451"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01515"
+          },
+          {
+            "client_id": "B-C-00260"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1957
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01516"
+      },
+      "row_ref": 1517,
+      "defect_type": "child_on_parent_policy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "George",
+        "last_name": "Carney",
+        "dob": "2022-10-13",
+        "policy_ids": [
+          "B-P-01986"
+        ],
+        "parent_policy_id": "B-P-00438"
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00337",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00496"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01516"
+          },
+          {
+            "client_id": "B-C-00337"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1958
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01517"
+      },
+      "row_ref": 1518,
+      "defect_type": "child_on_parent_policy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Brittany",
+        "last_name": "Wells",
+        "dob": "2020-01-13",
+        "policy_ids": [
+          "B-P-01987"
+        ],
+        "parent_policy_id": "B-P-00819"
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00628",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00611"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01517"
+          },
+          {
+            "client_id": "B-C-00628"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1959
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01518"
+      },
+      "row_ref": 1519,
+      "defect_type": "child_on_parent_policy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Keith",
+        "last_name": "Mcfarland",
+        "dob": "2017-04-04",
+        "policy_ids": [
+          "B-P-01988"
+        ],
+        "parent_policy_id": "B-P-00652"
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00499",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00773"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01518"
+          },
+          {
+            "client_id": "B-C-00499"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1960
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01519"
+      },
+      "row_ref": 1520,
+      "defect_type": "child_on_parent_policy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Kim",
+        "last_name": "Stuart",
+        "dob": "2001-08-19",
+        "policy_ids": [
+          "B-P-01989"
+        ],
+        "parent_policy_id": "B-P-01117"
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00857",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01203"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01519"
+          },
+          {
+            "client_id": "B-C-00857"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1961
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01520"
+      },
+      "row_ref": 1521,
+      "defect_type": "child_on_parent_policy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Nicholas",
+        "last_name": "Townsend",
+        "dob": "2018-10-02",
+        "policy_ids": [
+          "B-P-01990"
+        ],
+        "parent_policy_id": "B-P-01160"
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00893",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01214"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01520"
+          },
+          {
+            "client_id": "B-C-00893"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1962
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01521"
+      },
+      "row_ref": 1522,
+      "defect_type": "child_on_parent_policy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Victoria",
+        "last_name": "Richards",
+        "dob": "2012-07-26",
+        "policy_ids": [
+          "B-P-01991"
+        ],
+        "parent_policy_id": "B-P-01107"
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00849",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01365"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01521"
+          },
+          {
+            "client_id": "B-C-00849"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1963
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01522"
+      },
+      "row_ref": 1523,
+      "defect_type": "child_on_parent_policy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Tammy",
+        "last_name": "Sparks",
+        "dob": "2021-11-03",
+        "policy_ids": [
+          "B-P-01992"
+        ],
+        "parent_policy_id": "B-P-01544"
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-01187",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01404"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01522"
+          },
+          {
+            "client_id": "B-C-01187"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1964
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01523"
+      },
+      "row_ref": 1524,
+      "defect_type": "child_on_parent_policy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Anita",
+        "last_name": "Thomas",
+        "dob": "2012-06-19",
+        "policy_ids": [
+          "B-P-01993"
+        ],
+        "parent_policy_id": "B-P-01004"
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00770",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01560"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01523"
+          },
+          {
+            "client_id": "B-C-00770"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1965
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01524"
+      },
+      "row_ref": 1525,
+      "defect_type": "child_on_parent_policy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Tyler",
+        "last_name": "Smith",
+        "dob": "2023-04-22",
+        "policy_ids": [
+          "B-P-01994"
+        ],
+        "parent_policy_id": "B-P-00093"
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00071",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01826"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01524"
+          },
+          {
+            "client_id": "B-C-00071"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1966
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01525"
+      },
+      "row_ref": 1526,
+      "defect_type": "child_on_parent_policy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "John",
+        "last_name": "Green",
+        "dob": "2019-01-03",
+        "policy_ids": [
+          "B-P-01995"
+        ],
+        "parent_policy_id": "B-P-01307"
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-01007",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01833"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01525"
+          },
+          {
+            "client_id": "B-C-01007"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1967
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01526"
+      },
+      "row_ref": 1527,
+      "defect_type": "child_on_parent_policy",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "James",
+        "last_name": "Delgado",
+        "dob": "2004-05-20",
+        "policy_ids": [
+          "B-P-01996"
+        ],
+        "parent_policy_id": "B-P-01204"
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00930",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01910"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01526"
+          },
+          {
+            "client_id": "B-C-00930"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1968
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01527"
+      },
+      "row_ref": 1528,
+      "defect_type": "twin_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Christina",
+        "last_name": "Jackson",
+        "dob": "1944-11-13",
+        "policy_ids": [
+          "B-P-01997"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00138",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00077"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01527"
+          },
+          {
+            "client_id": "B-C-00138"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1969
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01528"
+      },
+      "row_ref": 1529,
+      "defect_type": "twin_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Roberta",
+        "last_name": "Murphy",
+        "dob": "1940-10-11",
+        "policy_ids": [
+          "B-P-01998"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00198",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00083"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01528"
+          },
+          {
+            "client_id": "B-C-00198"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1970
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01529"
+      },
+      "row_ref": 1530,
+      "defect_type": "twin_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Stephanie",
+        "last_name": "Jones",
+        "dob": "1959-03-25",
+        "policy_ids": [
+          "B-P-01999"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-01478",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00209"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01529"
+          },
+          {
+            "client_id": "B-C-01478"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1971
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01530"
+      },
+      "row_ref": 1531,
+      "defect_type": "twin_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Mario",
+        "last_name": "Espinoza",
+        "dob": "1936-05-03",
+        "policy_ids": [
+          "B-P-02000"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00596",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00434"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01530"
+          },
+          {
+            "client_id": "B-C-00596"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1972
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01531"
+      },
+      "row_ref": 1532,
+      "defect_type": "twin_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Andrew",
+        "last_name": "Sparks",
+        "dob": "1944-11-23",
+        "policy_ids": [
+          "B-P-02001"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00308",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00453"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01531"
+          },
+          {
+            "client_id": "B-C-00308"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1973
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01532"
+      },
+      "row_ref": 1533,
+      "defect_type": "twin_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Danielle",
+        "last_name": "Martinez",
+        "dob": "1957-02-13",
+        "policy_ids": [
+          "B-P-02002",
+          "B-P-02003"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00119",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00612"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01532"
+          },
+          {
+            "client_id": "B-C-00119"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1974
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01533"
+      },
+      "row_ref": 1534,
+      "defect_type": "twin_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Andrea",
+        "last_name": "Holland",
+        "dob": "2005-02-23",
+        "policy_ids": [
+          "B-P-02004"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00582",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00867"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01533"
+          },
+          {
+            "client_id": "B-C-00582"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1976
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01534"
+      },
+      "row_ref": 1535,
+      "defect_type": "twin_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Erica",
+        "last_name": "Rivera",
+        "dob": "1951-08-28",
+        "policy_ids": [
+          "B-P-02005"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00842",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00871"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01534"
+          },
+          {
+            "client_id": "B-C-00842"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1977
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01535"
+      },
+      "row_ref": 1536,
+      "defect_type": "twin_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Stephen",
+        "last_name": "Kirk",
+        "dob": "1957-12-15",
+        "policy_ids": [
+          "B-P-02006",
+          "B-P-02007"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-01193",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00895"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01535"
+          },
+          {
+            "client_id": "B-C-01193"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1978
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01536"
+      },
+      "row_ref": 1537,
+      "defect_type": "twin_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Danielle",
+        "last_name": "Camacho",
+        "dob": "1942-10-31",
+        "policy_ids": [
+          "B-P-02008"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00692",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00914"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01536"
+          },
+          {
+            "client_id": "B-C-00692"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1980
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01537"
+      },
+      "row_ref": 1538,
+      "defect_type": "twin_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Dennis",
+        "last_name": "Melendez",
+        "dob": "1936-08-22",
+        "policy_ids": [
+          "B-P-02009"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-01158",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01014"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01537"
+          },
+          {
+            "client_id": "B-C-01158"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1981
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01538"
+      },
+      "row_ref": 1539,
+      "defect_type": "twin_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Briana",
+        "last_name": "Anderson",
+        "dob": "1937-12-05",
+        "policy_ids": [
+          "B-P-02010",
+          "B-P-02011"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00042",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01068"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01538"
+          },
+          {
+            "client_id": "B-C-00042"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1982
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01539"
+      },
+      "row_ref": 1540,
+      "defect_type": "twin_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Roberta",
+        "last_name": "Miranda",
+        "dob": "2002-05-03",
+        "policy_ids": [
+          "B-P-02012"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00475",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01666"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01539"
+          },
+          {
+            "client_id": "B-C-00475"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1984
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01540"
+      },
+      "row_ref": 1541,
+      "defect_type": "twin_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Paula",
+        "last_name": "Bradford",
+        "dob": "1948-09-13",
+        "policy_ids": [
+          "B-P-02013"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00039",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01706"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01540"
+          },
+          {
+            "client_id": "B-C-00039"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1985
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01541"
+      },
+      "row_ref": 1542,
+      "defect_type": "twin_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Michelle",
+        "last_name": "Willis",
+        "dob": "1947-02-18",
+        "policy_ids": [
+          "B-P-02014"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00633",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01749"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01541"
+          },
+          {
+            "client_id": "B-C-00633"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1986
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01542"
+      },
+      "row_ref": 1543,
+      "defect_type": "twin_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Michelle",
+        "last_name": "Smith",
+        "dob": "1941-09-10",
+        "policy_ids": [
+          "B-P-02015",
+          "B-P-02016"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-01105",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01981"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01542"
+          },
+          {
+            "client_id": "B-C-01105"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1987
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01543"
+      },
+      "row_ref": 1544,
+      "defect_type": "father_son_same_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Dylan",
+        "last_name": "Kane",
+        "dob": "1980-12-17",
+        "policy_ids": [
+          "B-P-02017",
+          "B-P-02018"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00538",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00093"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01543"
+          },
+          {
+            "client_id": "B-C-00538"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1989
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01544"
+      },
+      "row_ref": 1545,
+      "defect_type": "father_son_same_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Derrick",
+        "last_name": "Long",
+        "dob": "1977-07-10",
+        "policy_ids": [
+          "B-P-02019"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00005",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00473"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01544"
+          },
+          {
+            "client_id": "B-C-00005"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1991
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01545"
+      },
+      "row_ref": 1546,
+      "defect_type": "father_son_same_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "George",
+        "last_name": "Andrews",
+        "dob": "1984-09-05",
+        "policy_ids": [
+          "B-P-02020",
+          "B-P-02021"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00371",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00513"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01545"
+          },
+          {
+            "client_id": "B-C-00371"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1992
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01546"
+      },
+      "row_ref": 1547,
+      "defect_type": "father_son_same_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Alexis",
+        "last_name": "Jackson",
+        "dob": "1986-09-05",
+        "policy_ids": [
+          "B-P-02022"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00030",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00648"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01546"
+          },
+          {
+            "client_id": "B-C-00030"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1994
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01547"
+      },
+      "row_ref": 1548,
+      "defect_type": "father_son_same_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Kevin",
+        "last_name": "Cox",
+        "dob": "1973-05-31",
+        "policy_ids": [
+          "B-P-02023"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00891",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00852"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01547"
+          },
+          {
+            "client_id": "B-C-00891"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1995
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01548"
+      },
+      "row_ref": 1549,
+      "defect_type": "father_son_same_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Steven",
+        "last_name": "Porter",
+        "dob": "1975-07-15",
+        "policy_ids": [
+          "B-P-02024"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00045",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00949"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01548"
+          },
+          {
+            "client_id": "B-C-00045"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1996
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01549"
+      },
+      "row_ref": 1550,
+      "defect_type": "father_son_same_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Manuel",
+        "last_name": "Mclean",
+        "dob": "1984-01-03",
+        "policy_ids": [
+          "B-P-02025",
+          "B-P-02026"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00658",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00976"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01549"
+          },
+          {
+            "client_id": "B-C-00658"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1997
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01550"
+      },
+      "row_ref": 1551,
+      "defect_type": "father_son_same_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Marcus",
+        "last_name": "Barrett",
+        "dob": "1964-10-08",
+        "policy_ids": [
+          "B-P-02027",
+          "B-P-02028"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-01278",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01072"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01550"
+          },
+          {
+            "client_id": "B-C-01278"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1999
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01551"
+      },
+      "row_ref": 1552,
+      "defect_type": "father_son_same_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Greg",
+        "last_name": "Walsh",
+        "dob": "1970-10-28",
+        "policy_ids": [
+          "B-P-02029"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00606",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01232"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01551"
+          },
+          {
+            "client_id": "B-C-00606"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 2001
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01552"
+      },
+      "row_ref": 1553,
+      "defect_type": "father_son_same_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Shannon",
+        "last_name": "Miller",
+        "dob": "1969-10-28",
+        "policy_ids": [
+          "B-P-02030"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-01231",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01251"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01552"
+          },
+          {
+            "client_id": "B-C-01231"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 2002
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01553"
+      },
+      "row_ref": 1554,
+      "defect_type": "father_son_same_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Jacob",
+        "last_name": "House",
+        "dob": "1969-12-07",
+        "policy_ids": [
+          "B-P-02031"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00280",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01255"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01553"
+          },
+          {
+            "client_id": "B-C-00280"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 2003
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01554"
+      },
+      "row_ref": 1555,
+      "defect_type": "father_son_same_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Kevin",
+        "last_name": "Myers",
+        "dob": "1984-02-29",
+        "policy_ids": [
+          "B-P-02032"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-01253",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01265"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01554"
+          },
+          {
+            "client_id": "B-C-01253"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 2004
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01555"
+      },
+      "row_ref": 1556,
+      "defect_type": "father_son_same_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Charles",
+        "last_name": "Woods",
+        "dob": "1967-10-13",
+        "policy_ids": [
+          "B-P-02033",
+          "B-P-02034"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00131",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01328"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01555"
+          },
+          {
+            "client_id": "B-C-00131"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 2005
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01556"
+      },
+      "row_ref": 1557,
+      "defect_type": "father_son_same_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Dale",
+        "last_name": "Frank",
+        "dob": "1967-07-29",
+        "policy_ids": [
+          "B-P-02035",
+          "B-P-02036"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00125",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01563"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01556"
+          },
+          {
+            "client_id": "B-C-00125"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 2007
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01557"
+      },
+      "row_ref": 1558,
+      "defect_type": "father_son_same_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Ronald",
+        "last_name": "Zamora",
+        "dob": "1977-04-05",
+        "policy_ids": [
+          "B-P-02037"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00721",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01751"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01557"
+          },
+          {
+            "client_id": "B-C-00721"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 2009
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01558"
+      },
+      "row_ref": 1559,
+      "defect_type": "father_son_same_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Anthony",
+        "last_name": "Jacobs",
+        "dob": "1972-01-05",
+        "policy_ids": [
+          "B-P-02038",
+          "B-P-02039"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00587",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01888"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01558"
+          },
+          {
+            "client_id": "B-C-00587"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 2010
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01559"
+      },
+      "row_ref": 1560,
+      "defect_type": "father_son_same_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "James",
+        "last_name": "Jennings",
+        "dob": "1973-08-03",
+        "policy_ids": [
+          "B-P-02040"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00015",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01902"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01559"
+          },
+          {
+            "client_id": "B-C-00015"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 2012
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01560"
+      },
+      "row_ref": 1561,
+      "defect_type": "father_son_same_name",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "first_name": "Mark",
+        "last_name": "Davis",
+        "dob": "1982-03-26",
+        "policy_ids": [
+          "B-P-02041"
+        ]
+      },
+      "same_person": false,
+      "anchor_client_id": "B-C-00861",
+      "fields": [],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01946"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01560"
+          },
+          {
+            "client_id": "B-C-00861"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 2013
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00848"
+      },
+      "row_ref": 849,
+      "defect_type": "name_dob_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_zip": "19753",
+        "b_zip": "19857",
+        "first_name": "Jamie",
+        "last_name": "Walters",
+        "dob": "1933-10-28"
+      },
+      "same_person": false,
+      "anchor_client_id": "C-01869",
+      "fields": [
+        "first_name",
+        "last_name",
+        "dob"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01869"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00848"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1084
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00258"
+      },
+      "row_ref": 259,
+      "defect_type": "name_dob_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_zip": "31699",
+        "b_zip": "30322",
+        "first_name": "Diana",
+        "last_name": "Anderson",
+        "dob": "1957-03-28"
+      },
+      "same_person": false,
+      "anchor_client_id": "C-01156",
+      "fields": [
+        "first_name",
+        "last_name",
+        "dob"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01156"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00258"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 325
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00353"
+      },
+      "row_ref": 354,
+      "defect_type": "name_dob_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_zip": "28814",
+        "b_zip": "27901",
+        "first_name": "Wesley",
+        "last_name": "Gross",
+        "dob": "1958-05-05"
+      },
+      "same_person": false,
+      "anchor_client_id": "C-00941",
+      "fields": [
+        "first_name",
+        "last_name",
+        "dob"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00941"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00353"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 443
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01482"
+      },
+      "row_ref": 1483,
+      "defect_type": "name_dob_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_zip": "24489",
+        "b_zip": "23701",
+        "first_name": "Nicole",
+        "last_name": "Anderson",
+        "dob": "1936-09-25"
+      },
+      "same_person": false,
+      "anchor_client_id": "C-00149",
+      "fields": [
+        "first_name",
+        "last_name",
+        "dob"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00149"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01482"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1898
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00292"
+      },
+      "row_ref": 293,
+      "defect_type": "name_dob_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_zip": "97088",
+        "b_zip": "97780",
+        "first_name": "Gina",
+        "last_name": "Bradford",
+        "dob": "1937-03-16"
+      },
+      "same_person": false,
+      "anchor_client_id": "C-00644",
+      "fields": [
+        "first_name",
+        "last_name",
+        "dob"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00644"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00292"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 366
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00563"
+      },
+      "row_ref": 564,
+      "defect_type": "name_dob_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_zip": "81271",
+        "b_zip": "80039",
+        "first_name": "Lauren",
+        "last_name": "Washington",
+        "dob": "1959-10-17"
+      },
+      "same_person": false,
+      "anchor_client_id": "C-00533",
+      "fields": [
+        "first_name",
+        "last_name",
+        "dob"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00533"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00563"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 714
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00004"
+      },
+      "row_ref": 5,
+      "defect_type": "name_dob_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_zip": "20133",
+        "b_zip": "22659",
+        "first_name": "Michael",
+        "last_name": "Robinson",
+        "dob": "1963-09-10"
+      },
+      "same_person": false,
+      "anchor_client_id": "C-00918",
+      "fields": [
+        "first_name",
+        "last_name",
+        "dob"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00918"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00004"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 5
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00407"
+      },
+      "row_ref": 408,
+      "defect_type": "name_dob_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_zip": "97460",
+        "b_zip": "97710",
+        "first_name": "Christina",
+        "last_name": "Andrews",
+        "dob": "1943-11-07"
+      },
+      "same_person": false,
+      "anchor_client_id": "C-01021",
+      "fields": [
+        "first_name",
+        "last_name",
+        "dob"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01021"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00407"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 515
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01419"
+      },
+      "row_ref": 1420,
+      "defect_type": "name_dob_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_zip": "40654",
+        "b_zip": "42642",
+        "first_name": "Misty",
+        "last_name": "Brown",
+        "dob": "1947-02-17"
+      },
+      "same_person": false,
+      "anchor_client_id": "C-01547",
+      "fields": [
+        "first_name",
+        "last_name",
+        "dob"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01547"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01419"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1814
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00798"
+      },
+      "row_ref": 799,
+      "defect_type": "name_dob_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_zip": "05337",
+        "b_zip": "05378",
+        "first_name": "Jacqueline",
+        "last_name": "Medina",
+        "dob": "1937-05-27"
+      },
+      "same_person": false,
+      "anchor_client_id": "C-00374",
+      "fields": [
+        "first_name",
+        "last_name",
+        "dob"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00374"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00798"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1018
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00256"
+      },
+      "row_ref": 257,
+      "defect_type": "name_dob_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_zip": "24961",
+        "b_zip": "25954",
+        "first_name": "Brian",
+        "last_name": "Hawkins",
+        "dob": "1957-03-17"
+      },
+      "same_person": false,
+      "anchor_client_id": "C-01229",
+      "fields": [
+        "first_name",
+        "last_name",
+        "dob"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01229"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00256"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 323
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00457"
+      },
+      "row_ref": 458,
+      "defect_type": "name_dob_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_zip": "57026",
+        "b_zip": "57779",
+        "first_name": "Derek",
+        "last_name": "Martinez",
+        "dob": "1944-09-10"
+      },
+      "same_person": false,
+      "anchor_client_id": "C-00613",
+      "fields": [
+        "first_name",
+        "last_name",
+        "dob"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00613"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00457"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 577
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00556"
+      },
+      "row_ref": 557,
+      "defect_type": "name_dob_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_zip": "30014",
+        "b_zip": "39973",
+        "first_name": "Meagan",
+        "last_name": "Jackson",
+        "dob": "1965-07-20"
+      },
+      "same_person": false,
+      "anchor_client_id": "C-01838",
+      "fields": [
+        "first_name",
+        "last_name",
+        "dob"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01838"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00556"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 706
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-01113"
+      },
+      "row_ref": 1114,
+      "defect_type": "name_dob_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_zip": "72189",
+        "b_zip": "72203",
+        "first_name": "David",
+        "last_name": "Bean",
+        "dob": "1960-07-06"
+      },
+      "same_person": false,
+      "anchor_client_id": "C-01984",
+      "fields": [
+        "first_name",
+        "last_name",
+        "dob"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01984"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-01113"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 1419
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00206"
+      },
+      "row_ref": 207,
+      "defect_type": "name_dob_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_zip": "06776",
+        "b_zip": "06021",
+        "first_name": "Holly",
+        "last_name": "Mcdaniel",
+        "dob": "1951-10-28"
+      },
+      "same_person": false,
+      "anchor_client_id": "C-01079",
+      "fields": [
+        "first_name",
+        "last_name",
+        "dob"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01079"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00206"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 259
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00706"
+      },
+      "row_ref": 707,
+      "defect_type": "name_dob_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_zip": "70061",
+        "b_zip": "71057",
+        "first_name": "Benjamin",
+        "last_name": "Holland",
+        "dob": "1943-09-23"
+      },
+      "same_person": false,
+      "anchor_client_id": "C-00547",
+      "fields": [
+        "first_name",
+        "last_name",
+        "dob"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-00547"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00706"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 898
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00153"
+      },
+      "row_ref": 154,
+      "defect_type": "name_dob_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_zip": "19383",
+        "b_zip": "16285",
+        "first_name": "David",
+        "last_name": "Roy",
+        "dob": "1935-10-07"
+      },
+      "same_person": false,
+      "anchor_client_id": "C-01930",
+      "fields": [
+        "first_name",
+        "last_name",
+        "dob"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01930"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00153"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 194
+    },
+    {
+      "source": "clients",
+      "record_key": {
+        "client_id": "B-C-00378"
+      },
+      "row_ref": 379,
+      "defect_type": "name_dob_lookalike",
+      "expected_rule_ids": [],
+      "scored": true,
+      "injected_values": {
+        "a_zip": "27929",
+        "b_zip": "28084",
+        "first_name": "John",
+        "last_name": "Johnson",
+        "dob": "1942-02-03"
+      },
+      "same_person": false,
+      "anchor_client_id": "C-01702",
+      "fields": [
+        "first_name",
+        "last_name",
+        "dob"
+      ],
+      "record_keys": {
+        "agency-a": [
+          {
+            "client_id": "C-01702"
+          }
+        ],
+        "agency-b": [
+          {
+            "client_id": "B-C-00378"
+          }
+        ]
+      },
+      "source_file": "crm_export.csv",
+      "sheet": null,
+      "source_row": 476
+    }
+  ]
 }

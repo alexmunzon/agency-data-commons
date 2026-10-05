@@ -9,25 +9,37 @@
   },
   "counts": {
     "shared_people": 300,
+    "shared_people_living_with_others_in_b": 154,
     "agency_a_client_ids": 2040,
-    "agency_b_client_ids": 1500,
-    "agency_b_people": 1500,
-    "distinct_people": 3200
+    "agency_b_client_ids": 1560,
+    "agency_b_people": 1552,
+    "distinct_people": 3252,
+    "true_pairs": 320,
+    "true_pairs_within_b": 8,
+    "clusters": 3252,
+    "must_not_merge_pairs": {
+      "child_on_parent_policy": 36,
+      "father_son_same_name": 36,
+      "name_dob_lookalike": 18,
+      "shared_household_contact": 42,
+      "twin_lookalike": 32
+    }
   },
   "people": [
     {
       "person_id": "PER-00001",
       "agency_a": {
         "client_ids": [
-          "C-00001"
+          "C-00013"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01066"
+          "B-C-00284"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 3
       },
       "contact_differs": [
         "phone",
@@ -38,15 +50,16 @@
       "person_id": "PER-00002",
       "agency_a": {
         "client_ids": [
-          "C-00005"
+          "C-00022"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01385"
+          "B-C-00089"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -57,15 +70,16 @@
       "person_id": "PER-00003",
       "agency_a": {
         "client_ids": [
-          "C-00007"
+          "C-00025"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01093"
+          "B-C-00028"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -76,15 +90,25 @@
       "person_id": "PER-00004",
       "agency_a": {
         "client_ids": [
-          "C-00022"
+          "C-00044"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00407"
+          "B-C-00203"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00203",
+            "defect_type": "shared_household_contact",
+            "fields": [
+              "phone",
+              "email"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -95,15 +119,24 @@
       "person_id": "PER-00005",
       "agency_a": {
         "client_ids": [
-          "C-00025"
+          "C-00046"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "C-00046",
+            "defect_type": "missing_mbi",
+            "fields": [
+              "mbi"
+            ]
+          }
+        ]
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00031"
+          "B-C-00989"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -114,15 +147,16 @@
       "person_id": "PER-00006",
       "agency_a": {
         "client_ids": [
-          "C-00044"
+          "C-00058"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00137"
+          "B-C-00057"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -133,15 +167,33 @@
       "person_id": "PER-00007",
       "agency_a": {
         "client_ids": [
-          "C-00058"
+          "C-00059",
+          "C-02013"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "C-02013",
+            "defect_type": "near_duplicate_client",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ]
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00119"
+          "B-C-00701"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00701",
+            "defect_type": "hyphenated_surname",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -158,9 +210,10 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00622"
+          "B-C-00644"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -177,9 +230,10 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01115"
+          "B-C-00938"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -190,15 +244,24 @@
       "person_id": "PER-00010",
       "agency_a": {
         "client_ids": [
-          "C-00070"
+          "C-00069"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00065"
+          "B-C-01089"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-01089",
+            "defect_type": "maiden_name",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -207,6 +270,26 @@
     },
     {
       "person_id": "PER-00011",
+      "agency_a": {
+        "client_ids": [
+          "C-00070"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00065"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00012",
       "agency_a": {
         "client_ids": [
           "C-00077"
@@ -223,28 +306,10 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00348"
+          "B-C-00138"
         ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00012",
-      "agency_a": {
-        "client_ids": [
-          "C-00080"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00606"
-        ],
-        "labels": []
+        "labels": [],
+        "household_size": 3
       },
       "contact_differs": [
         "phone",
@@ -253,6 +318,34 @@
     },
     {
       "person_id": "PER-00013",
+      "agency_a": {
+        "client_ids": [
+          "C-00080"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00555"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-00555",
+            "defect_type": "maiden_name",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00014",
       "agency_a": {
         "client_ids": [
           "C-00083"
@@ -269,28 +362,10 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00308"
+          "B-C-00198"
         ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00014",
-      "agency_a": {
-        "client_ids": [
-          "C-00087"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00371"
-        ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -301,15 +376,16 @@
       "person_id": "PER-00015",
       "agency_a": {
         "client_ids": [
-          "C-00093"
+          "C-00087"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00538"
+          "B-C-00330"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -320,15 +396,16 @@
       "person_id": "PER-00016",
       "agency_a": {
         "client_ids": [
-          "C-00096"
+          "C-00089"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00505"
+          "B-C-00926"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -337,6 +414,46 @@
     },
     {
       "person_id": "PER-00017",
+      "agency_a": {
+        "client_ids": [
+          "C-00093"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00538"
+        ],
+        "labels": [],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00018",
+      "agency_a": {
+        "client_ids": [
+          "C-00096"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00147"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00019",
       "agency_a": {
         "client_ids": [
           "C-00098"
@@ -355,53 +472,8 @@
         "client_ids": [
           "B-C-00660"
         ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00018",
-      "agency_a": {
-        "client_ids": [
-          "C-00100"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00663"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00019",
-      "agency_a": {
-        "client_ids": [
-          "C-00104"
-        ],
-        "labels": [
-          {
-            "client_id": "C-00104",
-            "defect_type": "nickname",
-            "fields": [
-              "first_name"
-            ]
-          }
-        ]
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00762"
-        ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -426,9 +498,10 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00257"
+          "B-C-00246"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 3
       },
       "contact_differs": [
         "phone",
@@ -445,9 +518,10 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00717"
+          "B-C-00194"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -458,18 +532,20 @@
       "person_id": "PER-00022",
       "agency_a": {
         "client_ids": [
-          "C-00112"
+          "C-00122"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00594"
+          "B-C-00376"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
-        "phone"
+        "phone",
+        "email"
       ]
     },
     {
@@ -482,9 +558,18 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00764"
+          "B-C-00328"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00328",
+            "defect_type": "maiden_name",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -495,15 +580,25 @@
       "person_id": "PER-00024",
       "agency_a": {
         "client_ids": [
-          "C-00134"
+          "C-00130"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01473"
+          "B-C-00500"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00500",
+            "defect_type": "shared_household_contact",
+            "fields": [
+              "phone",
+              "email"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -514,15 +609,27 @@
       "person_id": "PER-00025",
       "agency_a": {
         "client_ids": [
-          "C-00135"
+          "C-00134"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01078"
+          "B-C-01084"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-01084",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          },
+          {
+            "client_id": "B-C-01084",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -533,15 +640,16 @@
       "person_id": "PER-00026",
       "agency_a": {
         "client_ids": [
-          "C-00136"
+          "C-00135"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01363"
+          "B-C-00491"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -552,15 +660,24 @@
       "person_id": "PER-00027",
       "agency_a": {
         "client_ids": [
-          "C-00144"
+          "C-00136"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01222"
+          "B-C-00880"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00880",
+            "defect_type": "maiden_name",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -579,7 +696,8 @@
         "client_ids": [
           "B-C-01039"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -590,23 +708,16 @@
       "person_id": "PER-00029",
       "agency_a": {
         "client_ids": [
-          "C-00163"
+          "C-00164"
         ],
-        "labels": [
-          {
-            "client_id": "C-00163",
-            "defect_type": "nickname",
-            "fields": [
-              "first_name"
-            ]
-          }
-        ]
+        "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00916"
+          "B-C-00014"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -615,25 +726,6 @@
     },
     {
       "person_id": "PER-00030",
-      "agency_a": {
-        "client_ids": [
-          "C-00164"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00219"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00031",
       "agency_a": {
         "client_ids": [
           "C-00181"
@@ -650,27 +742,50 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00820"
+          "B-C-00612"
+        ],
+        "labels": [],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00031",
+      "agency_a": {
+        "client_ids": [
+          "C-00206"
         ],
         "labels": []
       },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00044"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
       "contact_differs": [
-        "phone"
+        "phone",
+        "email"
       ]
     },
     {
       "person_id": "PER-00032",
       "agency_a": {
         "client_ids": [
-          "C-00191"
+          "C-00209"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00860"
+          "B-C-01478"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -681,15 +796,16 @@
       "person_id": "PER-00033",
       "agency_a": {
         "client_ids": [
-          "C-00206"
+          "C-00215"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00108"
+          "B-C-00313"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -700,15 +816,26 @@
       "person_id": "PER-00034",
       "agency_a": {
         "client_ids": [
-          "C-00215"
+          "C-00240"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01025"
+          "B-C-00154"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00154",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -719,15 +846,16 @@
       "person_id": "PER-00035",
       "agency_a": {
         "client_ids": [
-          "C-00240"
+          "C-00245"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00154"
+          "B-C-00873"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -736,25 +864,6 @@
     },
     {
       "person_id": "PER-00036",
-      "agency_a": {
-        "client_ids": [
-          "C-00244"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-01129"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00037",
       "agency_a": {
         "client_ids": [
           "C-00250"
@@ -773,14 +882,26 @@
         "client_ids": [
           "B-C-00062"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00062",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          },
+          {
+            "client_id": "B-C-00062",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone"
       ]
     },
     {
-      "person_id": "PER-00038",
+      "person_id": "PER-00037",
       "agency_a": {
         "client_ids": [
           "C-00252"
@@ -789,9 +910,46 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00258"
+          "B-C-00201"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00038",
+      "agency_a": {
+        "client_ids": [
+          "C-00255"
         ],
         "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00251",
+          "B-C-01501"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-00251",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          },
+          {
+            "client_id": "B-C-01501",
+            "defect_type": "moved_household_stale_copy",
+            "fields": []
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -802,7 +960,7 @@
       "person_id": "PER-00039",
       "agency_a": {
         "client_ids": [
-          "C-00255"
+          "C-00260"
         ],
         "labels": []
       },
@@ -810,7 +968,8 @@
         "client_ids": [
           "B-C-00197"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -821,15 +980,26 @@
       "person_id": "PER-00040",
       "agency_a": {
         "client_ids": [
-          "C-00260"
+          "C-00265"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00207"
+          "B-C-00622"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00622",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -840,15 +1010,25 @@
       "person_id": "PER-00041",
       "agency_a": {
         "client_ids": [
-          "C-00265"
+          "C-00269"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01136"
+          "B-C-00387"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00387",
+            "defect_type": "shared_household_contact",
+            "fields": [
+              "phone",
+              "email"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -865,9 +1045,10 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00780"
+          "B-C-01160"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 3
       },
       "contact_differs": [
         "phone",
@@ -884,9 +1065,19 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01157"
+          "B-C-00998"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00998",
+            "defect_type": "shared_household_contact",
+            "fields": [
+              "phone",
+              "email"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -903,9 +1094,10 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01482"
+          "B-C-01326"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -922,9 +1114,18 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01231"
+          "B-C-01230"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-01230",
+            "defect_type": "hyphenated_surname",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -941,13 +1142,24 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00805"
+          "B-C-00446"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00446",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          },
+          {
+            "client_id": "B-C-00446",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
-        "phone",
-        "email"
+        "phone"
       ]
     },
     {
@@ -962,7 +1174,16 @@
         "client_ids": [
           "B-C-00056"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00056",
+            "defect_type": "hyphenated_surname",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -979,28 +1200,45 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01034"
+          "B-C-00876"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
-        "phone",
-        "email"
+        "phone"
       ]
     },
     {
       "person_id": "PER-00049",
       "agency_a": {
         "client_ids": [
-          "C-00316"
+          "C-00325"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00218"
+          "B-C-00205",
+          "B-C-01502"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00205",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          },
+          {
+            "client_id": "B-C-01502",
+            "defect_type": "moved_household_stale_copy",
+            "fields": []
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -1011,15 +1249,25 @@
       "person_id": "PER-00050",
       "agency_a": {
         "client_ids": [
-          "C-00324"
+          "C-00333"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00029"
+          "B-C-00334"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00334",
+            "defect_type": "shared_household_contact",
+            "fields": [
+              "phone",
+              "email"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -1030,15 +1278,16 @@
       "person_id": "PER-00051",
       "agency_a": {
         "client_ids": [
-          "C-00325"
+          "C-00368"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00288"
+          "B-C-00257"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -1049,15 +1298,32 @@
       "person_id": "PER-00052",
       "agency_a": {
         "client_ids": [
-          "C-00333"
+          "C-00381"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00050"
+          "B-C-00405",
+          "B-C-01503"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00405",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          },
+          {
+            "client_id": "B-C-01503",
+            "defect_type": "moved_household_stale_copy",
+            "fields": []
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -1068,33 +1334,36 @@
       "person_id": "PER-00053",
       "agency_a": {
         "client_ids": [
-          "C-00336"
+          "C-00395"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01149"
+          "B-C-00694"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
-        "phone"
+        "phone",
+        "email"
       ]
     },
     {
       "person_id": "PER-00054",
       "agency_a": {
         "client_ids": [
-          "C-00361"
+          "C-00398"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00443"
+          "B-C-00180"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -1105,15 +1374,25 @@
       "person_id": "PER-00055",
       "agency_a": {
         "client_ids": [
-          "C-00368"
+          "C-00404"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00658"
+          "B-C-01492"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-01492",
+            "defect_type": "shared_household_contact",
+            "fields": [
+              "phone",
+              "email"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -1124,15 +1403,16 @@
       "person_id": "PER-00056",
       "agency_a": {
         "client_ids": [
-          "C-00381"
+          "C-00406"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00185"
+          "B-C-00490"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -1143,15 +1423,24 @@
       "person_id": "PER-00057",
       "agency_a": {
         "client_ids": [
-          "C-00395"
+          "C-00421"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01263"
+          "B-C-00064"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00064",
+            "defect_type": "maiden_name",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -1162,15 +1451,16 @@
       "person_id": "PER-00058",
       "agency_a": {
         "client_ids": [
-          "C-00398"
+          "C-00425"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00416"
+          "B-C-00219"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -1181,99 +1471,23 @@
       "person_id": "PER-00059",
       "agency_a": {
         "client_ids": [
-          "C-00404"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00926"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00060",
-      "agency_a": {
-        "client_ids": [
-          "C-00406"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00490"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00061",
-      "agency_a": {
-        "client_ids": [
-          "C-00421"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00176"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00062",
-      "agency_a": {
-        "client_ids": [
-          "C-00425"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00590"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00063",
-      "agency_a": {
-        "client_ids": [
           "C-00427"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00848"
+          "B-C-00845"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
-        "phone",
-        "email"
+        "phone"
       ]
     },
     {
-      "person_id": "PER-00064",
+      "person_id": "PER-00060",
       "agency_a": {
         "client_ids": [
           "C-00428"
@@ -1292,7 +1506,104 @@
         "client_ids": [
           "B-C-00436"
         ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00061",
+      "agency_a": {
+        "client_ids": [
+          "C-00434"
+        ],
         "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00596"
+        ],
+        "labels": [],
+        "household_size": 3
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00062",
+      "agency_a": {
+        "client_ids": [
+          "C-00438"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00207"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-00207",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          }
+        ],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00063",
+      "agency_a": {
+        "client_ids": [
+          "C-00441"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01363"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-01363",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          }
+        ],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00064",
+      "agency_a": {
+        "client_ids": [
+          "C-00449"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00294"
+        ],
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -1303,15 +1614,24 @@
       "person_id": "PER-00065",
       "agency_a": {
         "client_ids": [
-          "C-00434"
+          "C-00451"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "C-00451",
+            "defect_type": "nickname",
+            "fields": [
+              "first_name"
+            ]
+          }
+        ]
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00503"
+          "B-C-00260"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 3
       },
       "contact_differs": [
         "phone",
@@ -1322,15 +1642,16 @@
       "person_id": "PER-00066",
       "agency_a": {
         "client_ids": [
-          "C-00438"
+          "C-00453"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00358"
+          "B-C-00308"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -1341,15 +1662,16 @@
       "person_id": "PER-00067",
       "agency_a": {
         "client_ids": [
-          "C-00449"
+          "C-00457"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00378"
+          "B-C-00085"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -1360,15 +1682,16 @@
       "person_id": "PER-00068",
       "agency_a": {
         "client_ids": [
-          "C-00453"
+          "C-00458"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00522"
+          "B-C-00143"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -1379,15 +1702,24 @@
       "person_id": "PER-00069",
       "agency_a": {
         "client_ids": [
-          "C-00457"
+          "C-00462"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00010"
+          "B-C-00875"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00875",
+            "defect_type": "hyphenated_surname",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -1398,15 +1730,16 @@
       "person_id": "PER-00070",
       "agency_a": {
         "client_ids": [
-          "C-00458"
+          "C-00473"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00281"
+          "B-C-00005"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -1417,15 +1750,16 @@
       "person_id": "PER-00071",
       "agency_a": {
         "client_ids": [
-          "C-00462"
+          "C-00474"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00930"
+          "B-C-00839"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -1436,15 +1770,16 @@
       "person_id": "PER-00072",
       "agency_a": {
         "client_ids": [
-          "C-00465"
+          "C-00475"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01110"
+          "B-C-01411"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -1455,15 +1790,26 @@
       "person_id": "PER-00073",
       "agency_a": {
         "client_ids": [
-          "C-00473"
+          "C-00483"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00005"
+          "B-C-00018"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00018",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -1474,15 +1820,16 @@
       "person_id": "PER-00074",
       "agency_a": {
         "client_ids": [
-          "C-00479"
+          "C-00485"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00473"
+          "B-C-00190"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -1493,15 +1840,24 @@
       "person_id": "PER-00075",
       "agency_a": {
         "client_ids": [
-          "C-00483"
+          "C-00486"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00223"
+          "B-C-00077"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00077",
+            "defect_type": "hyphenated_surname",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -1512,15 +1868,27 @@
       "person_id": "PER-00076",
       "agency_a": {
         "client_ids": [
-          "C-00485"
+          "C-00492"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00345"
+          "B-C-00157"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00157",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          },
+          {
+            "client_id": "B-C-00157",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -1531,15 +1899,16 @@
       "person_id": "PER-00077",
       "agency_a": {
         "client_ids": [
-          "C-00486"
+          "C-00496"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00044"
+          "B-C-00337"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -1550,15 +1919,16 @@
       "person_id": "PER-00078",
       "agency_a": {
         "client_ids": [
-          "C-00492"
+          "C-00499"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00292"
+          "B-C-00116"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -1569,15 +1939,32 @@
       "person_id": "PER-00079",
       "agency_a": {
         "client_ids": [
-          "C-00496"
+          "C-00512"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00347"
+          "B-C-00012",
+          "B-C-01504"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00012",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          },
+          {
+            "client_id": "B-C-01504",
+            "defect_type": "moved_household_stale_copy",
+            "fields": []
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -1586,44 +1973,6 @@
     },
     {
       "person_id": "PER-00080",
-      "agency_a": {
-        "client_ids": [
-          "C-00499"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00147"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00081",
-      "agency_a": {
-        "client_ids": [
-          "C-00512"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00156"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00082",
       "agency_a": {
         "client_ids": [
           "C-00513"
@@ -1640,9 +1989,59 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00801"
+          "B-C-00371"
+        ],
+        "labels": [],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00081",
+      "agency_a": {
+        "client_ids": [
+          "C-00525"
         ],
         "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00068"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00082",
+      "agency_a": {
+        "client_ids": [
+          "C-00531"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01073"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-01073",
+            "defect_type": "shared_household_contact",
+            "fields": [
+              "phone",
+              "email"
+            ]
+          }
+        ],
+        "household_size": 3
       },
       "contact_differs": [
         "phone",
@@ -1653,24 +2052,16 @@
       "person_id": "PER-00083",
       "agency_a": {
         "client_ids": [
-          "C-00514",
-          "C-02016"
+          "C-00556"
         ],
-        "labels": [
-          {
-            "client_id": "C-02016",
-            "defect_type": "near_duplicate_client",
-            "fields": [
-              "last_name"
-            ]
-          }
-        ]
+        "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00955"
+          "B-C-01162"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -1679,127 +2070,6 @@
     },
     {
       "person_id": "PER-00084",
-      "agency_a": {
-        "client_ids": [
-          "C-00520"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00904"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00085",
-      "agency_a": {
-        "client_ids": [
-          "C-00525"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00162"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00086",
-      "agency_a": {
-        "client_ids": [
-          "C-00531"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00692"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00087",
-      "agency_a": {
-        "client_ids": [
-          "C-00546"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00709"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone"
-      ]
-    },
-    {
-      "person_id": "PER-00088",
-      "agency_a": {
-        "client_ids": [
-          "C-00553"
-        ],
-        "labels": [
-          {
-            "client_id": "C-00553",
-            "defect_type": "nickname",
-            "fields": [
-              "first_name"
-            ]
-          }
-        ]
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-01313"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00089",
-      "agency_a": {
-        "client_ids": [
-          "C-00554"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-01282"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00090",
       "agency_a": {
         "client_ids": [
           "C-00557"
@@ -1816,9 +2086,10 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00861"
+          "B-C-00350"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -1826,7 +2097,35 @@
       ]
     },
     {
-      "person_id": "PER-00091",
+      "person_id": "PER-00085",
+      "agency_a": {
+        "client_ids": [
+          "C-00559"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01351"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-01351",
+            "defect_type": "hyphenated_surname",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00086",
       "agency_a": {
         "client_ids": [
           "C-00573"
@@ -1837,7 +2136,125 @@
         "client_ids": [
           "B-C-00149"
         ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00087",
+      "agency_a": {
+        "client_ids": [
+          "C-00576"
+        ],
         "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00781"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00088",
+      "agency_a": {
+        "client_ids": [
+          "C-00581"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00659"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00089",
+      "agency_a": {
+        "client_ids": [
+          "C-00586"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00471"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00090",
+      "agency_a": {
+        "client_ids": [
+          "C-00587"
+        ],
+        "labels": [
+          {
+            "client_id": "C-00587",
+            "defect_type": "name_typo",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01477"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-01477",
+            "defect_type": "shared_household_contact",
+            "fields": [
+              "phone",
+              "email"
+            ]
+          }
+        ],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00091",
+      "agency_a": {
+        "client_ids": [
+          "C-00594"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00604"
+        ],
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -1848,15 +2265,25 @@
       "person_id": "PER-00092",
       "agency_a": {
         "client_ids": [
-          "C-00581"
+          "C-00600"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01360"
+          "B-C-00225"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00225",
+            "defect_type": "shared_household_contact",
+            "fields": [
+              "phone",
+              "email"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -1867,15 +2294,25 @@
       "person_id": "PER-00093",
       "agency_a": {
         "client_ids": [
-          "C-00586"
+          "C-00609"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01230"
+          "B-C-00067"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00067",
+            "defect_type": "shared_household_contact",
+            "fields": [
+              "phone",
+              "email"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -1886,15 +2323,16 @@
       "person_id": "PER-00094",
       "agency_a": {
         "client_ids": [
-          "C-00599"
+          "C-00611"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00788"
+          "B-C-00628"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 3
       },
       "contact_differs": [
         "phone",
@@ -1905,15 +2343,16 @@
       "person_id": "PER-00095",
       "agency_a": {
         "client_ids": [
-          "C-00600"
+          "C-00612"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00231"
+          "B-C-00119"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -1922,120 +2361,6 @@
     },
     {
       "person_id": "PER-00096",
-      "agency_a": {
-        "client_ids": [
-          "C-00607"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-01015"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00097",
-      "agency_a": {
-        "client_ids": [
-          "C-00609"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00049"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00098",
-      "agency_a": {
-        "client_ids": [
-          "C-00610"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-01011"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00099",
-      "agency_a": {
-        "client_ids": [
-          "C-00611"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00104"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00100",
-      "agency_a": {
-        "client_ids": [
-          "C-00612"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00581"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00101",
-      "agency_a": {
-        "client_ids": [
-          "C-00613"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00766"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00102",
       "agency_a": {
         "client_ids": [
           "C-00622",
@@ -2053,9 +2378,10 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01346"
+          "B-C-00603"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -2063,7 +2389,7 @@
       ]
     },
     {
-      "person_id": "PER-00103",
+      "person_id": "PER-00097",
       "agency_a": {
         "client_ids": [
           "C-00625"
@@ -2074,7 +2400,8 @@
         "client_ids": [
           "B-C-00164"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -2082,7 +2409,86 @@
       ]
     },
     {
-      "person_id": "PER-00104",
+      "person_id": "PER-00098",
+      "agency_a": {
+        "client_ids": [
+          "C-00626"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00320"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-00320",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          },
+          {
+            "client_id": "B-C-00320",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          }
+        ],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00099",
+      "agency_a": {
+        "client_ids": [
+          "C-00628"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01235"
+        ],
+        "labels": [],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00100",
+      "agency_a": {
+        "client_ids": [
+          "C-00632"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00567"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-00567",
+            "defect_type": "hyphenated_surname",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00101",
       "agency_a": {
         "client_ids": [
           "C-00645"
@@ -2099,9 +2505,20 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00398"
+          "B-C-00231"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00231",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -2109,25 +2526,7 @@
       ]
     },
     {
-      "person_id": "PER-00105",
-      "agency_a": {
-        "client_ids": [
-          "C-00647"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00882"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone"
-      ]
-    },
-    {
-      "person_id": "PER-00106",
+      "person_id": "PER-00102",
       "agency_a": {
         "client_ids": [
           "C-00648"
@@ -2146,7 +2545,8 @@
         "client_ids": [
           "B-C-00030"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -2154,7 +2554,7 @@
       ]
     },
     {
-      "person_id": "PER-00107",
+      "person_id": "PER-00103",
       "agency_a": {
         "client_ids": [
           "C-00662"
@@ -2173,7 +2573,8 @@
         "client_ids": [
           "B-C-00146"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -2181,7 +2582,7 @@
       ]
     },
     {
-      "person_id": "PER-00108",
+      "person_id": "PER-00104",
       "agency_a": {
         "client_ids": [
           "C-00663"
@@ -2192,7 +2593,116 @@
         "client_ids": [
           "B-C-01452"
         ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00105",
+      "agency_a": {
+        "client_ids": [
+          "C-00665"
+        ],
         "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00413"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-00413",
+            "defect_type": "shared_household_contact",
+            "fields": [
+              "phone",
+              "email"
+            ]
+          }
+        ],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00106",
+      "agency_a": {
+        "client_ids": [
+          "C-00678"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00117"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00107",
+      "agency_a": {
+        "client_ids": [
+          "C-00680"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00796"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-00796",
+            "defect_type": "hyphenated_surname",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00108",
+      "agency_a": {
+        "client_ids": [
+          "C-00690"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00316"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-00316",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          },
+          {
+            "client_id": "B-C-00316",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -2203,15 +2713,16 @@
       "person_id": "PER-00109",
       "agency_a": {
         "client_ids": [
-          "C-00678"
+          "C-00692"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00612"
+          "B-C-00409"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -2222,15 +2733,16 @@
       "person_id": "PER-00110",
       "agency_a": {
         "client_ids": [
-          "C-00680"
+          "C-00703"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00117"
+          "B-C-00395"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 3
       },
       "contact_differs": [
         "phone",
@@ -2241,15 +2753,24 @@
       "person_id": "PER-00111",
       "agency_a": {
         "client_ids": [
-          "C-00690"
+          "C-00718"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00341"
+          "B-C-00522"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00522",
+            "defect_type": "hyphenated_surname",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -2260,15 +2781,16 @@
       "person_id": "PER-00112",
       "agency_a": {
         "client_ids": [
-          "C-00692"
+          "C-00728"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00409"
+          "B-C-01033"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -2279,15 +2801,16 @@
       "person_id": "PER-00113",
       "agency_a": {
         "client_ids": [
-          "C-00702"
+          "C-00740"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00699"
+          "B-C-00105"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -2298,15 +2821,26 @@
       "person_id": "PER-00114",
       "agency_a": {
         "client_ids": [
-          "C-00703"
+          "C-00762"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00319"
+          "B-C-00868"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00868",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -2317,15 +2851,16 @@
       "person_id": "PER-00115",
       "agency_a": {
         "client_ids": [
-          "C-00718"
+          "C-00773"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00792"
+          "B-C-00499"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -2336,15 +2871,26 @@
       "person_id": "PER-00116",
       "agency_a": {
         "client_ids": [
-          "C-00740"
+          "C-00776"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00055"
+          "B-C-00150"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00150",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -2355,15 +2901,16 @@
       "person_id": "PER-00117",
       "agency_a": {
         "client_ids": [
-          "C-00762"
+          "C-00785"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00868"
+          "B-C-01346"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -2374,15 +2921,30 @@
       "person_id": "PER-00118",
       "agency_a": {
         "client_ids": [
-          "C-00773"
+          "C-00791",
+          "C-02004"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "C-00791",
+            "defect_type": "name_dob_collision",
+            "fields": []
+          },
+          {
+            "client_id": "C-02004",
+            "defect_type": "name_dob_collision",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ]
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00499"
+          "B-C-01063"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -2393,15 +2955,16 @@
       "person_id": "PER-00119",
       "agency_a": {
         "client_ids": [
-          "C-00776"
+          "C-00794"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00353"
+          "B-C-00963"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -2418,9 +2981,20 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00256"
+          "B-C-00109"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00109",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -2431,15 +3005,24 @@
       "person_id": "PER-00121",
       "agency_a": {
         "client_ids": [
-          "C-00805"
+          "C-00803"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00587"
+          "B-C-01298"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-01298",
+            "defect_type": "maiden_name",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -2450,15 +3033,24 @@
       "person_id": "PER-00122",
       "agency_a": {
         "client_ids": [
-          "C-00812"
+          "C-00805"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00255"
+          "B-C-00050"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00050",
+            "defect_type": "maiden_name",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -2469,15 +3061,16 @@
       "person_id": "PER-00123",
       "agency_a": {
         "client_ids": [
-          "C-00834"
+          "C-00807"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00771"
+          "B-C-00433"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -2488,33 +3081,45 @@
       "person_id": "PER-00124",
       "agency_a": {
         "client_ids": [
-          "C-00843"
+          "C-00812"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00232"
+          "B-C-00049"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
-        "phone"
+        "phone",
+        "email"
       ]
     },
     {
       "person_id": "PER-00125",
       "agency_a": {
         "client_ids": [
-          "C-00845"
+          "C-00818"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00543"
+          "B-C-01020"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-01020",
+            "defect_type": "shared_household_contact",
+            "fields": [
+              "phone",
+              "email"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -2525,15 +3130,16 @@
       "person_id": "PER-00126",
       "agency_a": {
         "client_ids": [
-          "C-00849"
+          "C-00834"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00457"
+          "B-C-00771"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -2544,15 +3150,32 @@
       "person_id": "PER-00127",
       "agency_a": {
         "client_ids": [
-          "C-00860"
+          "C-00839"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "C-00839",
+            "defect_type": "name_typo",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ]
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00576"
+          "B-C-01461"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-01461",
+            "defect_type": "maiden_name",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -2563,15 +3186,16 @@
       "person_id": "PER-00128",
       "agency_a": {
         "client_ids": [
-          "C-00865"
+          "C-00843"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00875"
+          "B-C-00232"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone"
@@ -2581,15 +3205,16 @@
       "person_id": "PER-00129",
       "agency_a": {
         "client_ids": [
-          "C-00867"
+          "C-00845"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01283"
+          "B-C-00196"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -2600,15 +3225,16 @@
       "person_id": "PER-00130",
       "agency_a": {
         "client_ids": [
-          "C-00868"
+          "C-00849"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00408"
+          "B-C-00070"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -2619,15 +3245,24 @@
       "person_id": "PER-00131",
       "agency_a": {
         "client_ids": [
-          "C-00877"
+          "C-00852"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "C-00852",
+            "defect_type": "missing_mbi",
+            "fields": [
+              "mbi"
+            ]
+          }
+        ]
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00659"
+          "B-C-00891"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 3
       },
       "contact_differs": [
         "phone",
@@ -2638,15 +3273,25 @@
       "person_id": "PER-00132",
       "agency_a": {
         "client_ids": [
-          "C-00878"
+          "C-00865"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00695"
+          "B-C-00315"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00315",
+            "defect_type": "shared_household_contact",
+            "fields": [
+              "phone",
+              "email"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -2657,15 +3302,16 @@
       "person_id": "PER-00133",
       "agency_a": {
         "client_ids": [
-          "C-00899"
+          "C-00867"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00171"
+          "B-C-00582"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 4
       },
       "contact_differs": [
         "phone",
@@ -2676,15 +3322,16 @@
       "person_id": "PER-00134",
       "agency_a": {
         "client_ids": [
-          "C-00902"
+          "C-00868"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01024"
+          "B-C-00176"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -2695,34 +3342,35 @@
       "person_id": "PER-00135",
       "agency_a": {
         "client_ids": [
-          "C-00903"
+          "C-00870"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00972"
+          "B-C-01378"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
-        "phone",
-        "email"
+        "phone"
       ]
     },
     {
       "person_id": "PER-00136",
       "agency_a": {
         "client_ids": [
-          "C-00914"
+          "C-00871"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01022"
+          "B-C-00842"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -2733,15 +3381,16 @@
       "person_id": "PER-00137",
       "agency_a": {
         "client_ids": [
-          "C-00919"
+          "C-00877"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00054"
+          "B-C-00442"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -2752,33 +3401,36 @@
       "person_id": "PER-00138",
       "agency_a": {
         "client_ids": [
-          "C-00923"
+          "C-00878"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00239"
+          "B-C-00322"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
-        "phone"
+        "phone",
+        "email"
       ]
     },
     {
       "person_id": "PER-00139",
       "agency_a": {
         "client_ids": [
-          "C-00939"
+          "C-00895"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00158"
+          "B-C-01193"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 3
       },
       "contact_differs": [
         "phone",
@@ -2789,15 +3441,16 @@
       "person_id": "PER-00140",
       "agency_a": {
         "client_ids": [
-          "C-00942"
+          "C-00899"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00344"
+          "B-C-00171"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -2808,15 +3461,16 @@
       "person_id": "PER-00141",
       "agency_a": {
         "client_ids": [
-          "C-00949"
+          "C-00914"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00045"
+          "B-C-00692"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -2827,15 +3481,24 @@
       "person_id": "PER-00142",
       "agency_a": {
         "client_ids": [
-          "C-00956"
+          "C-00919"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00263"
+          "B-C-00278"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00278",
+            "defect_type": "hyphenated_surname",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -2846,34 +3509,45 @@
       "person_id": "PER-00143",
       "agency_a": {
         "client_ids": [
-          "C-00961"
+          "C-00923"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00720"
+          "B-C-00239"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00239",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
-        "phone",
-        "email"
+        "phone"
       ]
     },
     {
       "person_id": "PER-00144",
       "agency_a": {
         "client_ids": [
-          "C-00965"
+          "C-00930"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00831"
+          "B-C-01303"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -2884,15 +3558,16 @@
       "person_id": "PER-00145",
       "agency_a": {
         "client_ids": [
-          "C-00976"
+          "C-00939"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01033"
+          "B-C-00158"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -2903,15 +3578,16 @@
       "person_id": "PER-00146",
       "agency_a": {
         "client_ids": [
-          "C-00983"
+          "C-00942"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00043"
+          "B-C-00344"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -2922,15 +3598,16 @@
       "person_id": "PER-00147",
       "agency_a": {
         "client_ids": [
-          "C-00987"
+          "C-00949"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00116"
+          "B-C-00045"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -2941,15 +3618,26 @@
       "person_id": "PER-00148",
       "agency_a": {
         "client_ids": [
-          "C-00993"
+          "C-00956"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00808"
+          "B-C-00156"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00156",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -2960,15 +3648,16 @@
       "person_id": "PER-00149",
       "agency_a": {
         "client_ids": [
-          "C-00996"
+          "C-00976"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00018"
+          "B-C-00658"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -2979,15 +3668,16 @@
       "person_id": "PER-00150",
       "agency_a": {
         "client_ids": [
-          "C-00999"
+          "C-00978"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01084"
+          "B-C-00285"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -2998,15 +3688,16 @@
       "person_id": "PER-00151",
       "agency_a": {
         "client_ids": [
-          "C-01003"
+          "C-00983"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00781"
+          "B-C-00043"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -3017,15 +3708,16 @@
       "person_id": "PER-00152",
       "agency_a": {
         "client_ids": [
-          "C-01015"
+          "C-00987"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00280"
+          "B-C-00008"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -3036,15 +3728,16 @@
       "person_id": "PER-00153",
       "agency_a": {
         "client_ids": [
-          "C-01018"
+          "C-00993"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01478"
+          "B-C-00493"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 3
       },
       "contact_differs": [
         "phone",
@@ -3055,15 +3748,24 @@
       "person_id": "PER-00154",
       "agency_a": {
         "client_ids": [
-          "C-01020"
+          "C-00996"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00593"
+          "B-C-00327"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00327",
+            "defect_type": "maiden_name",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -3074,15 +3776,16 @@
       "person_id": "PER-00155",
       "agency_a": {
         "client_ids": [
-          "C-01036"
+          "C-00999"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00328"
+          "B-C-01022"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -3093,15 +3796,16 @@
       "person_id": "PER-00156",
       "agency_a": {
         "client_ids": [
-          "C-01068"
+          "C-01003"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00196"
+          "B-C-00303"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -3112,15 +3816,16 @@
       "person_id": "PER-00157",
       "agency_a": {
         "client_ids": [
-          "C-01069"
+          "C-01014"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00598"
+          "B-C-01158"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -3129,6 +3834,151 @@
     },
     {
       "person_id": "PER-00158",
+      "agency_a": {
+        "client_ids": [
+          "C-01015"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00253"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00159",
+      "agency_a": {
+        "client_ids": [
+          "C-01018"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00832"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-00832",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          }
+        ],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00160",
+      "agency_a": {
+        "client_ids": [
+          "C-01020"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00505"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-00505",
+            "defect_type": "hyphenated_surname",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00161",
+      "agency_a": {
+        "client_ids": [
+          "C-01036"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00053"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-00053",
+            "defect_type": "maiden_name",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00162",
+      "agency_a": {
+        "client_ids": [
+          "C-01068"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00042"
+        ],
+        "labels": [],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00163",
+      "agency_a": {
+        "client_ids": [
+          "C-01072"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01278"
+        ],
+        "labels": [],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone"
+      ]
+    },
+    {
+      "person_id": "PER-00164",
       "agency_a": {
         "client_ids": [
           "C-01074"
@@ -3147,120 +3997,14 @@
         "client_ids": [
           "B-C-00127"
         ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00159",
-      "agency_a": {
-        "client_ids": [
-          "C-01076"
+        "labels": [
+          {
+            "client_id": "B-C-00127",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          }
         ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00842"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone"
-      ]
-    },
-    {
-      "person_id": "PER-00160",
-      "agency_a": {
-        "client_ids": [
-          "C-01077"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00603"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00161",
-      "agency_a": {
-        "client_ids": [
-          "C-01079"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00340"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00162",
-      "agency_a": {
-        "client_ids": [
-          "C-01090"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00556"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00163",
-      "agency_a": {
-        "client_ids": [
-          "C-01128"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-01019"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00164",
-      "agency_a": {
-        "client_ids": [
-          "C-01133"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00512"
-        ],
-        "labels": []
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -3271,15 +4015,22 @@
       "person_id": "PER-00165",
       "agency_a": {
         "client_ids": [
-          "C-01152"
+          "C-01076"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00313"
+          "B-C-00426"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00426",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -3288,6 +4039,150 @@
     },
     {
       "person_id": "PER-00166",
+      "agency_a": {
+        "client_ids": [
+          "C-01077"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00185"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00167",
+      "agency_a": {
+        "client_ids": [
+          "C-01092"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01265",
+          "B-C-01505"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-01265",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          },
+          {
+            "client_id": "B-C-01505",
+            "defect_type": "moved_household_stale_copy",
+            "fields": []
+          }
+        ],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00168",
+      "agency_a": {
+        "client_ids": [
+          "C-01133"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00512"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-00512",
+            "defect_type": "maiden_name",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00169",
+      "agency_a": {
+        "client_ids": [
+          "C-01140"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01473"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00170",
+      "agency_a": {
+        "client_ids": [
+          "C-01144"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01078"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00171",
+      "agency_a": {
+        "client_ids": [
+          "C-01152"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00123"
+        ],
+        "labels": [],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00172",
       "agency_a": {
         "client_ids": [
           "C-01157"
@@ -3304,123 +4199,18 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00201"
+          "B-C-00184"
         ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00167",
-      "agency_a": {
-        "client_ids": [
-          "C-01163"
+        "labels": [
+          {
+            "client_id": "B-C-00184",
+            "defect_type": "hyphenated_surname",
+            "fields": [
+              "last_name"
+            ]
+          }
         ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-01351"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00168",
-      "agency_a": {
-        "client_ids": [
-          "C-01173"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-01466"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00169",
-      "agency_a": {
-        "client_ids": [
-          "C-01176"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00949"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00170",
-      "agency_a": {
-        "client_ids": [
-          "C-01181"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00674"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00171",
-      "agency_a": {
-        "client_ids": [
-          "C-01186"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-01148"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00172",
-      "agency_a": {
-        "client_ids": [
-          "C-01187"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-01109"
-        ],
-        "labels": []
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -3431,15 +4221,16 @@
       "person_id": "PER-00173",
       "agency_a": {
         "client_ids": [
-          "C-01188"
+          "C-01163"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01471"
+          "B-C-00792"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -3450,15 +4241,24 @@
       "person_id": "PER-00174",
       "agency_a": {
         "client_ids": [
-          "C-01192"
+          "C-01173"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01127"
+          "B-C-01109"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-01109",
+            "defect_type": "maiden_name",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -3469,15 +4269,22 @@
       "person_id": "PER-00175",
       "agency_a": {
         "client_ids": [
-          "C-01195"
+          "C-01176"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00508"
+          "B-C-00949"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00949",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -3488,15 +4295,16 @@
       "person_id": "PER-00176",
       "agency_a": {
         "client_ids": [
-          "C-01200"
+          "C-01181"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01158"
+          "B-C-00674"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -3507,15 +4315,16 @@
       "person_id": "PER-00177",
       "agency_a": {
         "client_ids": [
-          "C-01202"
+          "C-01186"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00836"
+          "B-C-00630"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 3
       },
       "contact_differs": [
         "phone",
@@ -3526,34 +4335,35 @@
       "person_id": "PER-00178",
       "agency_a": {
         "client_ids": [
-          "C-01203"
+          "C-01187"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00857"
+          "B-C-00571"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
-        "phone",
-        "email"
+        "phone"
       ]
     },
     {
       "person_id": "PER-00179",
       "agency_a": {
         "client_ids": [
-          "C-01214"
+          "C-01195"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00491"
+          "B-C-00508"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -3564,15 +4374,16 @@
       "person_id": "PER-00180",
       "agency_a": {
         "client_ids": [
-          "C-01226"
+          "C-01196"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00917"
+          "B-C-00695"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -3583,15 +4394,25 @@
       "person_id": "PER-00181",
       "agency_a": {
         "client_ids": [
-          "C-01231"
+          "C-01198"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00439"
+          "B-C-01382"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-01382",
+            "defect_type": "shared_household_contact",
+            "fields": [
+              "phone",
+              "email"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -3602,15 +4423,24 @@
       "person_id": "PER-00182",
       "agency_a": {
         "client_ids": [
-          "C-01232"
+          "C-01200"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00880"
+          "B-C-00619"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00619",
+            "defect_type": "maiden_name",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -3619,6 +4449,150 @@
     },
     {
       "person_id": "PER-00183",
+      "agency_a": {
+        "client_ids": [
+          "C-01202"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00593"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-00593",
+            "defect_type": "maiden_name",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00184",
+      "agency_a": {
+        "client_ids": [
+          "C-01203"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00857"
+        ],
+        "labels": [],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00185",
+      "agency_a": {
+        "client_ids": [
+          "C-01214"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00893"
+        ],
+        "labels": [],
+        "household_size": 3
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00186",
+      "agency_a": {
+        "client_ids": [
+          "C-01219"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01484",
+          "B-C-01506"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-01484",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          },
+          {
+            "client_id": "B-C-01506",
+            "defect_type": "moved_household_stale_copy",
+            "fields": []
+          }
+        ],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00187",
+      "agency_a": {
+        "client_ids": [
+          "C-01231"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00577"
+        ],
+        "labels": [],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00188",
+      "agency_a": {
+        "client_ids": [
+          "C-01232"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00606"
+        ],
+        "labels": [],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00189",
       "agency_a": {
         "client_ids": [
           "C-01233"
@@ -3637,7 +4611,8 @@
         "client_ids": [
           "B-C-01037"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -3645,7 +4620,7 @@
       ]
     },
     {
-      "person_id": "PER-00184",
+      "person_id": "PER-00190",
       "agency_a": {
         "client_ids": [
           "C-01236"
@@ -3654,9 +4629,18 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00068"
+          "B-C-00025"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00025",
+            "defect_type": "maiden_name",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -3664,7 +4648,7 @@
       ]
     },
     {
-      "person_id": "PER-00185",
+      "person_id": "PER-00191",
       "agency_a": {
         "client_ids": [
           "C-01251"
@@ -3673,9 +4657,10 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01326"
+          "B-C-01231"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -3683,7 +4668,7 @@
       ]
     },
     {
-      "person_id": "PER-00186",
+      "person_id": "PER-00192",
       "agency_a": {
         "client_ids": [
           "C-01255"
@@ -3692,16 +4677,18 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00471"
+          "B-C-00280"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
-        "phone"
+        "phone",
+        "email"
       ]
     },
     {
-      "person_id": "PER-00187",
+      "person_id": "PER-00193",
       "agency_a": {
         "client_ids": [
           "C-01261"
@@ -3712,7 +4699,8 @@
         "client_ids": [
           "B-C-00502"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -3720,7 +4708,7 @@
       ]
     },
     {
-      "person_id": "PER-00188",
+      "person_id": "PER-00194",
       "agency_a": {
         "client_ids": [
           "C-01263"
@@ -3729,9 +4717,18 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00264"
+          "B-C-00217"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00217",
+            "defect_type": "maiden_name",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -3739,7 +4736,7 @@
       ]
     },
     {
-      "person_id": "PER-00189",
+      "person_id": "PER-00195",
       "agency_a": {
         "client_ids": [
           "C-01264"
@@ -3748,9 +4745,10 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01131"
+          "B-C-00533"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -3758,7 +4756,27 @@
       ]
     },
     {
-      "person_id": "PER-00190",
+      "person_id": "PER-00196",
+      "agency_a": {
+        "client_ids": [
+          "C-01265"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01253"
+        ],
+        "labels": [],
+        "household_size": 3
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00197",
       "agency_a": {
         "client_ids": [
           "C-01266"
@@ -3775,9 +4793,21 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01419"
+          "B-C-01148"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-01148",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          },
+          {
+            "client_id": "B-C-01148",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -3785,7 +4815,7 @@
       ]
     },
     {
-      "person_id": "PER-00191",
+      "person_id": "PER-00198",
       "agency_a": {
         "client_ids": [
           "C-01268"
@@ -3794,9 +4824,18 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01087"
+          "B-C-00393"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00393",
+            "defect_type": "hyphenated_surname",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -3804,7 +4843,7 @@
       ]
     },
     {
-      "person_id": "PER-00192",
+      "person_id": "PER-00199",
       "agency_a": {
         "client_ids": [
           "C-01269"
@@ -3813,9 +4852,19 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00563"
+          "B-C-00423"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00423",
+            "defect_type": "shared_household_contact",
+            "fields": [
+              "phone",
+              "email"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -3823,26 +4872,7 @@
       ]
     },
     {
-      "person_id": "PER-00193",
-      "agency_a": {
-        "client_ids": [
-          "C-01276"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00421"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00194",
+      "person_id": "PER-00200",
       "agency_a": {
         "client_ids": [
           "C-01301"
@@ -3859,122 +4889,26 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00422"
+          "B-C-00264",
+          "B-C-01507"
         ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00195",
-      "agency_a": {
-        "client_ids": [
-          "C-01303"
+        "labels": [
+          {
+            "client_id": "B-C-00264",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          },
+          {
+            "client_id": "B-C-01507",
+            "defect_type": "moved_household_stale_copy",
+            "fields": []
+          }
         ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-01302"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone"
-      ]
-    },
-    {
-      "person_id": "PER-00196",
-      "agency_a": {
-        "client_ids": [
-          "C-01318"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00175"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00197",
-      "agency_a": {
-        "client_ids": [
-          "C-01327"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00359"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00198",
-      "agency_a": {
-        "client_ids": [
-          "C-01328"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00131"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00199",
-      "agency_a": {
-        "client_ids": [
-          "C-01342"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00452"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00200",
-      "agency_a": {
-        "client_ids": [
-          "C-01344"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00048"
-        ],
-        "labels": []
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -3985,15 +4919,16 @@
       "person_id": "PER-00201",
       "agency_a": {
         "client_ids": [
-          "C-01350"
+          "C-01318"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00287"
+          "B-C-00175"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4004,15 +4939,16 @@
       "person_id": "PER-00202",
       "agency_a": {
         "client_ids": [
-          "C-01365"
+          "C-01328"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00849"
+          "B-C-00131"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -4021,6 +4957,94 @@
     },
     {
       "person_id": "PER-00203",
+      "agency_a": {
+        "client_ids": [
+          "C-01342"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00341"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00204",
+      "agency_a": {
+        "client_ids": [
+          "C-01344"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00034"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-00034",
+            "defect_type": "hyphenated_surname",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00205",
+      "agency_a": {
+        "client_ids": [
+          "C-01350"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00144"
+        ],
+        "labels": [],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00206",
+      "agency_a": {
+        "client_ids": [
+          "C-01365"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00849"
+        ],
+        "labels": [],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00207",
       "agency_a": {
         "client_ids": [
           "C-01375"
@@ -4037,9 +5061,10 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00174"
+          "B-C-00728"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -4047,34 +5072,7 @@
       ]
     },
     {
-      "person_id": "PER-00204",
-      "agency_a": {
-        "client_ids": [
-          "C-01379"
-        ],
-        "labels": [
-          {
-            "client_id": "C-01379",
-            "defect_type": "invalid_mbi",
-            "fields": [
-              "mbi"
-            ]
-          }
-        ]
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00746"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00205",
+      "person_id": "PER-00208",
       "agency_a": {
         "client_ids": [
           "C-01381"
@@ -4083,9 +5081,16 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00703"
+          "B-C-00287"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00287",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4093,7 +5098,7 @@
       ]
     },
     {
-      "person_id": "PER-00206",
+      "person_id": "PER-00209",
       "agency_a": {
         "client_ids": [
           "C-01385"
@@ -4110,66 +5115,10 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00253"
+          "B-C-00054"
         ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00207",
-      "agency_a": {
-        "client_ids": [
-          "C-01404"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-01187"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00208",
-      "agency_a": {
-        "client_ids": [
-          "C-01406"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00217"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00209",
-      "agency_a": {
-        "client_ids": [
-          "C-01409"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00071"
-        ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4180,15 +5129,25 @@
       "person_id": "PER-00210",
       "agency_a": {
         "client_ids": [
-          "C-01417"
+          "C-01386"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00011"
+          "B-C-01057"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-01057",
+            "defect_type": "shared_household_contact",
+            "fields": [
+              "phone",
+              "email"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -4199,15 +5158,16 @@
       "person_id": "PER-00211",
       "agency_a": {
         "client_ids": [
-          "C-01425"
+          "C-01404"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00206"
+          "B-C-01187"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -4218,15 +5178,24 @@
       "person_id": "PER-00212",
       "agency_a": {
         "client_ids": [
-          "C-01426"
+          "C-01406"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00190"
+          "B-C-00095"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00095",
+            "defect_type": "hyphenated_surname",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 3
       },
       "contact_differs": [
         "phone",
@@ -4237,15 +5206,16 @@
       "person_id": "PER-00213",
       "agency_a": {
         "client_ids": [
-          "C-01436"
+          "C-01409"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00153"
+          "B-C-00183"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -4256,15 +5226,16 @@
       "person_id": "PER-00214",
       "agency_a": {
         "client_ids": [
-          "C-01439"
+          "C-01417"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00571"
+          "B-C-00011"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4275,15 +5246,16 @@
       "person_id": "PER-00215",
       "agency_a": {
         "client_ids": [
-          "C-01450"
+          "C-01425"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00233"
+          "B-C-00108"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4294,15 +5266,16 @@
       "person_id": "PER-00216",
       "agency_a": {
         "client_ids": [
-          "C-01454"
+          "C-01426"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00757"
+          "B-C-00055"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4311,6 +5284,75 @@
     },
     {
       "person_id": "PER-00217",
+      "agency_a": {
+        "client_ids": [
+          "C-01436"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00385"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-00385",
+            "defect_type": "shared_household_contact",
+            "fields": [
+              "phone",
+              "email"
+            ]
+          }
+        ],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00218",
+      "agency_a": {
+        "client_ids": [
+          "C-01439"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00360"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00219",
+      "agency_a": {
+        "client_ids": [
+          "C-01450"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00162"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00220",
       "agency_a": {
         "client_ids": [
           "C-01460"
@@ -4327,66 +5369,10 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01239"
+          "B-C-00017"
         ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00218",
-      "agency_a": {
-        "client_ids": [
-          "C-01461"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00198"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00219",
-      "agency_a": {
-        "client_ids": [
-          "C-01465"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00355"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00220",
-      "agency_a": {
-        "client_ids": [
-          "C-01468"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00063"
-        ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -4397,15 +5383,16 @@
       "person_id": "PER-00221",
       "agency_a": {
         "client_ids": [
-          "C-01472"
+          "C-01461"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00215"
+          "B-C-00074"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -4416,15 +5403,16 @@
       "person_id": "PER-00222",
       "agency_a": {
         "client_ids": [
-          "C-01474"
+          "C-01465"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00053"
+          "B-C-00355"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4433,6 +5421,104 @@
     },
     {
       "person_id": "PER-00223",
+      "agency_a": {
+        "client_ids": [
+          "C-01466"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01140"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00224",
+      "agency_a": {
+        "client_ids": [
+          "C-01468"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00063"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00225",
+      "agency_a": {
+        "client_ids": [
+          "C-01472"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00174"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-00174",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          }
+        ],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00226",
+      "agency_a": {
+        "client_ids": [
+          "C-01474"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00048"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-00048",
+            "defect_type": "hyphenated_surname",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00227",
       "agency_a": {
         "client_ids": [
           "C-01477"
@@ -4449,85 +5535,18 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00442"
+          "B-C-00233"
         ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00224",
-      "agency_a": {
-        "client_ids": [
-          "C-01480"
+        "labels": [
+          {
+            "client_id": "B-C-00233",
+            "defect_type": "hyphenated_surname",
+            "fields": [
+              "last_name"
+            ]
+          }
         ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00282"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00225",
-      "agency_a": {
-        "client_ids": [
-          "C-01482"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00694"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00226",
-      "agency_a": {
-        "client_ids": [
-          "C-01485"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00122"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00227",
-      "agency_a": {
-        "client_ids": [
-          "C-01496"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00322"
-        ],
-        "labels": []
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4538,15 +5557,22 @@
       "person_id": "PER-00228",
       "agency_a": {
         "client_ids": [
-          "C-01503"
+          "C-01480"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00346"
+          "B-C-00282"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00282",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4557,15 +5583,16 @@
       "person_id": "PER-00229",
       "agency_a": {
         "client_ids": [
-          "C-01506"
+          "C-01482"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00673"
+          "B-C-00358"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4576,15 +5603,22 @@
       "person_id": "PER-00230",
       "agency_a": {
         "client_ids": [
-          "C-01508"
+          "C-01485"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00360"
+          "B-C-00080"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00080",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          }
+        ],
+        "household_size": 3
       },
       "contact_differs": [
         "phone",
@@ -4595,15 +5629,22 @@
       "person_id": "PER-00231",
       "agency_a": {
         "client_ids": [
-          "C-01510"
+          "C-01496"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00014"
+          "B-C-00104"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00104",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4614,15 +5655,16 @@
       "person_id": "PER-00232",
       "agency_a": {
         "client_ids": [
-          "C-01535"
+          "C-01503"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00093"
+          "B-C-00255"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4633,15 +5675,16 @@
       "person_id": "PER-00233",
       "agency_a": {
         "client_ids": [
-          "C-01540"
+          "C-01506"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00575"
+          "B-C-00673"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4652,15 +5695,26 @@
       "person_id": "PER-00234",
       "agency_a": {
         "client_ids": [
-          "C-01548"
+          "C-01508"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00619"
+          "B-C-00032"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00032",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -4671,33 +5725,36 @@
       "person_id": "PER-00235",
       "agency_a": {
         "client_ids": [
-          "C-01560"
+          "C-01510"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00770"
+          "B-C-00002"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
-        "phone"
+        "phone",
+        "email"
       ]
     },
     {
       "person_id": "PER-00236",
       "agency_a": {
         "client_ids": [
-          "C-01562"
+          "C-01521"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00559"
+          "B-C-01136"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4708,15 +5765,16 @@
       "person_id": "PER-00237",
       "agency_a": {
         "client_ids": [
-          "C-01563"
+          "C-01535"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00194"
+          "B-C-00093"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4727,15 +5785,16 @@
       "person_id": "PER-00238",
       "agency_a": {
         "client_ids": [
-          "C-01569"
+          "C-01540"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00431"
+          "B-C-00263"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4746,15 +5805,16 @@
       "person_id": "PER-00239",
       "agency_a": {
         "client_ids": [
-          "C-01573"
+          "C-01548"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00733"
+          "B-C-00132"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4765,34 +5825,35 @@
       "person_id": "PER-00240",
       "agency_a": {
         "client_ids": [
-          "C-01574"
+          "C-01560"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01140"
+          "B-C-00770"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
-        "phone",
-        "email"
+        "phone"
       ]
     },
     {
       "person_id": "PER-00241",
       "agency_a": {
         "client_ids": [
-          "C-01576"
+          "C-01562"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00143"
+          "B-C-00753"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -4803,15 +5864,16 @@
       "person_id": "PER-00242",
       "agency_a": {
         "client_ids": [
-          "C-01584"
+          "C-01563"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01105"
+          "B-C-00125"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 3
       },
       "contact_differs": [
         "phone",
@@ -4822,15 +5884,24 @@
       "person_id": "PER-00243",
       "agency_a": {
         "client_ids": [
-          "C-01602"
+          "C-01569"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00845"
+          "B-C-00431"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00431",
+            "defect_type": "maiden_name",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4841,15 +5912,16 @@
       "person_id": "PER-00244",
       "agency_a": {
         "client_ids": [
-          "C-01609"
+          "C-01574"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00977"
+          "B-C-00250"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -4860,15 +5932,16 @@
       "person_id": "PER-00245",
       "agency_a": {
         "client_ids": [
-          "C-01610"
+          "C-01576"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00706"
+          "B-C-00101"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4879,15 +5952,27 @@
       "person_id": "PER-00246",
       "agency_a": {
         "client_ids": [
-          "C-01628"
+          "C-01584"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00111"
+          "B-C-00416"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00416",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          },
+          {
+            "client_id": "B-C-00416",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4898,15 +5983,26 @@
       "person_id": "PER-00247",
       "agency_a": {
         "client_ids": [
-          "C-01645"
+          "C-01602"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00595"
+          "B-C-00836"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00836",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4917,15 +6013,16 @@
       "person_id": "PER-00248",
       "agency_a": {
         "client_ids": [
-          "C-01650"
+          "C-01610"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00509"
+          "B-C-00703"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4936,15 +6033,16 @@
       "person_id": "PER-00249",
       "agency_a": {
         "client_ids": [
-          "C-01654"
+          "C-01628"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01265"
+          "B-C-00111"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4955,15 +6053,32 @@
       "person_id": "PER-00250",
       "agency_a": {
         "client_ids": [
-          "C-01664"
+          "C-01630"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00798"
+          "B-C-01034",
+          "B-C-01508"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-01034",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          },
+          {
+            "client_id": "B-C-01508",
+            "defect_type": "moved_household_stale_copy",
+            "fields": []
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -4972,6 +6087,123 @@
     },
     {
       "person_id": "PER-00251",
+      "agency_a": {
+        "client_ids": [
+          "C-01631"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01263"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00252",
+      "agency_a": {
+        "client_ids": [
+          "C-01645"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00458"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-00458",
+            "defect_type": "shared_household_contact",
+            "fields": [
+              "phone",
+              "email"
+            ]
+          }
+        ],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00253",
+      "agency_a": {
+        "client_ids": [
+          "C-01650"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00509"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00254",
+      "agency_a": {
+        "client_ids": [
+          "C-01654"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00543"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00255",
+      "agency_a": {
+        "client_ids": [
+          "C-01664"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00755"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-00755",
+            "defect_type": "maiden_name",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00256",
       "agency_a": {
         "client_ids": [
           "C-01666"
@@ -4990,102 +6222,8 @@
         "client_ids": [
           "B-C-00475"
         ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00252",
-      "agency_a": {
-        "client_ids": [
-          "C-01674"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00963"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00253",
-      "agency_a": {
-        "client_ids": [
-          "C-01675"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00572"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00254",
-      "agency_a": {
-        "client_ids": [
-          "C-01706"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00157"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00255",
-      "agency_a": {
-        "client_ids": [
-          "C-01719"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00064"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00256",
-      "agency_a": {
-        "client_ids": [
-          "C-01723"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00535"
-        ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -5096,15 +6234,24 @@
       "person_id": "PER-00257",
       "agency_a": {
         "client_ids": [
-          "C-01727"
+          "C-01674"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00938"
+          "B-C-00550"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00550",
+            "defect_type": "hyphenated_surname",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -5115,15 +6262,16 @@
       "person_id": "PER-00258",
       "agency_a": {
         "client_ids": [
-          "C-01732"
+          "C-01706"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00184"
+          "B-C-00039"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 3
       },
       "contact_differs": [
         "phone",
@@ -5134,15 +6282,16 @@
       "person_id": "PER-00259",
       "agency_a": {
         "client_ids": [
-          "C-01736"
+          "C-01719"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00337"
+          "B-C-00087"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 3
       },
       "contact_differs": [
         "phone",
@@ -5153,15 +6302,16 @@
       "person_id": "PER-00260",
       "agency_a": {
         "client_ids": [
-          "C-01737"
+          "C-01723"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00393"
+          "B-C-00346"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -5172,15 +6322,16 @@
       "person_id": "PER-00261",
       "agency_a": {
         "client_ids": [
-          "C-01741"
+          "C-01727"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00472"
+          "B-C-00750"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -5191,15 +6342,16 @@
       "person_id": "PER-00262",
       "agency_a": {
         "client_ids": [
-          "C-01745"
+          "C-01732"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00229"
+          "B-C-00031"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -5210,15 +6362,16 @@
       "person_id": "PER-00263",
       "agency_a": {
         "client_ids": [
-          "C-01747"
+          "C-01736"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00827"
+          "B-C-00428"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -5229,15 +6382,25 @@
       "person_id": "PER-00264",
       "agency_a": {
         "client_ids": [
-          "C-01751"
+          "C-01737"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01206"
+          "B-C-00399"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00399",
+            "defect_type": "shared_household_contact",
+            "fields": [
+              "phone",
+              "email"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -5246,6 +6409,131 @@
     },
     {
       "person_id": "PER-00265",
+      "agency_a": {
+        "client_ids": [
+          "C-01741"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00211"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-00211",
+            "defect_type": "shared_household_contact",
+            "fields": [
+              "phone",
+              "email"
+            ]
+          }
+        ],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00266",
+      "agency_a": {
+        "client_ids": [
+          "C-01745"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00229"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00267",
+      "agency_a": {
+        "client_ids": [
+          "C-01746"
+        ],
+        "labels": [
+          {
+            "client_id": "C-01746",
+            "defect_type": "name_typo",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01115"
+        ],
+        "labels": [],
+        "household_size": 1
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00268",
+      "agency_a": {
+        "client_ids": [
+          "C-01749"
+        ],
+        "labels": [
+          {
+            "client_id": "C-01749",
+            "defect_type": "nickname",
+            "fields": [
+              "first_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00633"
+        ],
+        "labels": [],
+        "household_size": 4
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00269",
+      "agency_a": {
+        "client_ids": [
+          "C-01751"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00721"
+        ],
+        "labels": [],
+        "household_size": 3
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00270",
       "agency_a": {
         "client_ids": [
           "C-01754"
@@ -5264,7 +6552,8 @@
         "client_ids": [
           "B-C-01371"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -5272,45 +6561,7 @@
       ]
     },
     {
-      "person_id": "PER-00266",
-      "agency_a": {
-        "client_ids": [
-          "C-01767"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-01016"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00267",
-      "agency_a": {
-        "client_ids": [
-          "C-01772"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00971"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00268",
+      "person_id": "PER-00271",
       "agency_a": {
         "client_ids": [
           "C-01773"
@@ -5319,9 +6570,10 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00132"
+          "B-C-00483"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -5329,7 +6581,7 @@
       ]
     },
     {
-      "person_id": "PER-00269",
+      "person_id": "PER-00272",
       "agency_a": {
         "client_ids": [
           "C-01774"
@@ -5340,7 +6592,8 @@
         "client_ids": [
           "B-C-00102"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -5348,7 +6601,38 @@
       ]
     },
     {
-      "person_id": "PER-00270",
+      "person_id": "PER-00273",
+      "agency_a": {
+        "client_ids": [
+          "C-01795"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00599"
+        ],
+        "labels": [
+          {
+            "client_id": "B-C-00599",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          },
+          {
+            "client_id": "B-C-00599",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          }
+        ],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00274",
       "agency_a": {
         "client_ids": [
           "C-01800"
@@ -5357,9 +6641,10 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01276"
+          "B-C-00439"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -5367,7 +6652,7 @@
       ]
     },
     {
-      "person_id": "PER-00271",
+      "person_id": "PER-00275",
       "agency_a": {
         "client_ids": [
           "C-01809"
@@ -5384,85 +6669,10 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00750"
+          "B-C-00099"
         ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00272",
-      "agency_a": {
-        "client_ids": [
-          "C-01826"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00430"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00273",
-      "agency_a": {
-        "client_ids": [
-          "C-01830"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00101"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00274",
-      "agency_a": {
-        "client_ids": [
-          "C-01831"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00047"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00275",
-      "agency_a": {
-        "client_ids": [
-          "C-01833"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-01007"
-        ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -5473,15 +6683,16 @@
       "person_id": "PER-00276",
       "agency_a": {
         "client_ids": [
-          "C-01834"
+          "C-01826"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01214"
+          "B-C-00071"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -5492,15 +6703,16 @@
       "person_id": "PER-00277",
       "agency_a": {
         "client_ids": [
-          "C-01847"
+          "C-01830"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00103"
+          "B-C-00010"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -5511,15 +6723,16 @@
       "person_id": "PER-00278",
       "agency_a": {
         "client_ids": [
-          "C-01851"
+          "C-01831"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00856"
+          "B-C-00047"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -5530,15 +6743,16 @@
       "person_id": "PER-00279",
       "agency_a": {
         "client_ids": [
-          "C-01862"
+          "C-01833"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00682"
+          "B-C-01007"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -5549,15 +6763,16 @@
       "person_id": "PER-00280",
       "agency_a": {
         "client_ids": [
-          "C-01888"
+          "C-01834"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01196"
+          "B-C-00051"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -5568,15 +6783,16 @@
       "person_id": "PER-00281",
       "agency_a": {
         "client_ids": [
-          "C-01889"
+          "C-01847"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00007"
+          "B-C-00103"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -5587,15 +6803,24 @@
       "person_id": "PER-00282",
       "agency_a": {
         "client_ids": [
-          "C-01892"
+          "C-01849"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00521"
+          "B-C-01196"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-01196",
+            "defect_type": "maiden_name",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -5606,15 +6831,16 @@
       "person_id": "PER-00283",
       "agency_a": {
         "client_ids": [
-          "C-01898"
+          "C-01862"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00028"
+          "B-C-00122"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -5625,15 +6851,24 @@
       "person_id": "PER-00284",
       "agency_a": {
         "client_ids": [
-          "C-01899"
+          "C-01870"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00042"
+          "B-C-00128"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00128",
+            "defect_type": "maiden_name",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -5644,15 +6879,16 @@
       "person_id": "PER-00285",
       "agency_a": {
         "client_ids": [
-          "C-01902"
+          "C-01888"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00015"
+          "B-C-00587"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -5663,23 +6899,16 @@
       "person_id": "PER-00286",
       "agency_a": {
         "client_ids": [
-          "C-01908"
+          "C-01889"
         ],
-        "labels": [
-          {
-            "client_id": "C-01908",
-            "defect_type": "nickname",
-            "fields": [
-              "first_name"
-            ]
-          }
-        ]
+        "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00950"
+          "B-C-00007"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -5690,15 +6919,25 @@
       "person_id": "PER-00287",
       "agency_a": {
         "client_ids": [
-          "C-01910"
+          "C-01898"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00939"
+          "B-C-00037"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00037",
+            "defect_type": "shared_household_contact",
+            "fields": [
+              "phone",
+              "email"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -5709,23 +6948,16 @@
       "person_id": "PER-00288",
       "agency_a": {
         "client_ids": [
-          "C-01912"
+          "C-01899"
         ],
-        "labels": [
-          {
-            "client_id": "C-01912",
-            "defect_type": "dob_transposition",
-            "fields": [
-              "dob"
-            ]
-          }
-        ]
+        "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00072"
+          "B-C-00178"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -5734,6 +6966,46 @@
     },
     {
       "person_id": "PER-00289",
+      "agency_a": {
+        "client_ids": [
+          "C-01902"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00015"
+        ],
+        "labels": [],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00290",
+      "agency_a": {
+        "client_ids": [
+          "C-01910"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00930"
+        ],
+        "labels": [],
+        "household_size": 2
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00291",
       "agency_a": {
         "client_ids": [
           "C-01915",
@@ -5753,45 +7025,8 @@
         "client_ids": [
           "B-C-00432"
         ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00290",
-      "agency_a": {
-        "client_ids": [
-          "C-01925"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00785"
-        ],
-        "labels": []
-      },
-      "contact_differs": [
-        "phone",
-        "email"
-      ]
-    },
-    {
-      "person_id": "PER-00291",
-      "agency_a": {
-        "client_ids": [
-          "C-01926"
-        ],
-        "labels": []
-      },
-      "agency_b": {
-        "client_ids": [
-          "B-C-00795"
-        ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -5802,15 +7037,24 @@
       "person_id": "PER-00292",
       "agency_a": {
         "client_ids": [
-          "C-01929"
+          "C-01940"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00786"
+          "B-C-00098"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00098",
+            "defect_type": "maiden_name",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -5821,15 +7065,24 @@
       "person_id": "PER-00293",
       "agency_a": {
         "client_ids": [
-          "C-01940"
+          "C-01945"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "C-01945",
+            "defect_type": "missing_mbi",
+            "fields": [
+              "mbi"
+            ]
+          }
+        ]
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00098"
+          "B-C-01206"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -5846,9 +7099,10 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01484"
+          "B-C-00861"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -5865,9 +7119,20 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00489"
+          "B-C-00120"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00120",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -5884,9 +7149,10 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00683"
+          "B-C-00236"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 3
       },
       "contact_differs": [
         "phone",
@@ -5903,9 +7169,10 @@
       },
       "agency_b": {
         "client_ids": [
-          "B-C-01278"
+          "B-C-00536"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -5916,15 +7183,16 @@
       "person_id": "PER-00298",
       "agency_a": {
         "client_ids": [
-          "C-01982"
+          "C-01981"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00022"
+          "B-C-01105"
         ],
-        "labels": []
+        "labels": [],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
@@ -5935,15 +7203,27 @@
       "person_id": "PER-00299",
       "agency_a": {
         "client_ids": [
-          "C-01990"
+          "C-01982"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00435"
+          "B-C-00022"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00022",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          },
+          {
+            "client_id": "B-C-00022",
+            "defect_type": "same_policy_two_member_ids",
+            "fields": []
+          }
+        ],
+        "household_size": 1
       },
       "contact_differs": [
         "phone",
@@ -5954,15 +7234,26 @@
       "person_id": "PER-00300",
       "agency_a": {
         "client_ids": [
-          "C-01999"
+          "C-01990"
         ],
         "labels": []
       },
       "agency_b": {
         "client_ids": [
-          "B-C-00929"
+          "B-C-00441"
         ],
-        "labels": []
+        "labels": [
+          {
+            "client_id": "B-C-00441",
+            "defect_type": "moved_household",
+            "fields": [
+              "address_line1",
+              "city",
+              "zip"
+            ]
+          }
+        ],
+        "household_size": 2
       },
       "contact_differs": [
         "phone",
