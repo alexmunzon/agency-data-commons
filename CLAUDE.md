@@ -8,6 +8,8 @@ and plan-diff: `agency_schema` (canonical models, lineage, exceptions, rule regi
 ## Commands
 - `npm run verify`   ruff, ruff format check, mypy strict, pytest. Must pass before any commit.
 - `uv run synth generate --seed 42 --clients 2000 --out /tmp/agency-a`   the seed-42 world.
+- `uv run synth generate-multi --seed 42 --no-agency-a --out fixtures/multi-a-b`   agency B and the
+  cross-agency truth (docs/c1-notes.md).
 - `uv run pytest -q tests/unit/test_generator_fidelity.py`   byte check against agency-intake-kit.
 
 ## Invariants (never break these)

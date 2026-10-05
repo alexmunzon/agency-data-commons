@@ -102,3 +102,10 @@ Planted on purpose (SPEC examples 3 and 4): P-00417 has no RTS for Harborline, T
 PII sentences use only fake specifics: 555 phone numbers, example.com emails, made-up last
 names like Testperson, and short zero-led numbers that cannot look like an SSN. A few harmless
 notes carry accented letters (español, café) so the latin-1 encoding is real.
+
+## Two agencies (commons C1)
+
+`synth generate-multi --seed 42 --agencies 2 --overlap 300` writes agency A (exactly the seed-42
+world above), agency B (seed 43, 1,500 clients, clean, ids prefixed `B-`), and
+`cross_agency_truth.json`, which lists every person both agencies hold with their client ids in
+each. `fixtures/multi-a-b/` holds agency B and that file. How people are chosen and why: docs/c1-notes.md.

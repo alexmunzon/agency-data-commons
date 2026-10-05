@@ -1,0 +1,5973 @@
+{
+  "agencies": {
+    "agency-a": {
+      "seed": 42
+    },
+    "agency-b": {
+      "seed": 43
+    }
+  },
+  "counts": {
+    "shared_people": 300,
+    "agency_a_client_ids": 2040,
+    "agency_b_client_ids": 1500,
+    "agency_b_people": 1500,
+    "distinct_people": 3200
+  },
+  "people": [
+    {
+      "person_id": "PER-00001",
+      "agency_a": {
+        "client_ids": [
+          "C-00001"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01066"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00002",
+      "agency_a": {
+        "client_ids": [
+          "C-00005"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01385"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00003",
+      "agency_a": {
+        "client_ids": [
+          "C-00007"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01093"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00004",
+      "agency_a": {
+        "client_ids": [
+          "C-00022"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00407"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00005",
+      "agency_a": {
+        "client_ids": [
+          "C-00025"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00031"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00006",
+      "agency_a": {
+        "client_ids": [
+          "C-00044"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00137"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00007",
+      "agency_a": {
+        "client_ids": [
+          "C-00058"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00119"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00008",
+      "agency_a": {
+        "client_ids": [
+          "C-00066"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00622"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00009",
+      "agency_a": {
+        "client_ids": [
+          "C-00068"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01115"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00010",
+      "agency_a": {
+        "client_ids": [
+          "C-00070"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00065"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00011",
+      "agency_a": {
+        "client_ids": [
+          "C-00077"
+        ],
+        "labels": [
+          {
+            "client_id": "C-00077",
+            "defect_type": "name_typo",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00348"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00012",
+      "agency_a": {
+        "client_ids": [
+          "C-00080"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00606"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00013",
+      "agency_a": {
+        "client_ids": [
+          "C-00083"
+        ],
+        "labels": [
+          {
+            "client_id": "C-00083",
+            "defect_type": "nickname",
+            "fields": [
+              "first_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00308"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00014",
+      "agency_a": {
+        "client_ids": [
+          "C-00087"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00371"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00015",
+      "agency_a": {
+        "client_ids": [
+          "C-00093"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00538"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00016",
+      "agency_a": {
+        "client_ids": [
+          "C-00096"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00505"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00017",
+      "agency_a": {
+        "client_ids": [
+          "C-00098"
+        ],
+        "labels": [
+          {
+            "client_id": "C-00098",
+            "defect_type": "nickname",
+            "fields": [
+              "first_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00660"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00018",
+      "agency_a": {
+        "client_ids": [
+          "C-00100"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00663"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00019",
+      "agency_a": {
+        "client_ids": [
+          "C-00104"
+        ],
+        "labels": [
+          {
+            "client_id": "C-00104",
+            "defect_type": "nickname",
+            "fields": [
+              "first_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00762"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00020",
+      "agency_a": {
+        "client_ids": [
+          "C-00107"
+        ],
+        "labels": [
+          {
+            "client_id": "C-00107",
+            "defect_type": "invalid_mbi",
+            "fields": [
+              "mbi"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00257"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00021",
+      "agency_a": {
+        "client_ids": [
+          "C-00108"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00717"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00022",
+      "agency_a": {
+        "client_ids": [
+          "C-00112"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00594"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone"
+      ]
+    },
+    {
+      "person_id": "PER-00023",
+      "agency_a": {
+        "client_ids": [
+          "C-00128"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00764"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00024",
+      "agency_a": {
+        "client_ids": [
+          "C-00134"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01473"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00025",
+      "agency_a": {
+        "client_ids": [
+          "C-00135"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01078"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00026",
+      "agency_a": {
+        "client_ids": [
+          "C-00136"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01363"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00027",
+      "agency_a": {
+        "client_ids": [
+          "C-00144"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01222"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00028",
+      "agency_a": {
+        "client_ids": [
+          "C-00153"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01039"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00029",
+      "agency_a": {
+        "client_ids": [
+          "C-00163"
+        ],
+        "labels": [
+          {
+            "client_id": "C-00163",
+            "defect_type": "nickname",
+            "fields": [
+              "first_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00916"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00030",
+      "agency_a": {
+        "client_ids": [
+          "C-00164"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00219"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00031",
+      "agency_a": {
+        "client_ids": [
+          "C-00181"
+        ],
+        "labels": [
+          {
+            "client_id": "C-00181",
+            "defect_type": "nickname",
+            "fields": [
+              "first_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00820"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone"
+      ]
+    },
+    {
+      "person_id": "PER-00032",
+      "agency_a": {
+        "client_ids": [
+          "C-00191"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00860"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00033",
+      "agency_a": {
+        "client_ids": [
+          "C-00206"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00108"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00034",
+      "agency_a": {
+        "client_ids": [
+          "C-00215"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01025"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00035",
+      "agency_a": {
+        "client_ids": [
+          "C-00240"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00154"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00036",
+      "agency_a": {
+        "client_ids": [
+          "C-00244"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01129"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00037",
+      "agency_a": {
+        "client_ids": [
+          "C-00250"
+        ],
+        "labels": [
+          {
+            "client_id": "C-00250",
+            "defect_type": "missing_mbi",
+            "fields": [
+              "mbi"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00062"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone"
+      ]
+    },
+    {
+      "person_id": "PER-00038",
+      "agency_a": {
+        "client_ids": [
+          "C-00252"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00258"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00039",
+      "agency_a": {
+        "client_ids": [
+          "C-00255"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00197"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00040",
+      "agency_a": {
+        "client_ids": [
+          "C-00260"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00207"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00041",
+      "agency_a": {
+        "client_ids": [
+          "C-00265"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01136"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00042",
+      "agency_a": {
+        "client_ids": [
+          "C-00272"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00780"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00043",
+      "agency_a": {
+        "client_ids": [
+          "C-00274"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01157"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00044",
+      "agency_a": {
+        "client_ids": [
+          "C-00294"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01482"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00045",
+      "agency_a": {
+        "client_ids": [
+          "C-00295"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01231"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00046",
+      "agency_a": {
+        "client_ids": [
+          "C-00300"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00805"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00047",
+      "agency_a": {
+        "client_ids": [
+          "C-00305"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00056"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00048",
+      "agency_a": {
+        "client_ids": [
+          "C-00307"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01034"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00049",
+      "agency_a": {
+        "client_ids": [
+          "C-00316"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00218"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00050",
+      "agency_a": {
+        "client_ids": [
+          "C-00324"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00029"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00051",
+      "agency_a": {
+        "client_ids": [
+          "C-00325"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00288"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00052",
+      "agency_a": {
+        "client_ids": [
+          "C-00333"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00050"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00053",
+      "agency_a": {
+        "client_ids": [
+          "C-00336"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01149"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone"
+      ]
+    },
+    {
+      "person_id": "PER-00054",
+      "agency_a": {
+        "client_ids": [
+          "C-00361"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00443"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00055",
+      "agency_a": {
+        "client_ids": [
+          "C-00368"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00658"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00056",
+      "agency_a": {
+        "client_ids": [
+          "C-00381"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00185"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00057",
+      "agency_a": {
+        "client_ids": [
+          "C-00395"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01263"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00058",
+      "agency_a": {
+        "client_ids": [
+          "C-00398"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00416"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00059",
+      "agency_a": {
+        "client_ids": [
+          "C-00404"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00926"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00060",
+      "agency_a": {
+        "client_ids": [
+          "C-00406"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00490"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00061",
+      "agency_a": {
+        "client_ids": [
+          "C-00421"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00176"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00062",
+      "agency_a": {
+        "client_ids": [
+          "C-00425"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00590"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00063",
+      "agency_a": {
+        "client_ids": [
+          "C-00427"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00848"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00064",
+      "agency_a": {
+        "client_ids": [
+          "C-00428"
+        ],
+        "labels": [
+          {
+            "client_id": "C-00428",
+            "defect_type": "name_typo",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00436"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00065",
+      "agency_a": {
+        "client_ids": [
+          "C-00434"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00503"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00066",
+      "agency_a": {
+        "client_ids": [
+          "C-00438"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00358"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00067",
+      "agency_a": {
+        "client_ids": [
+          "C-00449"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00378"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00068",
+      "agency_a": {
+        "client_ids": [
+          "C-00453"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00522"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00069",
+      "agency_a": {
+        "client_ids": [
+          "C-00457"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00010"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00070",
+      "agency_a": {
+        "client_ids": [
+          "C-00458"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00281"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00071",
+      "agency_a": {
+        "client_ids": [
+          "C-00462"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00930"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00072",
+      "agency_a": {
+        "client_ids": [
+          "C-00465"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01110"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00073",
+      "agency_a": {
+        "client_ids": [
+          "C-00473"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00005"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00074",
+      "agency_a": {
+        "client_ids": [
+          "C-00479"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00473"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00075",
+      "agency_a": {
+        "client_ids": [
+          "C-00483"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00223"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00076",
+      "agency_a": {
+        "client_ids": [
+          "C-00485"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00345"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00077",
+      "agency_a": {
+        "client_ids": [
+          "C-00486"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00044"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00078",
+      "agency_a": {
+        "client_ids": [
+          "C-00492"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00292"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00079",
+      "agency_a": {
+        "client_ids": [
+          "C-00496"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00347"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00080",
+      "agency_a": {
+        "client_ids": [
+          "C-00499"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00147"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00081",
+      "agency_a": {
+        "client_ids": [
+          "C-00512"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00156"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00082",
+      "agency_a": {
+        "client_ids": [
+          "C-00513"
+        ],
+        "labels": [
+          {
+            "client_id": "C-00513",
+            "defect_type": "missing_mbi",
+            "fields": [
+              "mbi"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00801"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00083",
+      "agency_a": {
+        "client_ids": [
+          "C-00514",
+          "C-02016"
+        ],
+        "labels": [
+          {
+            "client_id": "C-02016",
+            "defect_type": "near_duplicate_client",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00955"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00084",
+      "agency_a": {
+        "client_ids": [
+          "C-00520"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00904"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00085",
+      "agency_a": {
+        "client_ids": [
+          "C-00525"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00162"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00086",
+      "agency_a": {
+        "client_ids": [
+          "C-00531"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00692"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00087",
+      "agency_a": {
+        "client_ids": [
+          "C-00546"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00709"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone"
+      ]
+    },
+    {
+      "person_id": "PER-00088",
+      "agency_a": {
+        "client_ids": [
+          "C-00553"
+        ],
+        "labels": [
+          {
+            "client_id": "C-00553",
+            "defect_type": "nickname",
+            "fields": [
+              "first_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01313"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00089",
+      "agency_a": {
+        "client_ids": [
+          "C-00554"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01282"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00090",
+      "agency_a": {
+        "client_ids": [
+          "C-00557"
+        ],
+        "labels": [
+          {
+            "client_id": "C-00557",
+            "defect_type": "nickname",
+            "fields": [
+              "first_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00861"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00091",
+      "agency_a": {
+        "client_ids": [
+          "C-00573"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00149"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00092",
+      "agency_a": {
+        "client_ids": [
+          "C-00581"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01360"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00093",
+      "agency_a": {
+        "client_ids": [
+          "C-00586"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01230"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00094",
+      "agency_a": {
+        "client_ids": [
+          "C-00599"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00788"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00095",
+      "agency_a": {
+        "client_ids": [
+          "C-00600"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00231"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00096",
+      "agency_a": {
+        "client_ids": [
+          "C-00607"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01015"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00097",
+      "agency_a": {
+        "client_ids": [
+          "C-00609"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00049"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00098",
+      "agency_a": {
+        "client_ids": [
+          "C-00610"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01011"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00099",
+      "agency_a": {
+        "client_ids": [
+          "C-00611"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00104"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00100",
+      "agency_a": {
+        "client_ids": [
+          "C-00612"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00581"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00101",
+      "agency_a": {
+        "client_ids": [
+          "C-00613"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00766"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00102",
+      "agency_a": {
+        "client_ids": [
+          "C-00622",
+          "C-02019"
+        ],
+        "labels": [
+          {
+            "client_id": "C-02019",
+            "defect_type": "near_duplicate_client",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01346"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00103",
+      "agency_a": {
+        "client_ids": [
+          "C-00625"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00164"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00104",
+      "agency_a": {
+        "client_ids": [
+          "C-00645"
+        ],
+        "labels": [
+          {
+            "client_id": "C-00645",
+            "defect_type": "name_typo",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00398"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00105",
+      "agency_a": {
+        "client_ids": [
+          "C-00647"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00882"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone"
+      ]
+    },
+    {
+      "person_id": "PER-00106",
+      "agency_a": {
+        "client_ids": [
+          "C-00648"
+        ],
+        "labels": [
+          {
+            "client_id": "C-00648",
+            "defect_type": "missing_mbi",
+            "fields": [
+              "mbi"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00030"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00107",
+      "agency_a": {
+        "client_ids": [
+          "C-00662"
+        ],
+        "labels": [
+          {
+            "client_id": "C-00662",
+            "defect_type": "dob_month_day_swap",
+            "fields": [
+              "dob"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00146"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00108",
+      "agency_a": {
+        "client_ids": [
+          "C-00663"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01452"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00109",
+      "agency_a": {
+        "client_ids": [
+          "C-00678"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00612"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00110",
+      "agency_a": {
+        "client_ids": [
+          "C-00680"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00117"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00111",
+      "agency_a": {
+        "client_ids": [
+          "C-00690"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00341"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00112",
+      "agency_a": {
+        "client_ids": [
+          "C-00692"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00409"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00113",
+      "agency_a": {
+        "client_ids": [
+          "C-00702"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00699"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00114",
+      "agency_a": {
+        "client_ids": [
+          "C-00703"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00319"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00115",
+      "agency_a": {
+        "client_ids": [
+          "C-00718"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00792"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00116",
+      "agency_a": {
+        "client_ids": [
+          "C-00740"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00055"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00117",
+      "agency_a": {
+        "client_ids": [
+          "C-00762"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00868"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00118",
+      "agency_a": {
+        "client_ids": [
+          "C-00773"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00499"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00119",
+      "agency_a": {
+        "client_ids": [
+          "C-00776"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00353"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00120",
+      "agency_a": {
+        "client_ids": [
+          "C-00798"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00256"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00121",
+      "agency_a": {
+        "client_ids": [
+          "C-00805"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00587"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00122",
+      "agency_a": {
+        "client_ids": [
+          "C-00812"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00255"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00123",
+      "agency_a": {
+        "client_ids": [
+          "C-00834"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00771"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00124",
+      "agency_a": {
+        "client_ids": [
+          "C-00843"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00232"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone"
+      ]
+    },
+    {
+      "person_id": "PER-00125",
+      "agency_a": {
+        "client_ids": [
+          "C-00845"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00543"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00126",
+      "agency_a": {
+        "client_ids": [
+          "C-00849"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00457"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00127",
+      "agency_a": {
+        "client_ids": [
+          "C-00860"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00576"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00128",
+      "agency_a": {
+        "client_ids": [
+          "C-00865"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00875"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone"
+      ]
+    },
+    {
+      "person_id": "PER-00129",
+      "agency_a": {
+        "client_ids": [
+          "C-00867"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01283"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00130",
+      "agency_a": {
+        "client_ids": [
+          "C-00868"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00408"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00131",
+      "agency_a": {
+        "client_ids": [
+          "C-00877"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00659"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00132",
+      "agency_a": {
+        "client_ids": [
+          "C-00878"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00695"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00133",
+      "agency_a": {
+        "client_ids": [
+          "C-00899"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00171"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00134",
+      "agency_a": {
+        "client_ids": [
+          "C-00902"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01024"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00135",
+      "agency_a": {
+        "client_ids": [
+          "C-00903"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00972"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00136",
+      "agency_a": {
+        "client_ids": [
+          "C-00914"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01022"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00137",
+      "agency_a": {
+        "client_ids": [
+          "C-00919"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00054"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00138",
+      "agency_a": {
+        "client_ids": [
+          "C-00923"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00239"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone"
+      ]
+    },
+    {
+      "person_id": "PER-00139",
+      "agency_a": {
+        "client_ids": [
+          "C-00939"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00158"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00140",
+      "agency_a": {
+        "client_ids": [
+          "C-00942"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00344"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00141",
+      "agency_a": {
+        "client_ids": [
+          "C-00949"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00045"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00142",
+      "agency_a": {
+        "client_ids": [
+          "C-00956"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00263"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00143",
+      "agency_a": {
+        "client_ids": [
+          "C-00961"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00720"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00144",
+      "agency_a": {
+        "client_ids": [
+          "C-00965"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00831"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00145",
+      "agency_a": {
+        "client_ids": [
+          "C-00976"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01033"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00146",
+      "agency_a": {
+        "client_ids": [
+          "C-00983"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00043"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00147",
+      "agency_a": {
+        "client_ids": [
+          "C-00987"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00116"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00148",
+      "agency_a": {
+        "client_ids": [
+          "C-00993"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00808"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00149",
+      "agency_a": {
+        "client_ids": [
+          "C-00996"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00018"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00150",
+      "agency_a": {
+        "client_ids": [
+          "C-00999"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01084"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00151",
+      "agency_a": {
+        "client_ids": [
+          "C-01003"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00781"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00152",
+      "agency_a": {
+        "client_ids": [
+          "C-01015"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00280"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00153",
+      "agency_a": {
+        "client_ids": [
+          "C-01018"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01478"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00154",
+      "agency_a": {
+        "client_ids": [
+          "C-01020"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00593"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00155",
+      "agency_a": {
+        "client_ids": [
+          "C-01036"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00328"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00156",
+      "agency_a": {
+        "client_ids": [
+          "C-01068"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00196"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00157",
+      "agency_a": {
+        "client_ids": [
+          "C-01069"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00598"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00158",
+      "agency_a": {
+        "client_ids": [
+          "C-01074"
+        ],
+        "labels": [
+          {
+            "client_id": "C-01074",
+            "defect_type": "invalid_mbi",
+            "fields": [
+              "mbi"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00127"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00159",
+      "agency_a": {
+        "client_ids": [
+          "C-01076"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00842"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone"
+      ]
+    },
+    {
+      "person_id": "PER-00160",
+      "agency_a": {
+        "client_ids": [
+          "C-01077"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00603"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00161",
+      "agency_a": {
+        "client_ids": [
+          "C-01079"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00340"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00162",
+      "agency_a": {
+        "client_ids": [
+          "C-01090"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00556"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00163",
+      "agency_a": {
+        "client_ids": [
+          "C-01128"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01019"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00164",
+      "agency_a": {
+        "client_ids": [
+          "C-01133"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00512"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00165",
+      "agency_a": {
+        "client_ids": [
+          "C-01152"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00313"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00166",
+      "agency_a": {
+        "client_ids": [
+          "C-01157"
+        ],
+        "labels": [
+          {
+            "client_id": "C-01157",
+            "defect_type": "nickname",
+            "fields": [
+              "first_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00201"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00167",
+      "agency_a": {
+        "client_ids": [
+          "C-01163"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01351"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00168",
+      "agency_a": {
+        "client_ids": [
+          "C-01173"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01466"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00169",
+      "agency_a": {
+        "client_ids": [
+          "C-01176"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00949"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00170",
+      "agency_a": {
+        "client_ids": [
+          "C-01181"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00674"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00171",
+      "agency_a": {
+        "client_ids": [
+          "C-01186"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01148"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00172",
+      "agency_a": {
+        "client_ids": [
+          "C-01187"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01109"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00173",
+      "agency_a": {
+        "client_ids": [
+          "C-01188"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01471"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00174",
+      "agency_a": {
+        "client_ids": [
+          "C-01192"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01127"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00175",
+      "agency_a": {
+        "client_ids": [
+          "C-01195"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00508"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00176",
+      "agency_a": {
+        "client_ids": [
+          "C-01200"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01158"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00177",
+      "agency_a": {
+        "client_ids": [
+          "C-01202"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00836"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00178",
+      "agency_a": {
+        "client_ids": [
+          "C-01203"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00857"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00179",
+      "agency_a": {
+        "client_ids": [
+          "C-01214"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00491"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00180",
+      "agency_a": {
+        "client_ids": [
+          "C-01226"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00917"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00181",
+      "agency_a": {
+        "client_ids": [
+          "C-01231"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00439"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00182",
+      "agency_a": {
+        "client_ids": [
+          "C-01232"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00880"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00183",
+      "agency_a": {
+        "client_ids": [
+          "C-01233"
+        ],
+        "labels": [
+          {
+            "client_id": "C-01233",
+            "defect_type": "nickname",
+            "fields": [
+              "first_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01037"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00184",
+      "agency_a": {
+        "client_ids": [
+          "C-01236"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00068"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00185",
+      "agency_a": {
+        "client_ids": [
+          "C-01251"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01326"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00186",
+      "agency_a": {
+        "client_ids": [
+          "C-01255"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00471"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone"
+      ]
+    },
+    {
+      "person_id": "PER-00187",
+      "agency_a": {
+        "client_ids": [
+          "C-01261"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00502"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00188",
+      "agency_a": {
+        "client_ids": [
+          "C-01263"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00264"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00189",
+      "agency_a": {
+        "client_ids": [
+          "C-01264"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01131"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00190",
+      "agency_a": {
+        "client_ids": [
+          "C-01266"
+        ],
+        "labels": [
+          {
+            "client_id": "C-01266",
+            "defect_type": "dob_month_day_swap",
+            "fields": [
+              "dob"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01419"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00191",
+      "agency_a": {
+        "client_ids": [
+          "C-01268"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01087"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00192",
+      "agency_a": {
+        "client_ids": [
+          "C-01269"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00563"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00193",
+      "agency_a": {
+        "client_ids": [
+          "C-01276"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00421"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00194",
+      "agency_a": {
+        "client_ids": [
+          "C-01301"
+        ],
+        "labels": [
+          {
+            "client_id": "C-01301",
+            "defect_type": "nickname",
+            "fields": [
+              "first_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00422"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00195",
+      "agency_a": {
+        "client_ids": [
+          "C-01303"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01302"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone"
+      ]
+    },
+    {
+      "person_id": "PER-00196",
+      "agency_a": {
+        "client_ids": [
+          "C-01318"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00175"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00197",
+      "agency_a": {
+        "client_ids": [
+          "C-01327"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00359"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00198",
+      "agency_a": {
+        "client_ids": [
+          "C-01328"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00131"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00199",
+      "agency_a": {
+        "client_ids": [
+          "C-01342"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00452"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00200",
+      "agency_a": {
+        "client_ids": [
+          "C-01344"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00048"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00201",
+      "agency_a": {
+        "client_ids": [
+          "C-01350"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00287"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00202",
+      "agency_a": {
+        "client_ids": [
+          "C-01365"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00849"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00203",
+      "agency_a": {
+        "client_ids": [
+          "C-01375"
+        ],
+        "labels": [
+          {
+            "client_id": "C-01375",
+            "defect_type": "zip_state_mismatch",
+            "fields": [
+              "zip"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00174"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00204",
+      "agency_a": {
+        "client_ids": [
+          "C-01379"
+        ],
+        "labels": [
+          {
+            "client_id": "C-01379",
+            "defect_type": "invalid_mbi",
+            "fields": [
+              "mbi"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00746"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00205",
+      "agency_a": {
+        "client_ids": [
+          "C-01381"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00703"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00206",
+      "agency_a": {
+        "client_ids": [
+          "C-01385"
+        ],
+        "labels": [
+          {
+            "client_id": "C-01385",
+            "defect_type": "nickname",
+            "fields": [
+              "first_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00253"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00207",
+      "agency_a": {
+        "client_ids": [
+          "C-01404"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01187"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00208",
+      "agency_a": {
+        "client_ids": [
+          "C-01406"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00217"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00209",
+      "agency_a": {
+        "client_ids": [
+          "C-01409"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00071"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00210",
+      "agency_a": {
+        "client_ids": [
+          "C-01417"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00011"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00211",
+      "agency_a": {
+        "client_ids": [
+          "C-01425"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00206"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00212",
+      "agency_a": {
+        "client_ids": [
+          "C-01426"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00190"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00213",
+      "agency_a": {
+        "client_ids": [
+          "C-01436"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00153"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00214",
+      "agency_a": {
+        "client_ids": [
+          "C-01439"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00571"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00215",
+      "agency_a": {
+        "client_ids": [
+          "C-01450"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00233"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00216",
+      "agency_a": {
+        "client_ids": [
+          "C-01454"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00757"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00217",
+      "agency_a": {
+        "client_ids": [
+          "C-01460"
+        ],
+        "labels": [
+          {
+            "client_id": "C-01460",
+            "defect_type": "missing_mbi",
+            "fields": [
+              "mbi"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01239"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00218",
+      "agency_a": {
+        "client_ids": [
+          "C-01461"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00198"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00219",
+      "agency_a": {
+        "client_ids": [
+          "C-01465"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00355"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00220",
+      "agency_a": {
+        "client_ids": [
+          "C-01468"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00063"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00221",
+      "agency_a": {
+        "client_ids": [
+          "C-01472"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00215"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00222",
+      "agency_a": {
+        "client_ids": [
+          "C-01474"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00053"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00223",
+      "agency_a": {
+        "client_ids": [
+          "C-01477"
+        ],
+        "labels": [
+          {
+            "client_id": "C-01477",
+            "defect_type": "name_typo",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00442"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00224",
+      "agency_a": {
+        "client_ids": [
+          "C-01480"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00282"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00225",
+      "agency_a": {
+        "client_ids": [
+          "C-01482"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00694"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00226",
+      "agency_a": {
+        "client_ids": [
+          "C-01485"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00122"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00227",
+      "agency_a": {
+        "client_ids": [
+          "C-01496"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00322"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00228",
+      "agency_a": {
+        "client_ids": [
+          "C-01503"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00346"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00229",
+      "agency_a": {
+        "client_ids": [
+          "C-01506"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00673"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00230",
+      "agency_a": {
+        "client_ids": [
+          "C-01508"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00360"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00231",
+      "agency_a": {
+        "client_ids": [
+          "C-01510"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00014"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00232",
+      "agency_a": {
+        "client_ids": [
+          "C-01535"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00093"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00233",
+      "agency_a": {
+        "client_ids": [
+          "C-01540"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00575"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00234",
+      "agency_a": {
+        "client_ids": [
+          "C-01548"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00619"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00235",
+      "agency_a": {
+        "client_ids": [
+          "C-01560"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00770"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone"
+      ]
+    },
+    {
+      "person_id": "PER-00236",
+      "agency_a": {
+        "client_ids": [
+          "C-01562"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00559"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00237",
+      "agency_a": {
+        "client_ids": [
+          "C-01563"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00194"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00238",
+      "agency_a": {
+        "client_ids": [
+          "C-01569"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00431"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00239",
+      "agency_a": {
+        "client_ids": [
+          "C-01573"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00733"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00240",
+      "agency_a": {
+        "client_ids": [
+          "C-01574"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01140"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00241",
+      "agency_a": {
+        "client_ids": [
+          "C-01576"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00143"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00242",
+      "agency_a": {
+        "client_ids": [
+          "C-01584"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01105"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00243",
+      "agency_a": {
+        "client_ids": [
+          "C-01602"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00845"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00244",
+      "agency_a": {
+        "client_ids": [
+          "C-01609"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00977"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00245",
+      "agency_a": {
+        "client_ids": [
+          "C-01610"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00706"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00246",
+      "agency_a": {
+        "client_ids": [
+          "C-01628"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00111"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00247",
+      "agency_a": {
+        "client_ids": [
+          "C-01645"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00595"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00248",
+      "agency_a": {
+        "client_ids": [
+          "C-01650"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00509"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00249",
+      "agency_a": {
+        "client_ids": [
+          "C-01654"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01265"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00250",
+      "agency_a": {
+        "client_ids": [
+          "C-01664"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00798"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00251",
+      "agency_a": {
+        "client_ids": [
+          "C-01666"
+        ],
+        "labels": [
+          {
+            "client_id": "C-01666",
+            "defect_type": "nickname",
+            "fields": [
+              "first_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00475"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00252",
+      "agency_a": {
+        "client_ids": [
+          "C-01674"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00963"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00253",
+      "agency_a": {
+        "client_ids": [
+          "C-01675"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00572"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00254",
+      "agency_a": {
+        "client_ids": [
+          "C-01706"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00157"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00255",
+      "agency_a": {
+        "client_ids": [
+          "C-01719"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00064"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00256",
+      "agency_a": {
+        "client_ids": [
+          "C-01723"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00535"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00257",
+      "agency_a": {
+        "client_ids": [
+          "C-01727"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00938"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00258",
+      "agency_a": {
+        "client_ids": [
+          "C-01732"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00184"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00259",
+      "agency_a": {
+        "client_ids": [
+          "C-01736"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00337"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00260",
+      "agency_a": {
+        "client_ids": [
+          "C-01737"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00393"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00261",
+      "agency_a": {
+        "client_ids": [
+          "C-01741"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00472"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00262",
+      "agency_a": {
+        "client_ids": [
+          "C-01745"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00229"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00263",
+      "agency_a": {
+        "client_ids": [
+          "C-01747"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00827"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00264",
+      "agency_a": {
+        "client_ids": [
+          "C-01751"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01206"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00265",
+      "agency_a": {
+        "client_ids": [
+          "C-01754"
+        ],
+        "labels": [
+          {
+            "client_id": "C-01754",
+            "defect_type": "missing_mbi",
+            "fields": [
+              "mbi"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01371"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00266",
+      "agency_a": {
+        "client_ids": [
+          "C-01767"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01016"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00267",
+      "agency_a": {
+        "client_ids": [
+          "C-01772"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00971"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00268",
+      "agency_a": {
+        "client_ids": [
+          "C-01773"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00132"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00269",
+      "agency_a": {
+        "client_ids": [
+          "C-01774"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00102"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00270",
+      "agency_a": {
+        "client_ids": [
+          "C-01800"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01276"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00271",
+      "agency_a": {
+        "client_ids": [
+          "C-01809"
+        ],
+        "labels": [
+          {
+            "client_id": "C-01809",
+            "defect_type": "name_typo",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00750"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00272",
+      "agency_a": {
+        "client_ids": [
+          "C-01826"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00430"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00273",
+      "agency_a": {
+        "client_ids": [
+          "C-01830"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00101"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00274",
+      "agency_a": {
+        "client_ids": [
+          "C-01831"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00047"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00275",
+      "agency_a": {
+        "client_ids": [
+          "C-01833"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01007"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00276",
+      "agency_a": {
+        "client_ids": [
+          "C-01834"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01214"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00277",
+      "agency_a": {
+        "client_ids": [
+          "C-01847"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00103"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00278",
+      "agency_a": {
+        "client_ids": [
+          "C-01851"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00856"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00279",
+      "agency_a": {
+        "client_ids": [
+          "C-01862"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00682"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00280",
+      "agency_a": {
+        "client_ids": [
+          "C-01888"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01196"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00281",
+      "agency_a": {
+        "client_ids": [
+          "C-01889"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00007"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00282",
+      "agency_a": {
+        "client_ids": [
+          "C-01892"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00521"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00283",
+      "agency_a": {
+        "client_ids": [
+          "C-01898"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00028"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00284",
+      "agency_a": {
+        "client_ids": [
+          "C-01899"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00042"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00285",
+      "agency_a": {
+        "client_ids": [
+          "C-01902"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00015"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00286",
+      "agency_a": {
+        "client_ids": [
+          "C-01908"
+        ],
+        "labels": [
+          {
+            "client_id": "C-01908",
+            "defect_type": "nickname",
+            "fields": [
+              "first_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00950"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00287",
+      "agency_a": {
+        "client_ids": [
+          "C-01910"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00939"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00288",
+      "agency_a": {
+        "client_ids": [
+          "C-01912"
+        ],
+        "labels": [
+          {
+            "client_id": "C-01912",
+            "defect_type": "dob_transposition",
+            "fields": [
+              "dob"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00072"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00289",
+      "agency_a": {
+        "client_ids": [
+          "C-01915",
+          "C-02040"
+        ],
+        "labels": [
+          {
+            "client_id": "C-02040",
+            "defect_type": "near_duplicate_client",
+            "fields": [
+              "last_name"
+            ]
+          }
+        ]
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00432"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00290",
+      "agency_a": {
+        "client_ids": [
+          "C-01925"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00785"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00291",
+      "agency_a": {
+        "client_ids": [
+          "C-01926"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00795"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00292",
+      "agency_a": {
+        "client_ids": [
+          "C-01929"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00786"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00293",
+      "agency_a": {
+        "client_ids": [
+          "C-01940"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00098"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00294",
+      "agency_a": {
+        "client_ids": [
+          "C-01946"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01484"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00295",
+      "agency_a": {
+        "client_ids": [
+          "C-01955"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00489"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00296",
+      "agency_a": {
+        "client_ids": [
+          "C-01956"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00683"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00297",
+      "agency_a": {
+        "client_ids": [
+          "C-01974"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-01278"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00298",
+      "agency_a": {
+        "client_ids": [
+          "C-01982"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00022"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00299",
+      "agency_a": {
+        "client_ids": [
+          "C-01990"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00435"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "person_id": "PER-00300",
+      "agency_a": {
+        "client_ids": [
+          "C-01999"
+        ],
+        "labels": []
+      },
+      "agency_b": {
+        "client_ids": [
+          "B-C-00929"
+        ],
+        "labels": []
+      },
+      "contact_differs": [
+        "phone",
+        "email"
+      ]
+    }
+  ]
+}
