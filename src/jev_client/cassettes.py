@@ -40,8 +40,16 @@ def load_cassette(cassette_dir: Path, body: Any) -> dict[str, Any] | None:
     path = cassette_path(cassette_dir, body)
     if not path.exists():
         return None
-    response: dict[str, Any] = json.loads(path.read_text(encoding="utf-8"))["response"]
-    return response
+    cassette = json.loads(path.read_text(encoding="utf-8"))
+    if (
+        not isinstance(cassette, dict)
+        or set(cassette) != {"request", "response"}
+        or not isinstance(cassette["request"], dict)
+        or not isinstance(cassette["response"], dict)
+        or request_hash(cassette["request"]) != request_hash(body)
+    ):
+        raise ValueError("Jev cassette must contain the requested body and response objects")
+    return cassette["response"]
 
 
 def save_cassette(cassette_dir: Path, body: Any, response: dict[str, Any]) -> Path:

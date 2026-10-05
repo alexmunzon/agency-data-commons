@@ -405,7 +405,9 @@ def name_dob_lookalike(
 ) -> None:
     """A B client who lives alone takes the name and birth date of an A-only person in the same
     state but another ZIP. Their MBI, address, phone, and policies stay their own."""
-    held = {cid: book.held(cid) for cid in book.clients}
+    held: dict[str, list[Row]] = {cid: [] for cid in book.clients}
+    for policy in book.policies:
+        held.setdefault(policy["client_id"], []).append(policy)
     pool: dict[tuple[Any, ...], list[str]] = {}
     for h in book.households.values():
         cid = h["members"][0]
