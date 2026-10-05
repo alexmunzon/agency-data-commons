@@ -7,9 +7,12 @@ client look like someone they are not. Each shared person anchors at most one in
 label is unambiguous. Rates are shares of the shared people (300 by default).
 """
 
+import json
 import random
+from collections import Counter
 from dataclasses import dataclass, field, replace
 from datetime import date
+from pathlib import Path
 from typing import Any
 
 from faker import Faker
@@ -19,7 +22,7 @@ from agency_schema.enums import LineOfBusiness as Lob
 from agency_schema.enums import PolicyStatus
 from agency_schema.formats import zip3_table
 from synth_agency_data.injectors.base import Defect, defect
-from synth_agency_data.multi import Shared, _email, _key, _profile
+from synth_agency_data.multi import Shared, _email, _key, _profile, a_copies
 from synth_agency_data.world import (
     AS_OF,
     Row,
@@ -52,12 +55,26 @@ MUST_NOT_MERGE = {
     "shared_household_contact": "spouses who share a surname, address, phone, and email",
 }
 _PAIRS = (
-    ("Mario", "Maria"), ("Daniel", "Danielle"), ("Michael", "Michelle"), ("Paul", "Paula"),
-    ("Eric", "Erica"), ("Robert", "Roberta"), ("Brian", "Briana"), ("Christian", "Christina"),
-    ("Stephen", "Stephanie"), ("Andrew", "Andrea"), ("Patrick", "Patricia"), ("Carl", "Carla"),
-    ("Francis", "Frances"), ("Gabriel", "Gabriela"), ("Joel", "Joelle"), ("Dennis", "Denise"),
-    ("Alexander", "Alexandra"), ("Kristopher", "Kristina"), ("Julian", "Juliana"),
-)  # fmt: skip
+    ("Mario", "Maria"),
+    ("Daniel", "Danielle"),
+    ("Michael", "Michelle"),
+    ("Paul", "Paula"),
+    ("Eric", "Erica"),
+    ("Robert", "Roberta"),
+    ("Brian", "Briana"),
+    ("Christian", "Christina"),
+    ("Stephen", "Stephanie"),
+    ("Andrew", "Andrea"),
+    ("Patrick", "Patricia"),
+    ("Carl", "Carla"),
+    ("Francis", "Frances"),
+    ("Gabriel", "Gabriela"),
+    ("Joel", "Joelle"),
+    ("Dennis", "Denise"),
+    ("Alexander", "Alexandra"),
+    ("Kristopher", "Kristina"),
+    ("Julian", "Juliana"),
+)
 TWINS = {a: b for x, y in _PAIRS for a, b in ((x, y), (y, x))}
 ADDRESS = ("address_line1", "city", "zip")
 
@@ -489,3 +506,75 @@ def inject_identity(
     tables |= {"policies": book.policies, "rts": rts_rows}
     tables["commission_lines"] = commission_lines(paid, clients)
     return replace(b, tables=tables), book.labels, book.mnm
+
+
+def pair_and_cluster_truth(
+    truth: dict[str, Any],
+    a_world: World,
+    b: World,
+    a_defects: list[Defect],
+    mnm: list[dict[str, str]],
+) -> tuple[list[dict[str, Any]], dict[str, list[str]], list[dict[str, str]]]:
+    """Every true same-person pair (across agencies and within B), every person's record ids in
+    A and B, and every must-not-merge pair, each anchor expanded to all of the anchor's records."""
+    clusters: dict[str, list[str]] = {}
+    pairs: list[dict[str, Any]] = []
+    for p in truth["people"]:
+        a_ids, b_ids = p["agency_a"]["client_ids"], p["agency_b"]["client_ids"]
+        clusters[p["person_id"]] = [*a_ids, *b_ids]
+        labels = p["agency_a"]["labels"] + p["agency_b"]["labels"]
+        both = [(x, y, "cross") for x in a_ids for y in b_ids]
+        both += [(x, y, "within_b") for i, x in enumerate(b_ids) for y in b_ids[i + 1 :]]
+        for x, y, scope in both:
+            kinds = sorted({lab["defect_type"] for lab in labels if lab["client_id"] in (x, y)})
+            pairs.append(
+                {
+                    "person_id": p["person_id"],
+                    "left": x,
+                    "right": y,
+                    "scope": scope,
+                    "defect_types": kinds,
+                }
+            )
+    person = {r: pid for pid, ids in clusters.items() for r in ids}
+    copies = a_copies(a_defects)
+    copied = {c for v in copies.values() for c in v}
+    rows = [c["client_id"] for w in (a_world, b) for c in w.tables["clients"]]
+    for cid in rows:
+        if cid not in person and cid not in copied:
+            pid = f"PER-{len(clusters) + 1:05d}"
+            clusters[pid] = [cid, *copies.get(cid, [])]
+            person |= dict.fromkeys(clusters[pid], pid)
+    must_not = [
+        {
+            "left": r,
+            "right": e["client_id"],
+            "defect_type": e["defect_type"],
+            "reason": MUST_NOT_MERGE[e["defect_type"]],
+        }
+        for e in mnm
+        for r in clusters[person[e["anchor"]]]
+    ]
+    return pairs, clusters, must_not
+
+
+def write_truth(
+    out: Path,
+    truth: dict[str, Any],
+    pairs: list[dict[str, Any]],
+    clusters: dict[str, list[str]],
+    must_not: list[dict[str, str]],
+) -> None:
+    """cross_agency_truth.json (with counts), pair_truth.jsonl, cluster_truth.json, and
+    must_not_merge.jsonl."""
+    truth["counts"] |= {
+        "true_pairs": len(pairs),
+        "true_pairs_within_b": sum(p["scope"] == "within_b" for p in pairs),
+        "clusters": len(clusters),
+        "must_not_merge_pairs": dict(sorted(Counter(m["defect_type"] for m in must_not).items())),
+    }
+    (out / "cross_agency_truth.json").write_text(json.dumps(truth, indent=2) + "\n", "utf-8")
+    (out / "cluster_truth.json").write_text(json.dumps(clusters, indent=1) + "\n", "utf-8")
+    for name, rows in (("pair_truth", pairs), ("must_not_merge", must_not)):
+        text = "".join(json.dumps(r) + "\n" for r in rows)
+        (out / f"{name}.jsonl").write_text(text, encoding="utf-8")

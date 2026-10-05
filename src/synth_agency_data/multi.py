@@ -17,6 +17,7 @@ Agency A's identity defects are A's own labels: a shared person may read "Dave" 
 """
 
 import random
+from collections.abc import Sequence
 from dataclasses import dataclass, replace
 from typing import Any
 
@@ -226,26 +227,52 @@ def build_agency_b(
     return _overlap(a_clean, b, overlap, seed)
 
 
-def cross_agency_truth(
-    a_seed: int, b: World, shared: list[Shared], a_world: World, a_defects: list[Defect]
-) -> dict[str, Any]:
-    """Person id to client ids in each agency, A's labels on those ids, and counts."""
+def a_copies(a_defects: list[Defect]) -> dict[str, list[str]]:
+    """Agency A client id to its copies (near-duplicate and same name and birth date copies)."""
     copies: dict[str, list[str]] = {}
+    for d in a_defects:
+        if d["source"] == "clients" and "copy_of" in d["injected_values"]:
+            copies.setdefault(d["injected_values"]["copy_of"], []).append(
+                d["record_key"]["client_id"]
+            )
+    return copies
+
+
+def cross_agency_truth(
+    a_seed: int,
+    b: World,
+    shared: list[Shared],
+    a_world: World,
+    a_defects: list[Defect],
+    b_labels: Sequence[Defect] = (),
+) -> dict[str, Any]:
+    """Person id to client ids in each agency, each agency's labels on those ids, and counts."""
+    copies = a_copies(a_defects)
     labels: dict[str, list[dict[str, Any]]] = {}
     for d in a_defects:
         if d["source"] != "clients":
             continue
         cid = d["record_key"]["client_id"]
         v = d["injected_values"]
-        if "copy_of" in v:
-            copies.setdefault(v["copy_of"], []).append(cid)
         # The fields this defect changed: an edit names one; a copy may carry a new last name.
         fields = [v["field"]] if "field" in v else [k for k in v if k in IDENTITY_FIELDS]
         labels.setdefault(cid, []).append(
             {"client_id": cid, "defect_type": d["defect_type"], "fields": fields}
         )
+    b_copies: dict[str, list[str]] = {}
+    b_labels_by: dict[str, list[dict[str, Any]]] = {}
+    for d in b_labels:
+        if not d["same_person"]:
+            continue
+        anchor, cid = d["anchor_client_id"], d["record_keys"]["agency-b"][0]["client_id"]
+        if "copy_of" in d["injected_values"]:
+            b_copies.setdefault(anchor, []).append(cid)
+        b_labels_by.setdefault(anchor, []).append(
+            {"client_id": cid, "defect_type": d["defect_type"], "fields": d["fields"]}
+        )
     a_rows = {c["client_id"]: c for c in a_world.tables["clients"]}
     b_rows = {c["client_id"]: c for c in b.tables["clients"]}
+    home = {m: len(h["members"]) for h in b.tables["households"] for m in h["members"]}
     people = []
     for s in shared:
         a_ids = [s.a_client_id, *copies.get(s.a_client_id, [])]
@@ -259,20 +286,26 @@ def cross_agency_truth(
                     "client_ids": a_ids,
                     "labels": [x for i in a_ids for x in labels.get(i, [])],
                 },
-                "agency_b": {"client_ids": [s.b_client_id], "labels": []},
+                "agency_b": {
+                    "client_ids": [s.b_client_id, *b_copies.get(s.b_client_id, [])],
+                    "labels": b_labels_by.get(s.b_client_id, []),
+                    "household_size": home[s.b_client_id],
+                },
                 "contact_differs": contact,
             }
         )
     a_n, b_n = len(a_world.tables["clients"]), len(b.tables["clients"])
     a_people = a_n - sum(len(v) for v in copies.values())
+    b_people = b_n - sum(len(v) for v in b_copies.values())
     return {
         "agencies": {"agency-a": {"seed": a_seed}, "agency-b": {"seed": b.seed}},
         "counts": {
             "shared_people": len(shared),
+            "shared_people_living_with_others_in_b": sum(home[s.b_client_id] > 1 for s in shared),
             "agency_a_client_ids": a_n,
             "agency_b_client_ids": b_n,
-            "agency_b_people": b_n,  # B is clean: one client id per person
-            "distinct_people": a_people + b_n - len(shared),
+            "agency_b_people": b_people,
+            "distinct_people": a_people + b_people - len(shared),
         },
         "people": people,
     }
