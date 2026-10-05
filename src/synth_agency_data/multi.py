@@ -17,6 +17,7 @@ Agency A's identity defects are A's own labels: a shared person may read "Dave" 
 """
 
 import random
+from collections.abc import Sequence
 from dataclasses import dataclass, replace
 from typing import Any
 
@@ -35,6 +36,7 @@ B_PREFIX = "B-"
 B_EMAIL_DOMAIN = "agency-b.example.com"
 DEFAULT_OVERLAP = 300
 DEFAULT_B_CLIENTS = 1500
+MULTI_HOUSEHOLD_SHARE = 0.4  # of shared people, placed with a housemate in B (C2)
 IDENTITY_FIELDS = ("first_name", "last_name", "dob", "mbi")
 ADDRESS_FIELDS = ("address_line1", "city", "state", "zip")
 
@@ -110,57 +112,105 @@ def _profile(client: Row, policies: list[Row]) -> tuple[Any, ...]:
     return client["state"], client["mbi"] is not None, tuple(sorted(str(r) for r in reasons))
 
 
+def _email(row: Row, first: str, last: str) -> str | None:
+    """Rebuild an email from a name and the row number in the client id, as build_world does."""
+    slug = "".join(ch for ch in f"{first}.{last}".lower() if ch.isalnum() or ch == ".")
+    return f"{slug}{int(row['client_id'][-5:])}@example.com" if row["email"] else None
+
+
+def _key(c: Row) -> tuple[str, Any]:
+    return normalize_name(f"{c['first_name']} {c['last_name']}"), c["dob"]
+
+
 def _overlap(a: World, b: World, overlap: int, seed: int) -> tuple[World, list[Shared]]:
     rng = random.Random(f"overlap-{seed}")
     held: dict[str, list[Row]] = {}
     for w in (a, b):
         for p in w.tables["policies"]:
             held.setdefault(p["client_id"], []).append(p)
-    singles = [h["members"][0] for h in b.tables["households"] if len(h["members"]) == 1]
-    b_rows = {c["client_id"]: c for c in b.tables["clients"]}
-    open_b: dict[tuple[Any, ...], list[str]] = {}
-    for cid in singles:
-        open_b.setdefault(_profile(b_rows[cid], held[cid]), []).append(cid)
-    keys = {
-        (normalize_name(f"{c['first_name']} {c['last_name']}"), c["dob"]) for c in b_rows.values()
-    }
+    b_rows = {c["client_id"]: dict(c) for c in b.tables["clients"]}
+    home = {m: h["members"] for h in b.tables["households"] for m in h["members"]}
+    # open_b[multi][profile]: B clients a shared person may replace. Multi means the client lives
+    # with others (a spouse or an adult child), so shared people are not all living alone (C2).
+    open_b: dict[bool, dict[tuple[Any, ...], list[str]]] = {False: {}, True: {}}
+    for cid in b_rows:
+        open_b[len(home[cid]) > 1].setdefault(_profile(b_rows[cid], held[cid]), []).append(cid)
+    keys = {_key(c) for c in b_rows.values()}
     a_people = list(a.tables["clients"])
     rng.shuffle(a_people)
     chosen: dict[str, Row] = {}  # b client id: the A person who replaces them
     for person in a_people:
         if len(chosen) == overlap:
             break
-        key = (normalize_name(f"{person['first_name']} {person['last_name']}"), person["dob"])
-        if person["client_id"] not in held or key in keys:
+        want_multi = rng.random() < MULTI_HOUSEHOLD_SHARE
+        if person["client_id"] not in held or _key(person) in keys:
             continue
-        candidates = open_b.get(_profile(person, held[person["client_id"]]), [])
-        for cid in candidates:
-            starts = min(p["effective_date"] for p in held[cid])
-            if "AGE" not in str(held[cid][0]["eligibility_reason"]) or (
-                _first_month_at_65(person["dob"]) <= starts
-            ):
-                candidates.remove(cid)
+        for multi in (want_multi, not want_multi):
+            cid = _place(
+                person,
+                open_b[multi].get(_profile(person, held[person["client_id"]]), []),
+                held,
+                home,
+                b_rows,
+                keys,
+            )
+            if cid:
                 chosen[cid] = person
-                keys.add(key)
+                for other in home[cid]:  # one shared person per household
+                    for pool in open_b[multi].values():
+                        if other in pool:
+                            pool.remove(other)
                 break
     if len(chosen) < overlap:
         raise ValueError(f"agency B can share at most {len(chosen)} people with agency A")
-    clients = []
-    for c in b.tables["clients"]:
-        new = chosen.get(c["client_id"])
-        if new:
-            slug = "".join(
-                ch
-                for ch in f"{new['first_name']}.{new['last_name']}".lower()
-                if ch.isalnum() or ch == "."
-            )
-            email = f"{slug}{int(c['client_id'][-5:])}@example.com" if c["email"] else None
-            c = {**c, **{f: new[f] for f in IDENTITY_FIELDS + ADDRESS_FIELDS}, "email": email}
-        clients.append(c)
+    for cid, new in chosen.items():
+        c = b_rows[cid]
+        b_rows[cid] = {**c, **{f: new[f] for f in IDENTITY_FIELDS + ADDRESS_FIELDS}}
+        b_rows[cid]["email"] = _email(c, new["first_name"], new["last_name"])
+    clients = [b_rows[c["client_id"]] for c in b.tables["clients"]]
     pairs = sorted((p["client_id"], cid) for cid, p in chosen.items())
     shared = [Shared(f"PER-{i:05d}", a_id, b_id) for i, (a_id, b_id) in enumerate(pairs, start=1)]
     lines = commission_lines(b.tables["policies"], clients)
     return replace(b, tables={**b.tables, "clients": clients, "commission_lines": lines}), shared
+
+
+def _place(
+    person: Row,
+    candidates: list[str],
+    held: dict[str, list[Row]],
+    home: dict[str, tuple[str, ...]],
+    b_rows: dict[str, Row],
+    keys: set[tuple[str, Any]],
+) -> str | None:
+    """The first candidate the person can replace. Housemates take the person's surname and address
+    (one household, one address); a housemate whose new name and birth date are taken refuses."""
+    for cid in candidates:
+        starts = min(p["effective_date"] for p in held[cid])
+        if "AGE" in str(held[cid][0]["eligibility_reason"]) and (
+            _first_month_at_65(person["dob"]) > starts
+        ):
+            continue
+        mates = [m for m in home[cid] if m != cid]
+        moved = [
+            {
+                **b_rows[m],
+                "last_name": person["last_name"],
+                **{f: person[f] for f in ADDRESS_FIELDS},
+            }
+            for m in mates
+        ]
+        new_keys = {_key(m) for m in moved}
+        if len(new_keys) < len(moved) or new_keys & (keys - {_key(b_rows[m]) for m in mates}):
+            continue
+        for m in mates:
+            keys.discard(_key(b_rows[m]))
+        for row in moved:
+            row["email"] = _email(row, row["first_name"], row["last_name"])
+            b_rows[row["client_id"]] = row
+        keys |= new_keys | {_key(person)}
+        candidates.remove(cid)
+        return cid
+    return None
 
 
 def build_agency_b(
@@ -177,26 +227,52 @@ def build_agency_b(
     return _overlap(a_clean, b, overlap, seed)
 
 
-def cross_agency_truth(
-    a_seed: int, b: World, shared: list[Shared], a_world: World, a_defects: list[Defect]
-) -> dict[str, Any]:
-    """Person id to client ids in each agency, A's labels on those ids, and counts."""
+def a_copies(a_defects: list[Defect]) -> dict[str, list[str]]:
+    """Agency A client id to its copies (near-duplicate and same name and birth date copies)."""
     copies: dict[str, list[str]] = {}
+    for d in a_defects:
+        if d["source"] == "clients" and "copy_of" in d["injected_values"]:
+            copies.setdefault(d["injected_values"]["copy_of"], []).append(
+                d["record_key"]["client_id"]
+            )
+    return copies
+
+
+def cross_agency_truth(
+    a_seed: int,
+    b: World,
+    shared: list[Shared],
+    a_world: World,
+    a_defects: list[Defect],
+    b_labels: Sequence[Defect] = (),
+) -> dict[str, Any]:
+    """Person id to client ids in each agency, each agency's labels on those ids, and counts."""
+    copies = a_copies(a_defects)
     labels: dict[str, list[dict[str, Any]]] = {}
     for d in a_defects:
         if d["source"] != "clients":
             continue
         cid = d["record_key"]["client_id"]
         v = d["injected_values"]
-        if "copy_of" in v:
-            copies.setdefault(v["copy_of"], []).append(cid)
         # The fields this defect changed: an edit names one; a copy may carry a new last name.
         fields = [v["field"]] if "field" in v else [k for k in v if k in IDENTITY_FIELDS]
         labels.setdefault(cid, []).append(
             {"client_id": cid, "defect_type": d["defect_type"], "fields": fields}
         )
+    b_copies: dict[str, list[str]] = {}
+    b_labels_by: dict[str, list[dict[str, Any]]] = {}
+    for d in b_labels:
+        if not d["same_person"]:
+            continue
+        anchor, cid = d["anchor_client_id"], d["record_keys"]["agency-b"][0]["client_id"]
+        if "copy_of" in d["injected_values"]:
+            b_copies.setdefault(anchor, []).append(cid)
+        b_labels_by.setdefault(anchor, []).append(
+            {"client_id": cid, "defect_type": d["defect_type"], "fields": d["fields"]}
+        )
     a_rows = {c["client_id"]: c for c in a_world.tables["clients"]}
     b_rows = {c["client_id"]: c for c in b.tables["clients"]}
+    home = {m: len(h["members"]) for h in b.tables["households"] for m in h["members"]}
     people = []
     for s in shared:
         a_ids = [s.a_client_id, *copies.get(s.a_client_id, [])]
@@ -210,20 +286,26 @@ def cross_agency_truth(
                     "client_ids": a_ids,
                     "labels": [x for i in a_ids for x in labels.get(i, [])],
                 },
-                "agency_b": {"client_ids": [s.b_client_id], "labels": []},
+                "agency_b": {
+                    "client_ids": [s.b_client_id, *b_copies.get(s.b_client_id, [])],
+                    "labels": b_labels_by.get(s.b_client_id, []),
+                    "household_size": home[s.b_client_id],
+                },
                 "contact_differs": contact,
             }
         )
     a_n, b_n = len(a_world.tables["clients"]), len(b.tables["clients"])
     a_people = a_n - sum(len(v) for v in copies.values())
+    b_people = b_n - sum(len(v) for v in b_copies.values())
     return {
         "agencies": {"agency-a": {"seed": a_seed}, "agency-b": {"seed": b.seed}},
         "counts": {
             "shared_people": len(shared),
+            "shared_people_living_with_others_in_b": sum(home[s.b_client_id] > 1 for s in shared),
             "agency_a_client_ids": a_n,
             "agency_b_client_ids": b_n,
-            "agency_b_people": b_n,  # B is clean: one client id per person
-            "distinct_people": a_people + b_n - len(shared),
+            "agency_b_people": b_people,
+            "distinct_people": a_people + b_people - len(shared),
         },
         "people": people,
     }

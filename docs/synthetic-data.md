@@ -109,3 +109,45 @@ notes carry accented letters (español, café) so the latin-1 encoding is real.
 world above), agency B (seed 43, 1,500 clients, clean, ids prefixed `B-`), and
 `cross_agency_truth.json`, which lists every person both agencies hold with their client ids in
 each. `fixtures/multi-a-b/` holds agency B and that file. How people are chosen and why: docs/c1-notes.md.
+
+## Hard identity cases in agency B (commons C2)
+
+`generate-multi` also makes agency B harder to match, so it can serve as bob-resolve's held-out
+test. Agency A never changes. Each case below is labeled in `agency-b/ground_truth.json` with
+`scored: true`, `same_person` (true when the B record is the same person as the A record),
+`record_keys` for both agencies, and the values it injected. Rates are shares of the 300 shared
+people. Each shared person anchors at most one case, so labels never overlap.
+
+First, 40 percent of shared people (117 at seed 43) take the place of someone in a B household
+with others, not someone living alone. Their housemates take the person's surname and address,
+like a spouse or an adult child. Each person's B household size is in `cross_agency_truth.json`.
+
+**The same person, reading differently in B**
+
+| Case | Rate | What B shows |
+|---|---|---|
+| `maiden_name` | 7% | A woman's married surname; A has her maiden name. Housemates share the new name. |
+| `hyphenated_surname` | 6% | "Garcia-Lopez" or "Lopez-Garcia" where A has "Garcia". Housemates are "Lopez". |
+| `moved_household` | 8% | A new street, city, and ZIP in the same state (half the time a new ZIP3). The household moves together. |
+| `moved_household_stale_copy` | a third of movers | The agency also kept the old record at the old address, with no policy: a same-person pair inside B. |
+| `shared_household_contact` | 7% | The person uses the spouse's phone and email (a joint family email if the spouse had none). |
+| `same_policy_two_member_ids` | 6% | B holds the person's A policies (same carrier, plan, and dates, written by B's agent) under different carrier member ids. One label per policy. |
+
+**Different people who look alike (must not merge)**
+
+| Case | Rate | What B adds |
+|---|---|---|
+| `child_on_parent_policy` | 6% | A child (3 to 25) on the parent's ACA policy: same surname, address, and phone, member id = parent's id plus "-01", no premium, no commission line. |
+| `twin_lookalike` | 6% | A twin in the same household with a near-identical first name (Mario and Maria, Daniel and Danielle), the same birth date, and their own MBI and policies. |
+| `father_son_same_name` | 6% | A son with the father's exact name and no suffix, 22 to 40 years younger, in the same household, on his own ACA policy. |
+| `name_dob_lookalike` | 6% | A B client living alone takes the name and birth date of an A-only person in the same state but a different ZIP. Their MBI, address, phone, and policies stay their own. |
+
+Spouses in `shared_household_contact` are must-not-merge pairs too: they share a surname, address,
+phone, and email, and differ only in first name, birth date, and MBI.
+
+**Truth files** (next to `cross_agency_truth.json`): `pair_truth.jsonl` lists every true
+same-person pair across the agencies and within B with the defect types that apply to it (A's labels
+and B's). `cluster_truth.json` maps each person to all of their client ids in A and B; every id is in
+exactly one cluster. `must_not_merge.jsonl` lists each look-alike against every record of the person
+it resembles, with a plain reason. Counts are in the fixture README and in `counts`. Decisions:
+docs/c2-notes.md.

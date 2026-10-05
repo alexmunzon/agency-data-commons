@@ -1,6 +1,5 @@
 """Command line entry point for the synthetic data generator."""
 
-import json
 from pathlib import Path
 from typing import Annotated
 
@@ -8,6 +7,7 @@ import typer
 
 from synth_agency_data import __version__
 from synth_agency_data.canonical_writer import write_ground_truth, write_tables
+from synth_agency_data.identity import inject_identity, pair_and_cluster_truth, write_truth
 from synth_agency_data.injectors import Defect, inject
 from synth_agency_data.multi import (
     DEFAULT_B_CLIENTS,
@@ -96,23 +96,23 @@ def generate_multi(
         ),
     ] = True,
 ) -> None:
-    """Write agency-a/, agency-b/, and cross_agency_truth.json (the people both agencies hold)."""
+    """Write agency-a/, agency-b/ (with C2 identity cases), and the cross-agency truth files."""
     if agencies != 2:
         raise typer.BadParameter("only --agencies 2 is supported")
     a_clean = build_world(seed=seed, n_clients=2000)  # planting needs 2,000 clients
     try:
         a_world, a_defects = inject(a_clean)
         b, shared = build_agency_b(a_clean, a_world, b_seed(seed), b_clients, overlap)
+        b, labels, mnm = inject_identity(a_clean, a_world, b, shared)
     except ValueError as error:
         raise typer.BadParameter(str(error)) from error
     if agency_a:
         generate(out / "agency-a", seed=seed)
     folder = out / "agency-b"
-    write_drop(b, [], folder / "drop", plant_pii=False)
+    located = write_drop(b, labels, folder / "drop", plant_pii=False)
     write_tables(b, folder / "canonical")
-    write_ground_truth(b, folder, [])
-    truth = cross_agency_truth(seed, b, shared, a_world, a_defects)
-    text = json.dumps(truth, indent=2) + "\n"
-    (out / "cross_agency_truth.json").write_text(text, encoding="utf-8")
+    write_ground_truth(b, folder, located)
+    truth = cross_agency_truth(seed, b, shared, a_world, a_defects, labels)
+    write_truth(out, truth, *pair_and_cluster_truth(truth, a_world, b, a_defects, mnm))
     counts = ", ".join(f"{len(rows)} {name}" for name, rows in b.tables.items())
     typer.echo(f"Wrote {folder}: {counts}; {len(shared)} people shared with agency A")

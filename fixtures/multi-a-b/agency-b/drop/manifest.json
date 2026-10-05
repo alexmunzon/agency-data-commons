@@ -5,49 +5,49 @@
       "source": "crm",
       "file_name": "crm_export.csv",
       "sheet": null,
-      "rows": 1950
+      "rows": 2020
     },
     {
       "source": "enrollment",
       "file_name": "enrollment_export.csv",
       "sheet": null,
-      "rows": 1365
+      "rows": 1382
     },
     {
       "source": "statement_northwind_health",
       "file_name": "commissions_northwind_health.xlsx",
       "sheet": "Statement",
-      "rows": 828
+      "rows": 861
     },
     {
       "source": "statement_bluepeak",
       "file_name": "commissions_bluepeak.xlsx",
       "sheet": "Statement",
-      "rows": 792
+      "rows": 816
     },
     {
       "source": "statement_harborline",
       "file_name": "commissions_harborline.xlsx",
       "sheet": "Statement",
-      "rows": 810
+      "rows": 822
     },
     {
       "source": "statement_cardinal_mutual",
       "file_name": "commissions_cardinal_mutual.xlsx",
       "sheet": "Statement",
-      "rows": 804
+      "rows": 807
     },
     {
       "source": "statement_summit_health_plans",
       "file_name": "commissions_summit_health_plans.xlsx",
       "sheet": "Statement",
-      "rows": 897
+      "rows": 912
     },
     {
       "source": "statement_meridian_care",
       "file_name": "commissions_meridian_care.xlsx",
       "sheet": "Statement",
-      "rows": 864
+      "rows": 876
     },
     {
       "source": "roster",
@@ -59,7 +59,7 @@
       "source": "roster",
       "file_name": "agent_roster.xlsx",
       "sheet": "RTS",
-      "rows": 3094
+      "rows": 3122
     }
   ]
 }

@@ -10,7 +10,7 @@ from agency_schema.lineage import Lineage
 from agency_schema.models import TABLE_MODELS
 from agency_schema.outputs import RUN_FILE_MODELS
 
-__version__ = "0.2.0.dev0"
+__version__ = "0.2.0"
 
 __all__ = ["ExceptionRecord", "Lineage", "RUN_FILE_MODELS", "TABLE_MODELS", "json_schema"]
 
