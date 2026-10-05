@@ -1,6 +1,6 @@
 [project]
 name = "agency-data-commons"
-version = "0.1.0"
+version = "0.2.0.dev0"
 description = "Shared schema, synthetic data generator, and Jev client for the Agency Data Trust Series. Synthetic data only."
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
