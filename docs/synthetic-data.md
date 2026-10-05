@@ -1,5 +1,9 @@
 # Synthetic data
 
+> Copied from agency-intake-kit (commit `e9a7593`) in C0a. Mentions of `intake`, `engine/`,
+> pipeline PRs, and `config.py` describe agency-intake-kit, the first project that uses this
+> package; they are kept for traceability. Changes made in this repo are listed in CHANGELOG.md.
+
 Everything in `fixtures/` is made up. The generator builds a fake agency book (seed 42: 2,000
 clients, 2,600 policies, 25 agents, six fictional carriers), breaks it on purpose, writes it out
 as the four messy files a real agency would hand over, and records every planted problem in

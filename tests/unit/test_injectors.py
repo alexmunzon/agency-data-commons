@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import Any
 
 import pytest
+from aik_reference import generated_root, reference_hashes
 from typer.testing import CliRunner
 
 from agency_schema.enums import LineOfBusiness as Lob
@@ -32,7 +33,8 @@ from synth_agency_data.planted import ORPHAN_LINE, PLANTED_NPN, PLANTED_POLICY, 
 from synth_agency_data.rates import expected_amount
 from synth_agency_data.world import AS_OF, World, build_world
 
-FIXTURE = Path(__file__).parents[3] / "fixtures" / "agency-a"
+# Regenerated once per run and checked against agency-intake-kit's committed hashes (C0a).
+FIXTURE = generated_root() / "agency-a"
 # Guide 7.3 defaults: defect type -> (allowed rule ids, scored).
 EXPECTED: dict[str, tuple[set[str], bool]] = {
     "zip_state_mismatch": ({"ADR-002"}, True),
@@ -376,7 +378,9 @@ def test_cli_same_seed_is_byte_identical_and_matches_the_fixture(tmp_path: Path)
             + ["commissions_summit_health_plans.xlsx"]
         )
     ] + ["ground_truth.json"]
-    committed = {k: v for k, v in _digest(FIXTURE).items() if k in _digest(tmp_path / "a")}
+    committed = {
+        k: v for k, v in reference_hashes("agency-a").items() if k in _digest(tmp_path / "a")
+    }
     assert committed == _digest(tmp_path / "a"), "regenerate fixtures/agency-a (see CHANGELOG)"
 
 

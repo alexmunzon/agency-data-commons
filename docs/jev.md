@@ -1,5 +1,9 @@
 # Jev (TypeSafe) client
 
+> Copied from agency-intake-kit (commit `e9a7593`) in C0a. Mentions of `intake`, `engine/`,
+> pipeline PRs, and `config.py` describe agency-intake-kit, the first project that uses this
+> package; they are kept for traceability. Changes made in this repo are listed in CHANGELOG.md.
+
 Jev is TypeSafe's model. It answers small, bounded questions with probabilities instead of
 free text. This kit asks it four questions (SPEC "Jev usage"), and rules always have the last word.
 
@@ -82,8 +86,8 @@ that fails the checks was still billed, so it still counts; a missing or broken 
 counts the call with 0 tokens and logs a warning. In `record`, a reply that fails the checks is
 still saved as a cassette before the error is raised, and the error names the file. That way a
 retry reads the saved reply instead of paying again. Delete the file to re-record it. The estimated cost is input tokens
-times the price in `config.py`. It is an estimate, not a bill. When it reaches the budget ($0.50,
-`JEV_BUDGET_USD`) the client logs a warning, sets `usage.budget_tripped`, and returns
+times the price in `jev_client/config.py`. It is an estimate, not a bill. When it reaches the budget
+(`budget_usd`, a required argument; agency-intake-kit passes $0.50) the client logs a warning, sets `usage.budget_tripped`, and returns
 `Unresolved(reason="budget_tripped")` for every later question. The run still completes; those
 questions go to the human queue. `usage.mode` stays the configured mode, because the manifest's
 `JevUsage` refuses `off` with real call counts. The manifest records the trip in `budget_tripped`.
@@ -94,7 +98,7 @@ guard at the same point a live run would.
 
 ## Cassettes and the hash recipe
 
-A cassette is `engine/tests/cassettes/<hash>.json` with two keys, `request` and `response`.
+A cassette is `<cassette_dir>/<hash>.json` with two keys, `request` and `response`.
 Headers are never stored, so the key cannot leak into one.
 
 The hash (`jev_client.request_hash`, public so PR 11 can deduplicate with it):
@@ -255,3 +259,14 @@ The command refuses unless `JEV_MODE=record`, prints the count and estimated cos
 deletes only the hand-made cassettes it is about to replace, and never prints the key. Then run
 `npm run verify`: example 2 needs the real answer for "Birth Dt (mm/dd/yy)" to be `clients.dob`
 at 0.85 or more.
+
+## In agency-data-commons (C0a)
+
+- Defaults live in `jev_client/config.py`: `JEV_API_URL`, `JEV_MODEL`, `JEV_USD_PER_MTOK_IN`,
+  `JEV_MAX_TRIES`, `JEV_BACKOFF_BASE_S`, `JEV_TIMEOUT_S`, as checked on docs.typesafe.ai on
+  2026-10-04. Nothing here imports `intake`.
+- `JevClient(mode=..., api_key=..., cassette_dir=..., budget_usd=...)`: `cassette_dir` (a `Path`)
+  and `budget_usd` (a `Decimal` of 0 or more) are required, with no default. The same goes for
+  `JevClient.from_env(cassette_dir=..., budget_usd=...)`. Each project passes its own recordings
+  folder and its own spend cap, so no project can forget either one.
+- The hash recipe is unchanged, so cassettes recorded by agency-intake-kit still replay.

@@ -1,6 +1,10 @@
 # Canonical schema
 
-The shape every source file is mapped into. Code: `engine/src/agency_schema/`. Synthetic data only.
+> Copied from agency-intake-kit (commit `e9a7593`) in C0a. Mentions of `intake`, `engine/`,
+> pipeline PRs, and `config.py` describe agency-intake-kit, the first project that uses this
+> package; they are kept for traceability. Changes made in this repo are listed in CHANGELOG.md.
+
+The shape every source file is mapped into. Code: `src/agency_schema/`. Synthetic data only.
 `agency_schema.json_schema()` returns the JSON Schema for all of it (PR 1b wraps it in `intake schema`).
 
 ## Ground rules
@@ -95,7 +99,7 @@ The record is file-level and never copies or counts a value. It names the column
 
 ## Rule registry
 
-`agency_schema.registry` holds the `@rule(rule_id, severity, family, description, blocks=...)` decorator, `catalog()`, and `run_rules(frame, family=None)`. Registering applies the same identity checks as ExceptionRecord, refuses duplicate ids, and `run_rules` refuses a rule that emits a record under another rule's id or severity. All 46 rules are registered; see [rules.md](rules.md).
+`agency_schema.registry` holds the `@rule(rule_id, severity, family, description, blocks=...)` decorator, `catalog()`, and `run_rules(frame, family=None)`. Registering applies the same identity checks as ExceptionRecord, refuses duplicate ids, and `run_rules` refuses a rule that emits a record under another rule's id or severity. All 46 rules are registered; see rules.md in agency-intake-kit.
 
 ## Format rules
 
@@ -120,7 +124,7 @@ Pure functions in `agency_schema.formats`. Each takes a raw string and never rai
 
 ### ZIP prefix table
 
-`engine/src/agency_schema/data/zip3_state.csv` has one row per prefix and state (`zip3,state`): 938 rows and 933 prefixes. It covers all 50 states, DC, PR, VI, GU, AS, MP, FM, MH, PW, and the military codes AA, AE, AP. A prefix used by several places has one row each: 967 is HI and AS, and 969 is GU, MP, PW, FM, and MH.
+`src/agency_schema/data/zip3_state.csv` has one row per prefix and state (`zip3,state`): 938 rows and 933 prefixes. It covers all 50 states, DC, PR, VI, GU, AS, MP, FM, MH, PW, and the military codes AA, AE, AP. A prefix used by several places has one row each: 967 is HI and AS, and 969 is GU, MP, PW, FM, and MH.
 
 Source: USPS Labeling List L002, 3-Digit ZIP Code Prefix Matrix, January 2011 edition (https://pe.usps.com/Archive/HTML/DMMArchive20110102/L002.htm, read 2026-10-04). The current L002 page no longer loads, so this is the newest copy we could read.
 

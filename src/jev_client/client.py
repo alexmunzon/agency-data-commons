@@ -4,6 +4,9 @@ Modes: replay (default) reads cassettes, off answers nothing, live always calls 
 never reads or writes cassettes, record calls the API for requests with no cassette yet and
 saves the answer. live and record spend
 money, so the client refuses them unless allow_spend=True is passed on purpose.
+
+The cassette folder and the budget are required arguments: each project keeps its own recordings
+and sets its own spend cap. Fixed defaults (URL, model, retries) live in jev_client/config.py.
 """
 
 import logging
@@ -20,20 +23,13 @@ import httpx
 from pydantic import SecretStr
 
 from agency_schema.outputs import JevMode
-from intake.config import (
-    JEV_API_URL,
-    JEV_BACKOFF_BASE_S,
-    JEV_BUDGET_USD,
-    JEV_MAX_TRIES,
-    JEV_TIMEOUT_S,
-)
 from jev_client.cassettes import CassetteMiss, load_cassette, request_hash, save_cassette
+from jev_client.config import JEV_API_URL, JEV_BACKOFF_BASE_S, JEV_MAX_TRIES, JEV_TIMEOUT_S
 from jev_client.cost import RunUsage, estimate_cost_usd
 from jev_client.types import JevRequest, JevResponse, Unresolved, has_notes
 
 log = logging.getLogger("jev_client")
 
-DEFAULT_CASSETTE_DIR = Path(__file__).resolve().parents[2] / "tests" / "cassettes"
 RETRY_STATUSES = frozenset({429, 529})
 
 
@@ -86,13 +82,15 @@ class JevClient:
         *,
         mode: JevMode,
         api_key: str | None,
-        cassette_dir: Path = DEFAULT_CASSETTE_DIR,
+        cassette_dir: Path,
+        budget_usd: Decimal,
         allow_spend: bool = False,
-        budget_usd: Decimal = JEV_BUDGET_USD,
         transport: httpx.BaseTransport | None = None,
         sleep: Callable[[float], None] = time.sleep,
         rand: Callable[[], float] = random.random,
     ) -> None:
+        if not isinstance(budget_usd, Decimal) or not budget_usd.is_finite() or budget_usd < 0:
+            raise ValueError(f"budget_usd must be a Decimal of 0 or more, got {budget_usd!r}")
         spends = mode in (JevMode.LIVE, JevMode.RECORD)
         if spends and not allow_spend:
             raise SpendNotApproved(
@@ -113,10 +111,25 @@ class JevClient:
         self._tripped = False
 
     @classmethod
-    def from_env(cls, *, allow_spend: bool = False, **kwargs: Any) -> "JevClient":
+    def from_env(
+        cls,
+        *,
+        cassette_dir: Path,
+        budget_usd: Decimal,
+        allow_spend: bool = False,
+        **kwargs: Any,
+    ) -> "JevClient":
+        """Mode and key come from the environment; the cassette folder and budget never do."""
         mode = JevMode(os.environ.get("JEV_MODE", JevMode.REPLAY.value))
         key = os.environ.get("TYPESAFE_API_KEY")
-        return cls(mode=mode, api_key=key, allow_spend=allow_spend, **kwargs)
+        return cls(
+            mode=mode,
+            api_key=key,
+            cassette_dir=cassette_dir,
+            budget_usd=budget_usd,
+            allow_spend=allow_spend,
+            **kwargs,
+        )
 
     def __repr__(self) -> str:
         return f"JevClient(mode={self.mode.value}, budget_tripped={self._tripped})"

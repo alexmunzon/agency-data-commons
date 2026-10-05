@@ -7,7 +7,7 @@ from pydantic import ConfigDict, Field, JsonValue, StrictInt
 
 from agency_schema.exceptions import Probability
 from agency_schema.lineage import NonEmpty, StrictModel
-from intake.config import JEV_MODEL
+from jev_client.config import JEV_MODEL
 
 
 class NoulCriteria(StrictModel):

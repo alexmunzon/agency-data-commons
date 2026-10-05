@@ -2,7 +2,7 @@
 
 Recipe (PR 7, 11, and 12 depend on it): serialize the request body as JSON with sorted keys,
 separators (",", ":"), and non-ASCII kept as is, encode as UTF-8, and take the SHA-256 hex
-digest. The cassette is tests/cassettes/<hash>.json holding {"request", "response"} only.
+digest. The cassette is <cassette_dir>/<hash>.json holding {"request", "response"} only.
 Headers are never stored, so the API key cannot end up in a cassette.
 """
 

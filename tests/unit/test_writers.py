@@ -10,18 +10,15 @@ from pathlib import Path
 from typing import Any
 
 import pytest
+from aik_reference import FLAGS, generated_root, reference_hashes
 from openpyxl import load_workbook
 from typer.testing import CliRunner
 
 from synth_agency_data.cli import app
 from synth_agency_data.writers.common import EXCEL_EPOCH, SERIAL_RANGE
 
-FIXTURES = Path(__file__).parents[3] / "fixtures"
-FLAGS = {
-    "agency-a": [],
-    "agency-a-truncated": ["--truncate-crm", "2574", "--no-canonical"],
-    "agency-a-ssn": ["--add-ssn-column", "--no-canonical"],
-}
+# Regenerated once per run and checked against agency-intake-kit's committed hashes (C0a).
+FIXTURES = generated_root()
 CRM_ROWS = 2680  # 2,600 policies + 34 duplicate rows + 46 clients with no policy row
 
 
@@ -35,7 +32,7 @@ def test_fixture_regenerates_byte_for_byte(name: str, tmp_path: Path) -> None:
     args = ["generate", "--seed", "42", "--out", str(tmp_path), *FLAGS[name]]
     result = CliRunner().invoke(app, args)
     assert result.exit_code == 0, result.output
-    assert _digest(tmp_path) == _digest(FIXTURES / name), f"regenerate fixtures/{name}"
+    assert _digest(tmp_path) == reference_hashes(name), f"fixtures/{name} no longer matches aik"
 
 
 @cache

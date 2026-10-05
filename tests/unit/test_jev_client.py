@@ -30,6 +30,7 @@ from jev_client import (
 from jev_client.cassettes import save_cassette
 
 KEY = "ts-test-key-DO-NOT-LEAK-1234"
+BUDGET = Decimal("0.50")  # agency-intake-kit's cap; the client no longer has a default (C0a)
 
 TRIAGE = JevRequest(
     state={"rule_id": "DOB-002", "field": "dob", "value_shape": "19**-**-**"},
@@ -208,20 +209,26 @@ def test_record_writes_cassette_then_replay_hits(tmp_path: Path) -> None:
 @pytest.mark.parametrize("mode", [JevMode.LIVE, JevMode.RECORD])
 def test_spending_modes_need_explicit_approval(tmp_path: Path, mode: JevMode) -> None:
     with pytest.raises(SpendNotApproved):
-        JevClient(mode=mode, api_key=KEY, cassette_dir=tmp_path)
+        JevClient(mode=mode, api_key=KEY, cassette_dir=tmp_path, budget_usd=BUDGET)
 
 
 def test_spending_modes_need_a_key(tmp_path: Path) -> None:
     with pytest.raises(ValueError, match="TYPESAFE_API_KEY"):
-        JevClient(mode=JevMode.LIVE, api_key=None, cassette_dir=tmp_path, allow_spend=True)
+        JevClient(
+            mode=JevMode.LIVE,
+            api_key=None,
+            cassette_dir=tmp_path,
+            budget_usd=BUDGET,
+            allow_spend=True,
+        )
 
 
 def test_from_env_defaults_to_replay(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.delenv("JEV_MODE", raising=False)
-    assert JevClient.from_env(cassette_dir=tmp_path).mode == JevMode.REPLAY
+    assert JevClient.from_env(cassette_dir=tmp_path, budget_usd=BUDGET).mode == JevMode.REPLAY
     monkeypatch.setenv("JEV_MODE", "live")
     with pytest.raises(SpendNotApproved):
-        JevClient.from_env(cassette_dir=tmp_path)
+        JevClient.from_env(cassette_dir=tmp_path, budget_usd=BUDGET)
 
 
 # Backoff
@@ -376,6 +383,7 @@ def make_reply(
         mode=mode,
         api_key=KEY,
         cassette_dir=tmp_path,
+        budget_usd=BUDGET,
         allow_spend=True,
         transport=reply_transport(body, seen, status),
         sleep=FakeClock().sleep,

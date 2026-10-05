@@ -1,5 +1,8 @@
+from importlib.metadata import version
+
 import jev_client
 
 
 def test_jev_client_imports() -> None:
-    assert jev_client.__version__ == "0.0.0"
+    """One version for all three packages: the distribution's (docs/versioning.md)."""
+    assert jev_client.__version__ == version("agency-data-commons") == "0.1.0"

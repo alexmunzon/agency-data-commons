@@ -1,10 +1,10 @@
-"""Per-run usage accounting and the spend estimate. The price comes from config.py."""
+"""Per-run usage accounting and the spend estimate. The price comes from jev_client/config.py."""
 
 from decimal import ROUND_HALF_UP, Decimal
 
 from agency_schema.lineage import StrictModel
 from agency_schema.outputs import Count, JevMode, UsdCost
-from intake.config import JEV_USD_PER_MTOK_IN
+from jev_client.config import JEV_USD_PER_MTOK_IN
 
 _MICRO = Decimal("0.000001")
 

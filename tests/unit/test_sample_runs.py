@@ -20,7 +20,7 @@ from agency_schema.outputs import (
 )
 from agency_schema.run_dir import check_run_dir
 
-FIXTURES = Path(__file__).parents[3] / "fixtures"
+FIXTURES = Path(__file__).parents[1] / "fixtures"
 SAMPLES = ["sample-run", "sample-run-failed", "sample-run-passed", "sample-run-partial"]
 
 

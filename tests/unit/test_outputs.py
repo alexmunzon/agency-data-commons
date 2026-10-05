@@ -9,7 +9,7 @@ from pydantic import ValidationError
 
 from agency_schema.outputs import RUN_FILE_MODELS
 
-FIXTURES = Path(__file__).parents[3] / "fixtures"
+FIXTURES = Path(__file__).parents[1] / "fixtures"
 LEG_A = "tie_out/leg_book_vs_statement.json"
 LEG_B = "tie_out/leg_statement_vs_book.json"
 LEG_C = "tie_out/leg_crm_vs_statement.json"
