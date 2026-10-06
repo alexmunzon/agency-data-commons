@@ -89,6 +89,7 @@ class JevClient:
         sleep: Callable[[float], None] = time.sleep,
         rand: Callable[[], float] = random.random,
     ) -> None:
+        mode = JevMode(mode)
         if not isinstance(budget_usd, Decimal) or not budget_usd.is_finite() or budget_usd < 0:
             raise ValueError(f"budget_usd must be a Decimal of 0 or more, got {budget_usd!r}")
         spends = mode in (JevMode.LIVE, JevMode.RECORD)
@@ -108,7 +109,7 @@ class JevClient:
         self._calls = 0
         self._input_tokens = 0
         self._output_tokens = 0
-        self._tripped = False
+        self._tripped = spends and budget_usd == 0
 
     @classmethod
     def from_env(
@@ -180,8 +181,16 @@ class JevClient:
     def _count(self, usage: Any) -> None:
         self._calls += 1
         in_tokens = _token_count(usage, "input_tokens")
-        if in_tokens == 0:
-            log.warning("Jev reply has no usable input token count; it is counted as 0 tokens")
+        reported_input = usage.get("input_tokens") if isinstance(usage, dict) else None
+        if (
+            not isinstance(reported_input, int)
+            or isinstance(reported_input, bool)
+            or reported_input < 0
+        ):
+            # Retain supplied usable counts; an unknown billed cost cannot authorize more spend.
+            if self.mode in (JevMode.LIVE, JevMode.RECORD):
+                self._tripped = True
+            log.warning("Jev reply has no usable input token count; paid requests are disabled")
         self._input_tokens += in_tokens
         self._output_tokens += _token_count(usage, "output_tokens")
         cost = estimate_cost_usd(self._input_tokens)
